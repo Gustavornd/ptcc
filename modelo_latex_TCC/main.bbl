@@ -1,0 +1,2573 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{araujo2018geracao}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3ea9ad25ed6bafbdab0d230cd1939d81}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Wendell\bibnamedelimb Oliveira\bibnamedelima de},
+           giveni={W\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16a58398d631fb8cdcda1353ed54fde8}{%
+           family={Aranha},
+           familyi={A\bibinitperiod},
+           given={Eduardo\bibnamedelimb Henrique\bibnamedelimb da\bibnamedelima Silva},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d18624660eb72411f14fa1a21f74ea7}{%
+           family={Madeira},
+           familyi={M\bibinitperiod},
+           given={Charles\bibnamedelimb Andrye\bibnamedelima Galvão},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Porto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {Sociedade Brasileira de Computação}%
+      }
+      \strng{namehash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{fullhash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{fullhashraw}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{bibnamehash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{authorbibnamehash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{authornamehash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{authorfullhash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{authorfullhashraw}{e45f4e50bd91c8410b31473c16c41332}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Anais da VII Jornada de Atualização em Informática na Educação (JAIE 2018)}
+      \field{title}{Geração Procedural de Conteúdo Aplicada a Jogos Digitais Educacionais}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{bandeali2026generative}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06f13055a13e8f6b5f18c9756a020383}{%
+           family={Bandeali},
+           familyi={B\bibinitperiod},
+           given={Ahad},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Toronto Metropolitan University}%
+      }
+      \list{location}{1}{%
+        {Toronto, ON, Canada}%
+      }
+      \strng{namehash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{fullhash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{fullhashraw}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{bibnamehash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{authorbibnamehash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{authornamehash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{authorfullhash}{06f13055a13e8f6b5f18c9756a020383}
+      \strng{authorfullhashraw}{06f13055a13e8f6b5f18c9756a020383}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{Generative {AI} \& The Level Designer: An Exploratory Report of Tools, Workflows, and Challenges}
+      \field{type}{Master of Digital Media Major Research Project}
+      \field{year}{2026}
+    \endentry
+    \entry{bengio1994learning}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c866c0bcd8215f257f24444a7f53932f}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={Patrice},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f247df2d5de3a9ccb24aa9ee9fdaf277}{%
+           family={Frasconi},
+           familyi={F\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{fullhash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{fullhashraw}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{bibnamehash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{authorbibnamehash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{authornamehash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{authorfullhash}{e394d4a496ef63d7c69ef669365d2b97}
+      \strng{authorfullhashraw}{e394d4a496ef63d7c69ef669365d2b97}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{number}{2}
+      \field{title}{Learning Long-Term Dependencies with Gradient Descent Is Difficult}
+      \field{volume}{5}
+      \field{year}{1994}
+      \field{pages}{157\bibrangedash 166}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/72.279181
+      \endverb
+    \endentry
+    \entry{brown2020language}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=ad9f5a3d8c696d78ce2a831ce8ac7524}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4543c3bcd6aaf414da4296b349603e5}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ac58bd43db2434e8e1ffd6182c3fcda}{%
+           family={Ryder},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ed243177743da3e650f1cff6376bb3c}{%
+           family={Subbiah},
+           familyi={S\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e85370e215d552f72c95a2b63a37802}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
+           family={Dhariwal},
+           familyi={D\bibinitperiod},
+           given={Prafulla},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca421ceeb5b516dd8fc64bea5a23f2a}{%
+           family={Neelakantan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab5d7d7b9cfeaad635c4a60e8950d7dd}{%
+           family={Shyam},
+           familyi={S\bibinitperiod},
+           given={Pranav},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c1d9a663596faaf544c1a65aac581be}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e84eff933be9f4887bf369cf181bf12}{%
+           family={Askell},
+           familyi={A\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85437fe07696e4c57f916c83d4ba5581}
+      \strng{fullhash}{7b7bf3c58b040b737b9816829a955c41}
+      \strng{fullhashraw}{7b7bf3c58b040b737b9816829a955c41}
+      \strng{bibnamehash}{85437fe07696e4c57f916c83d4ba5581}
+      \strng{authorbibnamehash}{85437fe07696e4c57f916c83d4ba5581}
+      \strng{authornamehash}{85437fe07696e4c57f916c83d4ba5581}
+      \strng{authorfullhash}{7b7bf3c58b040b737b9816829a955c41}
+      \strng{authorfullhashraw}{7b7bf3c58b040b737b9816829a955c41}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 33 (NeurIPS 2020)}
+      \field{title}{Language Models are Few-Shot Learners}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{1877\bibrangedash 1901}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2005.14165
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2005.14165
+      \endverb
+    \endentry
+    \entry{chen2025narrative}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=05239a28a326202211635642451536ee}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yi-Chun},
+           giveni={Y\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bf5979a73e3275936664347c67d8a47}{%
+           family={Jhala},
+           familyi={J\bibinitperiod},
+           given={Arnav},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{231bd82474af2227562565e1372e6a60}
+      \strng{fullhash}{231bd82474af2227562565e1372e6a60}
+      \strng{fullhashraw}{231bd82474af2227562565e1372e6a60}
+      \strng{bibnamehash}{231bd82474af2227562565e1372e6a60}
+      \strng{authorbibnamehash}{231bd82474af2227562565e1372e6a60}
+      \strng{authornamehash}{231bd82474af2227562565e1372e6a60}
+      \strng{authorfullhash}{231bd82474af2227562565e1372e6a60}
+      \strng{authorfullhashraw}{231bd82474af2227562565e1372e6a60}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AIIDE Workshop on Experimental AI in Games (EXAG)}
+      \field{eprintclass}{cs.GR}
+      \field{eprinttype}{arXiv}
+      \field{title}{Narrative-to-Scene Generation: An {LLM}-Driven Pipeline for 2{D} Game Environments}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2509.04481
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2509.04481
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2509.04481
+      \endverb
+    \endentry
+    \entry{cohn2008qualitative}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8c6c03ab4edea443dde5127cec2e7aac}{%
+           family={Cohn},
+           familyi={C\bibinitperiod},
+           given={Anthony\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3db061d86e567feb6063de01ecb1acde}{%
+           family={Renz},
+           familyi={R\bibinitperiod},
+           given={Jochen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=ee480b6d2fd2c627ffb033d94c9691af}{%
+           family={Harmelen},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=3f9f7c9937297077325233d345cf9c91}{%
+           family={Lifschitz},
+           familyi={L\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2b872bd60c94ce5c565fe4c2f7f2d904}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{fullhash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{fullhashraw}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{bibnamehash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{authorbibnamehash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{authornamehash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{authorfullhash}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{authorfullhashraw}{8a757f0e2503d2382b0e5eb6a33e62a5}
+      \strng{editorbibnamehash}{5d60f7de00aa997e7212d558ef39b012}
+      \strng{editornamehash}{5d60f7de00aa997e7212d558ef39b012}
+      \strng{editorfullhash}{5d60f7de00aa997e7212d558ef39b012}
+      \strng{editorfullhashraw}{5d60f7de00aa997e7212d558ef39b012}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of Knowledge Representation}
+      \field{title}{Qualitative Spatial Representation and Reasoning}
+      \field{year}{2008}
+      \field{pages}{413\bibrangedash 465}
+      \range{pages}{53}
+      \verb{doi}
+      \verb 10.1016/S1574-6526(07)03013-3
+      \endverb
+    \endentry
+    \entry{cormen2009introduction}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=835b8c52757d98c15859b416316d9820}{%
+           family={Cormen},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a389dea91a76366c4b4af5f52a928a76}{%
+           family={Leiserson},
+           familyi={L\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a964821f97ee17f8bb285bc61c52899}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={Ronald\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc78426660400760f77758aec45e71a8}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Clifford},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{fullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{fullhashraw}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{bibnamehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{authorbibnamehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{authornamehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{authorfullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{authorfullhashraw}{10f004e08c7c03d98be0da1231a869ce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Introduction to Algorithms}
+      \field{year}{2009}
+    \endentry
+    \entry{dormans2010}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b33b44793455873814bf12f712f5d3b0}{%
+           family={Dormans},
+           familyi={D\bibinitperiod},
+           given={Joris},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Monterey, California}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{fullhash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{fullhashraw}{b33b44793455873814bf12f712f5d3b0}
+      \strng{bibnamehash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{authorbibnamehash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{authornamehash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{authorfullhash}{b33b44793455873814bf12f712f5d3b0}
+      \strng{authorfullhashraw}{b33b44793455873814bf12f712f5d3b0}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2010 Workshop on Procedural Content Generation in Games}
+      \field{isbn}{9781450300230}
+      \field{series}{PCGames '10}
+      \field{title}{Adventures in level design: generating missions and spaces for action adventure games}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1814256.1814257
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/1814256.1814257
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/1814256.1814257
+      \endverb
+      \keyw{procedural generation,level design,action adventure games}
+    \endentry
+    \entry{ericson2004realtime}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ce4108d000f2ab3383891dc12c16ae76}{%
+           family={Ericson},
+           familyi={E\bibinitperiod},
+           given={Christer},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{fullhash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{fullhashraw}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{bibnamehash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{authorbibnamehash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{authornamehash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{authorfullhash}{ce4108d000f2ab3383891dc12c16ae76}
+      \strng{authorfullhashraw}{ce4108d000f2ab3383891dc12c16ae76}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time Collision Detection}
+      \field{year}{2004}
+      \verb{doi}
+      \verb 10.1201/b14581
+      \endverb
+    \endentry
+    \entry{feng2026repurposing3dgenerativemodel}{misc}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=76b08d2a73f77d9e58e78aac0249d070}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Haoran},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=220b4c1beac50a47c043fbc3e508440a}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10f876e3ecab9a878c9f86ba9fb6e2f9}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zehuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f894558cce05261206c67f26ba3ef63e}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yang-Tian},
+           giveni={Y\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08eb1675afc04e72127d587ab05e8d4c}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Yuxin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c092b049a589aa0c1a2812cec9b5bf2e}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0a41882850347fd13e5797f4c4925b1b}
+      \strng{fullhash}{8f82f6dc1a3702e8d25ee76f7d0648b4}
+      \strng{fullhashraw}{8f82f6dc1a3702e8d25ee76f7d0648b4}
+      \strng{bibnamehash}{0a41882850347fd13e5797f4c4925b1b}
+      \strng{authorbibnamehash}{0a41882850347fd13e5797f4c4925b1b}
+      \strng{authornamehash}{0a41882850347fd13e5797f4c4925b1b}
+      \strng{authorfullhash}{8f82f6dc1a3702e8d25ee76f7d0648b4}
+      \strng{authorfullhashraw}{8f82f6dc1a3702e8d25ee76f7d0648b4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Repurposing 3D Generative Model for Autoregressive Layout Generation}
+      \field{year}{2026}
+      \verb{eprint}
+      \verb 2604.16299
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2604.16299
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2604.16299
+      \endverb
+    \endentry
+    \entry{Gallotta_2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=e16f4f5d3cf0e2c8e0263ace50fb5b75}{%
+           family={Gallotta},
+           familyi={G\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc9c46cc0807547b221e93ef062030a4}{%
+           family={Todd},
+           familyi={T\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14a5fe06ad4ebabbb66db40c622115e4}{%
+           family={Zammit},
+           familyi={Z\bibinitperiod},
+           given={Marvin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=495f1f7321ab1541320d57f92a26ae86}{%
+           family={Earle},
+           familyi={E\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=104b1948c9b90def8891b99712ce4bfe}{%
+           family={Liapis},
+           familyi={L\bibinitperiod},
+           given={Antonios},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf368727b2920ced839da42cbd3e69a0}{%
+           family={Yannakakis},
+           familyi={Y\bibinitperiod},
+           given={Georgios\bibnamedelima N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{1599580695d4234db900a7871be36746}
+      \strng{fullhash}{94aef2b977f7991098deb3a79726ab78}
+      \strng{fullhashraw}{94aef2b977f7991098deb3a79726ab78}
+      \strng{bibnamehash}{1599580695d4234db900a7871be36746}
+      \strng{authorbibnamehash}{1599580695d4234db900a7871be36746}
+      \strng{authornamehash}{1599580695d4234db900a7871be36746}
+      \strng{authorfullhash}{94aef2b977f7991098deb3a79726ab78}
+      \strng{authorfullhashraw}{94aef2b977f7991098deb3a79726ab78}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2475-1510}
+      \field{journaltitle}{IEEE Transactions on Games}
+      \field{title}{Large Language Models and Games: A Survey and Roadmap}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/tg.2024.3461510
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TG.2024.3461510
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TG.2024.3461510
+      \endverb
+    \endentry
+    \entry{garcez2023neurosymbolic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=70658466246873155f5b9b3a737cdd4e}{%
+           family={Garcez},
+           familyi={G\bibinitperiod},
+           given={Artur\bibnamedelima d'Avila},
+           giveni={A\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd05cca2f0b6523e1db9b0f5eed3c647}{%
+           family={Lamb},
+           familyi={L\bibinitperiod},
+           given={Luís\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{fullhash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{fullhashraw}{c5a9464b69946e2b9e999884712e971d}
+      \strng{bibnamehash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{authorbibnamehash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{authornamehash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{authorfullhash}{c5a9464b69946e2b9e999884712e971d}
+      \strng{authorfullhashraw}{c5a9464b69946e2b9e999884712e971d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{title}{Neurosymbolic {AI}: The 3rd Wave}
+      \field{volume}{56}
+      \field{year}{2023}
+      \field{pages}{12387\bibrangedash 12406}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s10462-023-10448-w
+      \endverb
+    \endentry
+    \entry{gibson1979ecological}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ea6712ad9271f5853a0b127d4d08d39b}{%
+           family={Gibson},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Houghton Mifflin}%
+      }
+      \strng{namehash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{fullhash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{fullhashraw}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{bibnamehash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{authorbibnamehash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{authornamehash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{authorfullhash}{ea6712ad9271f5853a0b127d4d08d39b}
+      \strng{authorfullhashraw}{ea6712ad9271f5853a0b127d4d08d39b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Ecological Approach to Visual Perception}
+      \field{year}{1979}
+    \endentry
+    \entry{harnad1990symbol}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec69f33038aa2838c8d39e24cd826b99}{%
+           family={Harnad},
+           familyi={H\bibinitperiod},
+           given={Stevan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{fullhash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{fullhashraw}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{bibnamehash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{authorbibnamehash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{authornamehash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{authorfullhash}{ec69f33038aa2838c8d39e24cd826b99}
+      \strng{authorfullhashraw}{ec69f33038aa2838c8d39e24cd826b99}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica D: Nonlinear Phenomena}
+      \field{number}{1--3}
+      \field{title}{The Symbol Grounding Problem}
+      \field{volume}{42}
+      \field{year}{1990}
+      \field{pages}{335\bibrangedash 346}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0167-2789(90)90087-6
+      \endverb
+    \endentry
+    \entry{hart1968formal}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9ce6ce2ae6a0f1ac64e4efe810d622c}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91c95ed3e3f572f27346b1131492bb8b}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Nils\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253a4de6b29f96e30136e368e9af44d0}{%
+           family={Raphael},
+           familyi={R\bibinitperiod},
+           given={Bertram},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{fullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{fullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{bibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorbibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authornamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorfullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorfullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems Science and Cybernetics}
+      \field{number}{2}
+      \field{title}{A Formal Basis for the Heuristic Determination of Minimum Cost Paths}
+      \field{volume}{4}
+      \field{year}{1968}
+      \field{pages}{100\bibrangedash 107}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TSSC.1968.300136
+      \endverb
+    \endentry
+    \entry{her2025zeroshot3dmapgeneration}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=ee61c0de49eac5cfa58d29e8caac0d68}{%
+           family={Her},
+           familyi={H\bibinitperiod},
+           given={Lim\bibnamedelima Chien},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=743ef631a4035b29413e855904c0fb2b}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41fca1b3c028b938a652edebf64f0af6}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Yunshu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8aabae92d27120c7689a72de5995b8e1}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ruihao},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{22f458da24b3f438cde68e833d919175}
+      \strng{fullhash}{68126b057db3a78bd6d342fe473a9e65}
+      \strng{fullhashraw}{68126b057db3a78bd6d342fe473a9e65}
+      \strng{bibnamehash}{22f458da24b3f438cde68e833d919175}
+      \strng{authorbibnamehash}{22f458da24b3f438cde68e833d919175}
+      \strng{authornamehash}{22f458da24b3f438cde68e833d919175}
+      \strng{authorfullhash}{68126b057db3a78bd6d342fe473a9e65}
+      \strng{authorfullhashraw}{68126b057db3a78bd6d342fe473a9e65}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Zero-shot 3D Map Generation with LLM Agents: A Dual-Agent Architecture for Procedural Content Generation}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2512.10501
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2512.10501
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2512.10501
+      \endverb
+    \endentry
+    \entry{hu2024scenecraft}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=6190b4a909d3d307a717b550d6d03f23}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Ziniu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=971c85a623207c902e4999df98f6ad18}{%
+           family={Iscen},
+           familyi={I\bibinitperiod},
+           given={Ahmet},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d83e8712ea7183556802d3c68f1ef166}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Aashi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92f0e61247770d3248674f4496c148e3}{%
+           family={Kipf},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d433272a8da287e7d9b17c3f80798a3f}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={Yisong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53f0107f9251cd11df52ce937822ea7c}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58e4a9845eac42a4b0e5205cf0970fc0}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Cordelia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a53a5d09d1e6a289f650156f964ec3cf}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a209c83dd05025d6cfade5753477de1}
+      \strng{fullhash}{cc40c218d294e090a98950ab1693be4a}
+      \strng{fullhashraw}{cc40c218d294e090a98950ab1693be4a}
+      \strng{bibnamehash}{4a209c83dd05025d6cfade5753477de1}
+      \strng{authorbibnamehash}{4a209c83dd05025d6cfade5753477de1}
+      \strng{authornamehash}{4a209c83dd05025d6cfade5753477de1}
+      \strng{authorfullhash}{cc40c218d294e090a98950ab1693be4a}
+      \strng{authorfullhashraw}{cc40c218d294e090a98950ab1693be4a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 41st International Conference on Machine Learning (ICML)}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{SceneCraft: An {LLM} Agent for Synthesizing 3{D} Scene as Blender Code}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2403.01248
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2403.01248
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2403.01248
+      \endverb
+    \endentry
+    \entry{karth2017wavefunctioncollapse}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=40164fe78eb5370b5d7502de2836f402}{%
+           family={Karth},
+           familyi={K\bibinitperiod},
+           given={Isaac},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4583dcb4e8a01076f4883b6c03635381}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{fullhash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{fullhashraw}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{bibnamehash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{authorbibnamehash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{authornamehash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{authorfullhash}{6f9f5309cb73fdd910932005e06e03a5}
+      \strng{authorfullhashraw}{6f9f5309cb73fdd910932005e06e03a5}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 12th International Conference on the Foundations of Digital Games (FDG '17)}
+      \field{title}{WaveFunctionCollapse is Constraint Solving in the Wild}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3102071.3110566
+      \endverb
+    \endentry
+    \entry{khalifa2020pcgrl}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8cf60c4d9250095feca7d9e907cf7f45}{%
+           family={Khalifa},
+           familyi={K\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4505e041f77b137101094a2522aed23c}{%
+           family={Bontrager},
+           familyi={B\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=495f1f7321ab1541320d57f92a26ae86}{%
+           family={Earle},
+           familyi={E\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
+      \strng{fullhash}{ff020027ac0762da6abd909bbc870363}
+      \strng{fullhashraw}{ff020027ac0762da6abd909bbc870363}
+      \strng{bibnamehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
+      \strng{authorbibnamehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
+      \strng{authornamehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
+      \strng{authorfullhash}{ff020027ac0762da6abd909bbc870363}
+      \strng{authorfullhashraw}{ff020027ac0762da6abd909bbc870363}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)}
+      \field{number}{1}
+      \field{title}{{PCGRL}: Procedural Content Generation via Reinforcement Learning}
+      \field{volume}{16}
+      \field{year}{2020}
+      \field{pages}{95\bibrangedash 101}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1609/aiide.v16i1.7416
+      \endverb
+    \endentry
+    \entry{lai2020towards}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7aee989da0d429e09917f57bbf3ff21e}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Gorm},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=706c15ae1c29abed5a49baa69123a3e5}{%
+           family={Latham},
+           familyi={L\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3aa1a2b222bc8096e33c53f1332545e}{%
+           family={Leymarie},
+           familyi={L\bibinitperiod},
+           given={Frederic\bibnamedelima Fol},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{fullhash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{fullhashraw}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{bibnamehash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{authorbibnamehash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{authornamehash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{authorfullhash}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \strng{authorfullhashraw}{0d2a7bc5e7693e2371c206b99250f2b4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on the Foundations of Digital Games (FDG '20)}
+      \field{title}{Towards Friendly Mixed Initiative Procedural Content Generation: Three Pillars of Industry}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/3402942.3402946
+      \endverb
+    \endentry
+    \entry{liapis2013sentient}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=104b1948c9b90def8891b99712ce4bfe}{%
+           family={Liapis},
+           familyi={L\bibinitperiod},
+           given={Antonios},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf368727b2920ced839da42cbd3e69a0}{%
+           family={Yannakakis},
+           familyi={Y\bibinitperiod},
+           given={Georgios\bibnamedelima N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{7163281056efd28444d54dbd43e4a983}
+      \strng{fullhash}{7163281056efd28444d54dbd43e4a983}
+      \strng{fullhashraw}{7163281056efd28444d54dbd43e4a983}
+      \strng{bibnamehash}{7163281056efd28444d54dbd43e4a983}
+      \strng{authorbibnamehash}{7163281056efd28444d54dbd43e4a983}
+      \strng{authornamehash}{7163281056efd28444d54dbd43e4a983}
+      \strng{authorfullhash}{7163281056efd28444d54dbd43e4a983}
+      \strng{authorfullhashraw}{7163281056efd28444d54dbd43e4a983}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 8th International Conference on the Foundations of Digital Games (FDG '13)}
+      \field{title}{Sentient Sketchbook: Computer-Aided Game Level Authoring}
+      \field{year}{2013}
+      \field{pages}{213\bibrangedash 220}
+      \range{pages}{8}
+    \endentry
+    \entry{linden2013designing}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1aafc72dd11442dc130beacb4e86c499}{%
+           family={Linden},
+           familyi={L\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=88d33934e10fd64a746702e0c4172d1a}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d3f4766060649d522cb73a599ad27c5}{%
+           family={Bidarra},
+           familyi={B\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{fullhash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{fullhashraw}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{bibnamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorbibnamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authornamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorfullhash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorfullhashraw}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE Workshop)}
+      \field{month}{10}
+      \field{title}{Designing Procedurally Generated Levels}
+      \field{year}{2013}
+      \field{pages}{41\bibrangedash 47}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1609/aiide.v9i3.12592
+      \endverb
+    \endentry
+    \entry{linden2014dungeons}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1aafc72dd11442dc130beacb4e86c499}{%
+           family={Linden},
+           familyi={L\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=88d33934e10fd64a746702e0c4172d1a}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d3f4766060649d522cb73a599ad27c5}{%
+           family={Bidarra},
+           familyi={B\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{fullhash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{fullhashraw}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{bibnamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorbibnamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authornamehash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorfullhash}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \strng{authorfullhashraw}{7c9ff97145cb14c4b1c0f8d33f679755}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computational Intelligence and AI in Games}
+      \field{number}{1}
+      \field{title}{Procedural Generation of Dungeons}
+      \field{volume}{6}
+      \field{year}{2014}
+      \field{pages}{78\bibrangedash 89}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TCIAIG.2013.2290371
+      \endverb
+    \endentry
+    \entry{maleki2024procedural}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fb97de3ade158396a7b35ef28b860605}{%
+           family={Maleki},
+           familyi={M\bibinitperiod},
+           given={Mahdi\bibnamedelima Farrokhi},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05091eb1240e6392a87946778668f89e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{fullhash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{fullhashraw}{90c4ae3da9c54378506812b253b1adff}
+      \strng{bibnamehash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{authorbibnamehash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{authornamehash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{authorfullhash}{90c4ae3da9c54378506812b253b1adff}
+      \strng{authorfullhashraw}{90c4ae3da9c54378506812b253b1adff}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twentieth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{number}{1}
+      \field{title}{Procedural Content Generation in Games: A Survey with Insights on Emerging {LLM} Integration}
+      \field{volume}{20}
+      \field{year}{2024}
+      \field{pages}{167\bibrangedash 178}
+      \range{pages}{12}
+      \verb{eprint}
+      \verb 2410.15644
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2410.15644
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2410.15644
+      \endverb
+    \endentry
+    \entry{nasir2024word2worldgeneratingstoriesworlds}{misc}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=0d5d7be8be0f67311f763052c118d018}{%
+           family={Nasir},
+           familyi={N\bibinitperiod},
+           given={Muhammad\bibnamedelima U.},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdf500ed51a345b8fe737bbe633814f1}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{fullhash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{fullhashraw}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{bibnamehash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{authorbibnamehash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{authornamehash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{authorfullhash}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \strng{authorfullhashraw}{eb34ae1e5fdbb3f9d66ca659aad4a237}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Word2World: Generating Stories and Worlds through Large Language Models}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2405.06686
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2405.06686
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2405.06686
+      \endverb
+    \endentry
+    \entry{ocal2024sceneteller}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=529d25e88e161d64b235c91f33e4e611}{%
+           family={Öcal},
+           familyi={Ö\bibinitperiod},
+           given={Başak\bibnamedelima Melis},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4a325ee69b6561cefa45b283ecb4772}{%
+           family={Tatarchenko},
+           familyi={T\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30b402047e9f5de35948b140576fd624}{%
+           family={Karaoğlu},
+           familyi={K\bibinitperiod},
+           given={Sezer},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50a45145d1cd6b9c9782801e107d49eb}{%
+           family={Gevers},
+           familyi={G\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7b30d94542b32e849f404b7273d453a0}
+      \strng{fullhash}{8327815d144586e1eca0eff88e4fc228}
+      \strng{fullhashraw}{8327815d144586e1eca0eff88e4fc228}
+      \strng{bibnamehash}{7b30d94542b32e849f404b7273d453a0}
+      \strng{authorbibnamehash}{7b30d94542b32e849f404b7273d453a0}
+      \strng{authornamehash}{7b30d94542b32e849f404b7273d453a0}
+      \strng{authorfullhash}{8327815d144586e1eca0eff88e4fc228}
+      \strng{authorfullhashraw}{8327815d144586e1eca0eff88e4fc228}
+      \field{sortinit}{Ö}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European Conference on Computer Vision (ECCV)}
+      \field{title}{SceneTeller: Language-to-3{D} Scene Generation}
+      \field{year}{2024}
+      \field{pages}{362\bibrangedash 378}
+      \range{pages}{17}
+    \endentry
+    \entry{regmi2025system}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=15e3196fc302363050b9d591af62cfd2}{%
+           family={Regmi},
+           familyi={R\bibinitperiod},
+           given={Vinayak},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Purdue University}%
+      }
+      \list{location}{1}{%
+        {West Lafayette, IN, USA}%
+      }
+      \strng{namehash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{fullhash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{fullhashraw}{15e3196fc302363050b9d591af62cfd2}
+      \strng{bibnamehash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{authorbibnamehash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{authornamehash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{authorfullhash}{15e3196fc302363050b9d591af62cfd2}
+      \strng{authorfullhashraw}{15e3196fc302363050b9d591af62cfd2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{title}{A System for Procedural Generation of Virtual Agent Activity Using {LLM}-Based Scene Interpretation}
+      \field{type}{Master of Science Thesis}
+      \field{year}{2025}
+    \endentry
+    \entry{russell2021artificial}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=143fa183327d9fcd9de18eec99d6ca97}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, NJ, USA}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhashraw}{b280605b721b4ebcba5395298499f924}
+      \strng{bibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorbibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authornamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhashraw}{b280605b721b4ebcba5395298499f924}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{Artificial Intelligence: A Modern Approach}
+      \field{year}{2021}
+    \endentry
+    \entry{shaker2016constructive}{incollection}{}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=ae1fe57aa4583addaa565aa16bfea22b}{%
+           family={Shaker},
+           familyi={S\bibinitperiod},
+           given={Noor},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=104b1948c9b90def8891b99712ce4bfe}{%
+           family={Liapis},
+           familyi={L\bibinitperiod},
+           given={Antonios},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88d33934e10fd64a746702e0c4172d1a}{%
+           family={Lopes},
+           familyi={L\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d3f4766060649d522cb73a599ad27c5}{%
+           family={Bidarra},
+           familyi={B\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{98f64252e091917ecae2cc8b2e96e364}
+      \strng{fullhash}{90cb59e0acdf80f7874426a6b4b8937b}
+      \strng{fullhashraw}{90cb59e0acdf80f7874426a6b4b8937b}
+      \strng{bibnamehash}{98f64252e091917ecae2cc8b2e96e364}
+      \strng{authorbibnamehash}{98f64252e091917ecae2cc8b2e96e364}
+      \strng{authornamehash}{98f64252e091917ecae2cc8b2e96e364}
+      \strng{authorfullhash}{90cb59e0acdf80f7874426a6b4b8937b}
+      \strng{authorfullhashraw}{90cb59e0acdf80f7874426a6b4b8937b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Procedural Content Generation in Games: A Textbook and an Overview of Current Research}
+      \field{title}{Constructive generation methods for dungeons and levels}
+      \field{year}{2016}
+      \field{pages}{31\bibrangedash 55}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/978-3-319-42716-4_3
+      \endverb
+    \endentry
+    \entry{pcgbook}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ae1fe57aa4583addaa565aa16bfea22b}{%
+           family={Shaker},
+           familyi={S\bibinitperiod},
+           given={Noor},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0a3a62cf62a96f28c7fba0e3e16283b}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{fullhash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{fullhashraw}{f94d337436520f5209d3360e69b11bc0}
+      \strng{bibnamehash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{authorbibnamehash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{authornamehash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{authorfullhash}{f94d337436520f5209d3360e69b11bc0}
+      \strng{authorfullhashraw}{f94d337436520f5209d3360e69b11bc0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Procedural Content Generation in Games: A Textbook and an Overview of Current Research}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-319-42716-4
+      \endverb
+    \endentry
+    \entry{smith2011answer}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4583dcb4e8a01076f4883b6c03635381}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6860903aff3a9110600b92e8c1fb82c1}{%
+           family={Mateas},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{fullhash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{fullhashraw}{a5ca14a02af4528c213ff480eb485492}
+      \strng{bibnamehash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{authorbibnamehash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{authornamehash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{authorfullhash}{a5ca14a02af4528c213ff480eb485492}
+      \strng{authorfullhashraw}{a5ca14a02af4528c213ff480eb485492}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computational Intelligence and AI in Games}
+      \field{number}{3}
+      \field{title}{Answer Set Programming for Procedural Content Generation: A Survey}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{187\bibrangedash 200}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCIAIG.2011.2158545
+      \endverb
+    \endentry
+    \entry{smith2010analyzing}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=998352e6f3012aee6faf14d1682c883c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Gillian},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=193f2ecc666539c69e994edc932a116c}{%
+           family={Whitehead},
+           familyi={W\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{fullhash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{fullhashraw}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{bibnamehash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{authorbibnamehash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{authornamehash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{authorfullhash}{fb34c7b58be7406f385a35e7587b3ebc}
+      \strng{authorfullhashraw}{fb34c7b58be7406f385a35e7587b3ebc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Workshop on Procedural Content Generation in Games (PCGames '10)}
+      \field{title}{Analyzing the Expressive Range of a Level Generator}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/1814256.1814260
+      \endverb
+    \endentry
+    \entry{tanagra}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=998352e6f3012aee6faf14d1682c883c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Gillian},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=193f2ecc666539c69e994edc932a116c}{%
+           family={Whitehead},
+           familyi={W\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6860903aff3a9110600b92e8c1fb82c1}{%
+           family={Mateas},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Monterey, California}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{fullhash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{fullhashraw}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{bibnamehash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{authorbibnamehash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{authornamehash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{authorfullhash}{369767fc0ab4e82d45ca15c11979f0be}
+      \strng{authorfullhashraw}{369767fc0ab4e82d45ca15c11979f0be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Fifth International Conference on the Foundations of Digital Games}
+      \field{isbn}{9781605589374}
+      \field{series}{FDG '10}
+      \field{title}{Tanagra: a mixed-initiative level design tool}
+      \field{year}{2010}
+      \field{pages}{209\bibrangedash 216}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1822348.1822376
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/1822348.1822376
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/1822348.1822376
+      \endverb
+      \keyw{procedural content generation,level design,games,AI-assisted design}
+    \endentry
+    \entry{snook2000simplified}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fae1e9a61db051a49ed8d4a2b6d99d6e}{%
+           family={Snook},
+           familyi={S\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=e6f673dc41bc74275655fdb44c25e89f}{%
+           family={DeLoura},
+           familyi={D\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hingham, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Charles River Media}%
+      }
+      \strng{namehash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{fullhash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{fullhashraw}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{bibnamehash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{authorbibnamehash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{authornamehash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{authorfullhash}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{authorfullhashraw}{fae1e9a61db051a49ed8d4a2b6d99d6e}
+      \strng{editorbibnamehash}{e6f673dc41bc74275655fdb44c25e89f}
+      \strng{editornamehash}{e6f673dc41bc74275655fdb44c25e89f}
+      \strng{editorfullhash}{e6f673dc41bc74275655fdb44c25e89f}
+      \strng{editorfullhashraw}{e6f673dc41bc74275655fdb44c25e89f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Game Programming Gems}
+      \field{title}{Simplified 3{D} Movement and Pathfinding Using Navigation Meshes}
+      \field{year}{2000}
+      \field{pages}{288\bibrangedash 304}
+      \range{pages}{17}
+    \endentry
+    \entry{summerville2018procedural}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=198982c57c855e20171a0d57488800c6}{%
+           family={Summerville},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b76cd99c7d9f136d105a5b9ef54cd023}{%
+           family={Snodgrass},
+           familyi={S\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e135527091b0f84e96d6573052d149b}{%
+           family={Guzdial},
+           familyi={G\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36d10fc86048a38b49af3fada5db7c52}{%
+           family={Holmg{å}rd},
+           familyi={H\bibinitperiod},
+           given={Christoffer},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=993b84f2da72478a96a6ddccf1db4953}{%
+           family={Hoover},
+           familyi={H\bibinitperiod},
+           given={Amy\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c2dfe32580e160e14b6a6838e0f77c9}{%
+           family={Isaksen},
+           familyi={I\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b42b016dc19b9d5aaa8679d8a1506a52}{%
+           family={Nealen},
+           familyi={N\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{fullhash}{6e2076797d39e4d4274a6633911e3284}
+      \strng{fullhashraw}{6e2076797d39e4d4274a6633911e3284}
+      \strng{bibnamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authorbibnamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authornamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authorfullhash}{6e2076797d39e4d4274a6633911e3284}
+      \strng{authorfullhashraw}{6e2076797d39e4d4274a6633911e3284}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Games}
+      \field{number}{3}
+      \field{title}{Procedural Content Generation via Machine Learning ({PCGML})}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{257\bibrangedash 270}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TG.2018.2846639
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/TG.2018.2846639
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/TG.2018.2846639
+      \endverb
+    \endentry
+    \entry{sun2024roomplanner}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=74c17d9d8d0d03f7dee9f5387e640934}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Wenzhuo},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f97172150f8228ec3e48ed19d365e8a9}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Mingjian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd246d86bb3e421049b3c343f13300d6}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Wenxuan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bbaa0c1ef8159b79eb2b3023fa7476e}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xuelian},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbfc282073c3c0a824d475bb3e3dfca4}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Zongyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{fullhash}{445b7d22199734e58f455b24ad6b6806}
+      \strng{fullhashraw}{445b7d22199734e58f455b24ad6b6806}
+      \strng{bibnamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authorbibnamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authornamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authorfullhash}{445b7d22199734e58f455b24ad6b6806}
+      \strng{authorfullhashraw}{445b7d22199734e58f455b24ad6b6806}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{RoomPlanner: Explicit Layout Planner for Easier LLM-Driven 3D Room Generation}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2511.17048
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2511.17048
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2511.17048
+      \endverb
+    \endentry
+    \entry{tang2025unrealllm}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=a858be89fb86717ce8f2c2771a8b1853}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1689d6d8f402fb855ce2857437e9459}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Kaiyong},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0af346791f32de569a1d3f867283a05a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuliang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a770f9f6dcfe05f34bc7d9835ea4375b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xuebo},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12dc46bad2af10d5ed593a618c71a287}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Junyi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42b03d7a28c97c101e0a62ee7baba8f9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fdc38753a7609fdd6a44286e907bad0}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Xiaowen},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=cb0803882fba28a6c7ecb519069a89de}{%
+           family={Che},
+           familyi={C\bibinitperiod},
+           given={Wanxiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=bfe9d325a7c90fcd2c57a7d9ff201524}{%
+           family={Nabende},
+           familyi={N\bibinitperiod},
+           given={Joyce},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c36f9fc7c3f7617b9ee71cb8646c6f30}{%
+           family={Shutova},
+           familyi={S\bibinitperiod},
+           given={Ekaterina},
+           giveni={E\bibinitperiod}}}%
+        {{hash=25546e3752457eae386c91911a2fb5f8}{%
+           family={Pilehvar},
+           familyi={P\bibinitperiod},
+           given={Mohammad\bibnamedelima Taher},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{fullhash}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{fullhashraw}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{bibnamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authorbibnamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authornamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authorfullhash}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{authorfullhashraw}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{editorbibnamehash}{6810c318bea26b0d4170d243c1a0e7ee}
+      \strng{editornamehash}{6810c318bea26b0d4170d243c1a0e7ee}
+      \strng{editorfullhash}{fbc5cc62b7fffb46f357f510b4531271}
+      \strng{editorfullhashraw}{fbc5cc62b7fffb46f357f510b4531271}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Findings of the Association for Computational Linguistics: ACL 2025}
+      \field{month}{7}
+      \field{title}{{U}nreal{LLM}: Towards Highly Controllable and Interactable 3{D} Scene Generation by {LLM}-powered Procedural Content Generation}
+      \field{year}{2025}
+      \field{pages}{19417\bibrangedash 19435}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.18653/v1/2025.findings-acl.994
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2025.findings-acl.994/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2025.findings-acl.994/
+      \endverb
+    \endentry
+    \entry{todd2023level}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fc9c46cc0807547b221e93ef062030a4}{%
+           family={Todd},
+           familyi={T\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=495f1f7321ab1541320d57f92a26ae86}{%
+           family={Earle},
+           familyi={E\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0dd404eff45c62fd5cab19321edd726}{%
+           family={Nasir},
+           familyi={N\bibinitperiod},
+           given={Muhammad\bibnamedelima Umair},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db70cf2978895cc7b9e9d8febc794f7c}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima Cerny},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{fullhash}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \strng{fullhashraw}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \strng{bibnamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authorbibnamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authornamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authorfullhash}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \strng{authorfullhashraw}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 18th International Conference on the Foundations of Digital Games}
+      \field{month}{4}
+      \field{series}{FDG 2023}
+      \field{title}{Level Generation Through Large Language Models}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3582437.3587211
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/3582437.3587211
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/3582437.3587211
+      \endverb
+    \endentry
+    \entry{togelius2011search}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf368727b2920ced839da42cbd3e69a0}{%
+           family={Yannakakis},
+           familyi={Y\bibinitperiod},
+           given={Georgios\bibnamedelima N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d60ff0bc339644af2328be8f24d5f2d4}{%
+           family={Browne},
+           familyi={B\bibinitperiod},
+           given={Cameron},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9103108141f54e1a3ee056c22bab568c}
+      \strng{fullhash}{251deac6926d3f445dda0e0b0529f217}
+      \strng{fullhashraw}{251deac6926d3f445dda0e0b0529f217}
+      \strng{bibnamehash}{9103108141f54e1a3ee056c22bab568c}
+      \strng{authorbibnamehash}{9103108141f54e1a3ee056c22bab568c}
+      \strng{authornamehash}{9103108141f54e1a3ee056c22bab568c}
+      \strng{authorfullhash}{251deac6926d3f445dda0e0b0529f217}
+      \strng{authorfullhashraw}{251deac6926d3f445dda0e0b0529f217}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computational Intelligence and AI in Games}
+      \field{number}{3}
+      \field{title}{Search-Based Procedural Content Generation: A Taxonomy and Survey}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{172\bibrangedash 186}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TCIAIG.2011.2148116
+      \endverb
+    \endentry
+    \entry{totten2014architectural}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c689f404bc9e2073d50098509a756874}{%
+           family={Totten},
+           familyi={T\bibinitperiod},
+           given={Christopher\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton, FL, USA}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{c689f404bc9e2073d50098509a756874}
+      \strng{fullhash}{c689f404bc9e2073d50098509a756874}
+      \strng{fullhashraw}{c689f404bc9e2073d50098509a756874}
+      \strng{bibnamehash}{c689f404bc9e2073d50098509a756874}
+      \strng{authorbibnamehash}{c689f404bc9e2073d50098509a756874}
+      \strng{authornamehash}{c689f404bc9e2073d50098509a756874}
+      \strng{authorfullhash}{c689f404bc9e2073d50098509a756874}
+      \strng{authorfullhashraw}{c689f404bc9e2073d50098509a756874}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Architectural Approach to Level Design}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1201/b17025
+      \endverb
+    \endentry
+    \entry{vaswani2017attention}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{fullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorfullhashraw}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 30 (NeurIPS 2017)}
+      \field{title}{Attention Is All You Need}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{pages}{5998\bibrangedash 6008}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+    \endentry
+    \entry{vieira2024metodologia}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=739e1a8e51d77db7a8b3a5754cd1378d}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Antonio\bibnamedelimb Henrique\bibnamedelima Garcia},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Estadual Paulista (Unesp)}%
+      }
+      \list{location}{1}{%
+        {Bauru}%
+      }
+      \strng{namehash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{fullhash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{fullhashraw}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{bibnamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{authorbibnamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{authornamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{authorfullhash}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \strng{authorfullhashraw}{739e1a8e51d77db7a8b3a5754cd1378d}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{month}{2}
+      \field{title}{Metodologia de geração procedural de conteúdo para estruturas narrativas em jogos eletrônicos}
+      \field{type}{phdthesis}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://hdl.handle.net/11449/295661
+      \endverb
+      \verb{url}
+      \verb https://hdl.handle.net/11449/295661
+      \endverb
+    \endentry
+    \entry{walton2020evaluating}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=668e48e900b64914529cca73b980a467}{%
+           family={Walton},
+           familyi={W\bibinitperiod},
+           given={Sean\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0a18e831ac202521155ab1855a9016b}{%
+           family={Rahat},
+           familyi={R\bibinitperiod},
+           given={Alma\bibnamedelimb A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cba6f93a84da660848fef4f4c4685d83}{%
+           family={Stovold},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{fullhash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{fullhashraw}{f310caaa9eef0a25038883a403171ea0}
+      \strng{bibnamehash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{authorbibnamehash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{authornamehash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{authorfullhash}{f310caaa9eef0a25038883a403171ea0}
+      \strng{authorfullhashraw}{f310caaa9eef0a25038883a403171ea0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2475-1510}
+      \field{journaltitle}{IEEE Transactions on Games}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Evaluating Mixed-Initiative Procedural Level Design Tools Using a Triple-Blind Mixed-Method User Study}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{pages}{413\bibrangedash 422}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/tg.2021.3086215
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TG.2021.3086215
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TG.2021.3086215
+      \endverb
+    \endentry
+    \entry{wang2026designerlyloop}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=61dd9de2a6d4bdb64c43e180361f1617}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Anqi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa5130b8f28fd65bc32b762bac5ba6ec}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhengyi},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6ba5cb4dbf1a848a74470f8588464df}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28777383a6d1b2b7a5a8741ac2ce2e03}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Pan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{54e568280447e370950e5cf64115c776}
+      \strng{fullhash}{0e06ef18437485bdf928f247896b712b}
+      \strng{fullhashraw}{0e06ef18437485bdf928f247896b712b}
+      \strng{bibnamehash}{54e568280447e370950e5cf64115c776}
+      \strng{authorbibnamehash}{54e568280447e370950e5cf64115c776}
+      \strng{authornamehash}{54e568280447e370950e5cf64115c776}
+      \strng{authorfullhash}{0e06ef18437485bdf928f247896b712b}
+      \strng{authorfullhashraw}{0e06ef18437485bdf928f247896b712b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Designing Interactive Systems Conference (DIS '26)}
+      \field{title}{DesignerlyLoop: Forming Design Intent through Curated Reasoning for Human-{LLM} Alignment}
+      \field{year}{2026}
+      \field{pages}{661\bibrangedash 687}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1145/3800645.3812885
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3800645.3812885
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3800645.3812885
+      \endverb
+    \endentry
+    \entry{xu2025databasedrivenframework3dlevel}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=34b9bd64f26fdc9409ceefff047d2681}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kaijie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c45a28e37e915fb5b0cc8623267ade9}{%
+           family={Verbrugge},
+           familyi={V\bibinitperiod},
+           given={Clark},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{fullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{fullhashraw}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{bibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorbibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authornamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorfullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorfullhashraw}{cd858f18cae5b7759a4bfe3638f36c06}
+      \field{extraname}{1}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-First AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Database-Driven Framework for 3{D} Level Generation with {LLM}s}
+      \field{year}{2025}
+      \field{pages}{367\bibrangedash 376}
+      \range{pages}{10}
+      \verb{eprint}
+      \verb 2508.18533
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2508.18533
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2508.18533
+      \endverb
+    \endentry
+    \entry{xu2025constraint}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=34b9bd64f26fdc9409ceefff047d2681}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kaijie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c45a28e37e915fb5b0cc8623267ade9}{%
+           family={Verbrugge},
+           familyi={V\bibinitperiod},
+           given={Clark},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{fullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{fullhashraw}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{bibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorbibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authornamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorfullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorfullhashraw}{cd858f18cae5b7759a4bfe3638f36c06}
+      \field{extraname}{2}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th International Conference on the Foundations of Digital Games}
+      \field{series}{FDG '25}
+      \field{title}{Constraint Is All You Need: Optimization-Based 3D Level Generation with LLMs}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1145/3723498.3723840
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3723498.3723840
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3723498.3723840
+      \endverb
+      \keyw{Procedural Content Generation,Facility Layout Problem,Level Generation,Large Language Models,Game Design}
+    \endentry
+    \entry{yang2026codeasroomgenerating3drooms}{misc}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=5cdeb2a6ce4671d22a38ca4697a9ef7b}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yixuan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91e9d1ba56caddfa976cb918a516bbec}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d84ab5abb9b0c0e45c8a1646ecaa890}{%
+           family={Gan},
+           familyi={G\bibinitperiod},
+           given={Wanshui},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e6fd76d43f73338cc10bc25dfb5c14e1}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Jinkun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84a0656e408f08d9d54c0f4f25a17743}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Junru},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd7cf298d6d9cb3aec0b367154b76b7f}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Jinghao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e3d1335414c1a6a8edd967bb1422704}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Zhaoyang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76d7f298437b205646991dcbbdb8818c}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xudong},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d731b386124649bfa54de125acb9b0fa}
+      \strng{fullhash}{285b043c2c28082882cd5e0cb7416469}
+      \strng{fullhashraw}{285b043c2c28082882cd5e0cb7416469}
+      \strng{bibnamehash}{d731b386124649bfa54de125acb9b0fa}
+      \strng{authorbibnamehash}{d731b386124649bfa54de125acb9b0fa}
+      \strng{authornamehash}{d731b386124649bfa54de125acb9b0fa}
+      \strng{authorfullhash}{285b043c2c28082882cd5e0cb7416469}
+      \strng{authorfullhashraw}{285b043c2c28082882cd5e0cb7416469}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis}
+      \field{year}{2026}
+      \verb{eprint}
+      \verb 2605.18451
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2605.18451
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2605.18451
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

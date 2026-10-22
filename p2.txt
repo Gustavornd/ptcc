@@ -1,0 +1,94 @@
+Tanagra: A Mixed-Initiative Level Design Tool
+Gillian Smith, Jim Whitehead, Michael Mateas
+Expressive Intelligence Studio
+University of California, Santa Cruz
+Santa Cruz, CA, USA
+
+{gsmith, ejw, michaelm}@soe.ucsc.edu
+ABSTRACT
+
+Tanagra is a prototype mixed-initiative design tool for 2D platformer level design, in which a human and computer can work together to produce a level. The human designer can place constraints
+on a continuously running level generator, in the form of exact geometry placement and manipulation of the level’s pacing. The computer then fills in the rest of the level with geometry that guarantees
+playability, or informs the designer that there is no level that meets
+their requirements. This paper presents the design of Tanagra, a
+discussion of the editing operations it provides to the designer, and
+an evaluation of the expressivity of its generator.
+
+Categories and Subject Descriptors
+
+I.2.1 [Artificial Intelligence]: Applications and Expert Systems
+– Games. F.4.1. [Mathematical Logic and Formal Languages]
+Mathematical Logic – Logic and constraint programming. I.2.8.
+[Artificial Intelligence] Problem Solving, Control Methods, and
+Search – Plan execution, formation, and generation.
+
+Figure 1. The Tanagra intelligent level design tool. The large
+area in the upper left is where the level is created. Below that
+is a beat timeline, allowing manipulation of the pacing of the
+level. On the right are buttons for editing the level.
+ers is especially important now that players, who tend to be inexperienced designers, are increasingly being invited to create their
+own content for games.
+
+General Terms
+
+Design, Human Factors
+
+A mixed-initiative approach to level design, where content is created through iterative cycles between the human designer and
+procedural support, would make it possible for designers to take
+advantage of the benefits that procedural level generation can offer: rapidly showing alternative designs, regenerating specified
+portions of a level, and enforcing the playability of any produced
+levels. Existing techniques in procedural level generation tend to
+offer little in terms of author guidance other than tweaking parameters in probability distributions, which can lead to unexpected
+outcomes [20] and do not allow the author to exert enough control
+over the final design. Consider, for example, our previous work
+in designer-guided level generation for 2D platformers [26]. We
+found it was extremely challenging to set fine-grained constraints
+such as prioritizing a segment of the control line or specifying an
+order for components to be introduced. It was also impossible to
+edit the level once it had been created, which drastically reduced
+the designer’s creative control.
+
+Keywords
+
+Games, level design, procedural content generation, AI-assisted
+design.
+
+1. INTRODUCTION
+
+Level design is a vital part of the game design process: levels are
+a “container for gameplay” [3], providing the player with a space
+to explore the game’s mechanics. Creating a good level is a time
+consuming and iterative process: the level may start as a simple
+sketch of the space, which is then filled in with specific geometry.
+Designers will typically play the level themselves a number of
+times before showing it to anyone else, checking that it is playable,
+engaging, and meets their expectations [4]. Making a change to
+a small section of a level, such as moving a single platform, can
+have a wide impact and require much of the rest of the level to be
+modified as well. Techniques from procedural level generation offer many opportunities to ease this authoring burden, by having the
+computer design and modify that which a human would normally
+painstakingly create. Providing authoring support to level design-
+
+This paper presents Tanagra, a prototype mixed-initiative level design tool for 2D platformers (e.g. Super Mario World or Sonic the
+Hedgehog). The underlying representation for levels in Tanagra is
+beat-based, which provides a structure for creating levels with a
+well-defined rhythm [25]. Designers can interact with the tool in
+two different ways: both by editing the gameplay experience of the
+level through altering the pacing of the beats, and by manipulating the geometry from which this gameplay emerges. Each beat
+specifies an interval of play time, during which the player must
+take some action, such as running or jumping. For example, the
+designer can draw a few platforms into the editor, and ask Tanagra
+to generate geometry that will make the level playable but obey
+
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise,
+to republish, to post on servers or to redistribute to lists, requires prior
+specific permission and/or a fee.
+FDG 2010, June 19-21, Monterey, CA, USA
+Copyright 2010 ACM 978-1-60558-937-4/10/06... $10.00
+
+209
+
+

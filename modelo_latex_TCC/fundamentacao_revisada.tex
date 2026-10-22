@@ -1,0 +1,76 @@
+\section{Fundamentação Teórica}
+\label{sec:fundamentacao}
+
+Este capítulo apresenta a base conceitual necessária para a compreensão da arquitetura do projeto. Inicia-se com a definição formal de fases e \textit{Level Design}, avançando pelas metodologias procedurais clássicas e de aprendizado de máquina. Em seguida, discutem-se as limitações dos modelos de linguagem na ancoragem espacial, culminando na teoria dos grafos de progressão, representação 3D modular e validação de restrições em sistemas híbridos.
+
+\subsection{Fases, \textit{Level Design} e Layouts 3D}
+\label{sec:level_design}
+
+Em jogos digitais, uma "fase" (ou nível) compreende o espaço interativo no qual as mecânicas de jogo ocorrem e onde o jogador experimenta os desafios propostos. A disciplina de projetar essas estruturas é conhecida como \textit{Level Design}. O \textit{Level Design} é responsável por ditar o ritmo da experiência \cite{dormans2010}, englobando tanto a elaboração narrativa das missões quanto o arranjo físico dos obstáculos.
+
+Para conceber adequadamente o \textit{design} de um nível, a literatura sugere separar a organização de uma fase em duas camadas independentes. Há uma diferença crucial na literatura de \textit{Level Design} \cite{dormans2010} entre a \textit{missão} (a progressão lógica de tarefas, chaves e bloqueios) e o \textit{espaço} (a topografia física que sedia a missão e que exige um arranjo dimensional). 
+
+No contexto tridimensional, o planejamento desses ambientes materializa-se através de \textit{layouts} 3D. Um \textit{layout} define a disposição espacial arquitetônica dos elementos -- paredes, pisos, plataformas e interações. Planejar um layout 3D exige um rigoroso controle sobre a métrica do espaço virtual para que a progressão planejada na missão não seja corrompida por falhas estruturais.
+
+\subsection{Geração Procedural de Conteúdo (PCG)}
+\label{sec:pcg}
+
+Para reduzir o custo de produção e garantir variabilidade, a indústria e a academia têm investido fortemente na Geração Procedural de Conteúdo (PCG -- \textit{Procedural Content Generation}). A PCG refere-se à criação algorítmica autônoma ou semiautônoma de dados e instâncias para jogos. Conforme detalhado na literatura basilar \cite{pcgbook}, o campo pode ser classificado em diferentes abordagens.
+
+Dentre as vertentes mais consolidadas estão os métodos construtivos e os métodos baseados em busca. Os métodos construtivos, como autômatos celulares e gramáticas de formas, constroem o conteúdo de forma determinística passo a passo, garantindo que regras de particionamento e distribuição de espaço nunca sejam violadas. Já as abordagens baseadas em busca geram o conteúdo e o avaliam posteriormente por meio de uma função de aptidão (\textit{fitness function}), selecionando a iteração que melhor resolve o espaço \cite{pcgbook}. Tais algoritmos garantem robustez, contudo, costumam carecer de intencionalidade criativa e de semântica complexa.
+
+\subsection{Procedural Content Generation via Machine Learning (PCGML) e LLMs}
+\label{sec:pcgml}
+
+Visando superar a rigidez dos algoritmos clássicos, a comunidade introduziu o \textit{Procedural Content Generation via Machine Learning} (PCGML). No escopo inicial dessas pesquisas, o PCGML foi definido \cite{summerville2018procedural} como o treinamento de modelos probabilísticos a partir de \textit{corpora} de conteúdos de jogos já existentes. A máquina aprende os padrões implícitos no \textit{design} humano e os reproduz.
+
+Com a consolidação da arquitetura \textit{Transformer}, os Modelos de Linguagem de Grande Porte (LLMs) começaram a ser aplicados nesse domínio. Diferente das antigas cadeias de Markov \cite{summerville2018procedural}, os LLMs processam contexto em longa escala e permitem direcionamento via linguagem natural, habilitando a geração de narrativas e conexões que transcendem a pura geometria estocástica. Para que a saída desses modelos seja funcionalmente processada por outras ferramentas computacionais, é indispensável a adoção de uma representação estruturada intermediária. Modelos conceituais arquitetados pela rede são frequentemente serializados em formatos consolidados de troca de dados, como o JSON, atuando como a ponte semântica entre o processamento de linguagem e os sistemas lógicos estritos.
+
+\subsection{O Problema da Ancoragem Espacial (\textit{Spatial Grounding}) em LLMs}
+\label{sec:spatial_grounding}
+
+Apesar de sua notável capacidade de interpretação semântica, os LLMs carecem de um raciocínio espacial inato -- a habilidade autônoma de compreender e computar noções absolutas de posição, distância, direção e adjacência no espaço euclidiano. Esta lacuna é formalmente conhecida como o problema da ancoragem espacial (\textit{spatial grounding}). 
+
+Sem o devido raciocínio espacial, um modelo pode descrever a lógica de "um corredor conectando a sala A à sala B", mas falha ao deduzir as coordenadas cartesianas absolutas necessárias para desenhar esse corredor sem invadir o espaço de um cômodo vizinho. Pesquisas recentes voltadas a planejadores explícitos e síntese 3D indicam que, embora o LLM possa sugerir relações qualitativas formidáveis, ele encontra graves dificuldades em satisfazer regras matemáticas contínuas \cite{sun2024roomplanner, hu2024scenecraft}. Portanto, transferir a responsabilidade geométrica irrestrita para uma IA generativa de texto resulta tipicamente em anomalias arquitetônicas.
+
+\subsection{Modelagem de Fases via Grafos de Progressão}
+\label{sec:grafos}
+
+Para viabilizar as qualidades do LLM sem esbarrar em suas limitações físicas, a modelagem foca primeiramente na camada de missão, comumente abstraída utilizando a base matemática da Teoria dos Grafos. 
+
+Matematicamente, um grafo é definido como $G = (V, E)$, onde $V$ representa um conjunto de vértices (ou nós) e $E$ representa um conjunto de arestas que conectam esses vértices. Para descrever arranjos e restrições complexas de uma fase, a teoria dos grafos fornece propriedades essenciais: \textit{caminhos} (sequência finita de arestas conectando nós iterativamente), \textit{conectividade} e \textit{alcançabilidade} (garantia de que um nó final pode ser acessado a partir do nó inicial), \textit{ciclos} (caminhos que retornam à origem), \textit{pesos} (custo para transpor uma aresta) e \textit{rótulos} (condições qualitativas atreladas aos nós ou arestas).
+
+Aplicando esse rigor ao design de níveis, cria-se o grafo de progressão lógico ou grafo de ações \cite{inproceedings}. Nesse modelo, os vértices não detêm coordenadas X, Y, Z, mas representam "instâncias de estado" ou salas temáticas. As arestas representam o fluxo de conectividade direcional e os rótulos demarcam as dependências e pré-condições de jogabilidade (por exemplo, "para transpor esta aresta rumo à Sala do Chefe, o rótulo de pré-condição exige a Chave de Ouro"). Ao estruturar a lógica em um grafo abstrato, os requisitos do jogo são matematicamente resolvidos muito antes da instanciação das paredes.
+
+\subsection{Representação de Layouts Espaciais 3D}
+\label{sec:layout_3d}
+
+Uma vez estabelecida a estrutura lógica (grafo), o espaço físico deve ser representado computacionalmente para permitir a materialização procedural. A literatura de PCG aborda comumente o espaço físico por meio da representação modular, onde cenários inteiros são compostos por \textit{tiles} (peças de grade bidimensional), módulos maiores, salas pré-construídas ou \textit{prefabs} tridimensionais \cite{linden2014dungeons}.
+
+Nessa representação, cada módulo detém propriedades absolutas essenciais: exata ocupação de volume, orientação vetorial e pontos âncora de encaixe (ex.: os batentes das portas). Para que o \textit{layout} seja estabelecido de forma válida, a instância espacial precisa calcular a translação e rotação global de cada componente modular, monitorando constantemente as intersecções de volumes para certificar-se de que nenhum modelo tridimensional ocupe o mesmo espaço que outro no plano contínuo.
+
+\subsection{Arquiteturas Híbridas e Validação}
+\label{sec:arquiteturas_hibridas}
+
+A separação metodológica descrita anteriormente propicia a utilização de sistemas ou arquiteturas híbridas de geração, que combinam geradores estocásticos com restrições operacionais exatas. Trabalhos notórios no campo de iniciativa mista (\textit{Mixed-Initiative}), como o \textit{Tanagra} \cite{tanagra}, evidenciam que a geração baseada em restrições (\textit{Constraint-Based Generation}) é indispensável para conciliar criatividade fluida com coerência matemática.
+
+Em um \textit{pipeline} híbrido neuro-simbólico, o modelo probabilístico propõe o esquema abstrato, e um algoritmo clássico de regras entra em ação na etapa de satisfação de restrições (\textit{Constraint Satisfaction}). Se a diretriz do gerador acarretar uma incompatibilidade física no espaço 3D, a etapa de validação tem a autonomia matemática de recusar a instrução, aplicar rotinas de reparo imediato ou recomputar posições, servindo de filtro definitivo entre a lógica intencional e a execução espacial.
+
+\subsection{Restrições de Nível: Lógica, Geometria, Navegação e Solvabilidade}
+\label{sec:validade}
+
+Para assegurar que a geração de um nível foi tecnicamente bem-sucedida, é imperativo avaliar as restrições e qualidades em espectros individuais, separando rigorosamente propriedades estruturais de dinâmicas de jogo \cite{inproceedings, dormans2010}:
+
+\begin{itemize}
+    \item \textbf{Validade Geométrica:} Uma propriedade primária. Refere-se estritamente à integridade volumétrica dos elementos gerados. Um nível é geometricamente válido quando não ocorrem sobreposições ilógicas (\textit{clipping}) ou intersecções indesejadas de malhas no espaço euclidiano.
+    
+    \item \textbf{Navegabilidade:} Propriedade que atesta que o cenário possui superfícies contínuas adequadas para a locomoção de agentes e jogadores (ex: escadas com degraus viáveis, chãos não-fragmentados). Pode ser mapeada em um projeto pela existência de \textit{Navigation Meshes} (\textit{NavMesh}) bem formadas.
+    
+    \item \textbf{Pathfinding (Busca de Caminho):} O mecanismo algorítmico utilizado para comprovar, na prática, que a malha de navegabilidade realmente permite traçar uma rota ininterrupta entre o ponto A e o ponto B estipulado no grafo.
+    
+    \item \textbf{Validade Lógica:} A garantia interna de que a estrutura semântica ou o grafo de dependências do nível não contém contradições (ex.: portas que bloqueiam a si mesmas ou ausência de rotas direcionais).
+    
+    \item \textbf{Solvabilidade:} É a comprovação funcional final de que o jogador consegue vencer a fase cumprindo todas as regras de \textit{gameplay}. 
+\end{itemize}
+
+Essa taxonomia é fundamental pois os fenômenos operam de maneira paralela. Uma fase pode deter total \textbf{Validade Geométrica} (nenhuma intersecção de modelo) e permitir perfeito \textbf{Pathfinding} (caminho navegável do início ao fim), mas falhar completamente na \textbf{Solvabilidade} (ex: o jogador necessitar de uma chave vermelha para abrir a porta que abriga essa mesma chave vermelha). Portanto, assegurar um \textit{layout} robusto exige que algoritmos dedicados atuem validando não apenas a matemática do espaço, mas o fluxo temporal da missão gerada pelo modelo.

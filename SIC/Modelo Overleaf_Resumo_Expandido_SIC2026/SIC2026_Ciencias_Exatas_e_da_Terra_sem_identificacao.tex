@@ -1,0 +1,229 @@
+﻿% ===========================================================================
+%  TEMPLATE — RESUMO EXPANDIDO
+%  Seminário de Iniciação Científica (SIC 2026)
+%  IFNMG — Campus Januária
+% ===========================================================================
+
+\documentclass[
+  12pt,
+  a4paper,
+  oneside,
+  article,
+  brazil
+]{abntex2}
+
+% ---------------------------------------------------------------------------
+% PACOTES
+% ---------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{setspace}
+
+% ---------------------------------------------------------------------------
+% CITAÇÕES E REFERÊNCIAS ABNT
+% ---------------------------------------------------------------------------
+\usepackage[
+  backend=biber,
+  style=abnt,
+  giveninits=true
+]{biblatex}
+
+\addbibresource{referencias.bib}
+
+% ---------------------------------------------------------------------------
+% MARGENS ABNT NBR 6022
+% ---------------------------------------------------------------------------
+\geometry{top=2cm, bottom=2cm, left=3cm, right=2cm}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% ---------------------------------------------------------------------------
+% CORES IFNMG
+% ---------------------------------------------------------------------------
+\definecolor{ifnmgverde}{RGB}{0,104,55}
+\definecolor{ifnmgcinza}{RGB}{88,88,90}
+
+% ---------------------------------------------------------------------------
+% HYPERLINKS
+% ---------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={Geração Automática de Fases 3D a Partir de Grafos de Progressão com Validação de Restrições},
+  pdfauthor={Autor Omitido}
+}
+
+% ---------------------------------------------------------------------------
+% CABECALHO E RODAPE
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\textit{SIC 2026 --- IFNMG Campus Januária}}
+\fancyhead[R]{\small\textit{\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+
+\fancypagestyle{primeirapagina}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+}
+
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\aliaspagestyle{cleared}{fancy}
+\aliaspagestyle{part}{fancy}
+
+% ---------------------------------------------------------------------------
+% SECOES — estilo ABNT
+% ---------------------------------------------------------------------------
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\bfseries\itshape}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\itshape}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=endash,
+  justification=raggedright,
+  singlelinecheck=false
+}
+
+% ===========================================================================
+%  INÍCIO DO DOCUMENTO
+% ===========================================================================
+\begin{document}
+\textual
+\aliaspagestyle{plain}{fancy}
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\pagestyle{fancy}
+\thispagestyle{primeirapagina}
+\OnehalfSpacing
+
+\noindent\includegraphics[width=\linewidth]{LogoSIC2026_header.pdf}
+\vspace{0.1cm}
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.05cm}
+
+\begin{center}
+  {\large\bfseries
+    GERAÇÃO AUTOMÁTICA DE FASES 3D A PARTIR DE GRAFOS DE PROGRESSÃO COM VALIDAÇÃO DE RESTRIÇÕES
+  }
+\end{center}
+
+\vspace{0.1cm}
+\begin{center}
+  \begin{SingleSpace}
+    {\normalsize AUTOR OMITIDO PARA AVALIAÇÃO }\\[3pt]
+    {\small Afiliação Omitida. }
+  \end{SingleSpace}
+\end{center}
+
+\vspace{0.2cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.05cm}
+
+{\centering\textbf{RESUMO}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+A criação de fases para jogos exige planejamento de caminhos e validação geométrica de espaços 3D. Em tarefas de geração de layouts 3D, estudos relatam dificuldades para produzir configurações que satisfaçam restrições espaciais. Este trabalho propõe uma arquitetura dividida: um modelo de linguagem (LLM) atua como "arquiteto", traduzindo intenções textuais em grafo lógico estruturado (JSON); e um algoritmo determinístico na \textit{engine} Godot atua como "engenheiro", encarregado de validar e instanciar componentes 3D. O objetivo da pesquisa é desenvolver e avaliar uma arquitetura híbrida para geração automática de fases 3D, na qual um LLM produz o grafo de progressão e algoritmos determinísticos constroem a geometria e verificam restrições lógicas, geométricas e de navegabilidade. Espera-se criar um \textit{addon} funcional para Godot que permita avaliar se a arquitetura híbrida reduz inconsistências na geração de fases 3D, buscando produzir fases que atendam aos critérios de validade definidos.
+
+\vspace{0.1cm}
+\noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Grafo de progressão. Validação de restrições.
+\end{SingleSpace}
+
+\vspace{0.1cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.1cm}
+
+{\centering\textbf{ABSTRACT}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+Level creation for games demands path planning and 3D geometric validation. In 3D layout generation tasks, studies report difficulties in producing configurations that satisfy spatial constraints. This work proposes a split architecture: a language model (LLM) acts as an "architect", translating intentions into a logical graph (JSON); and a deterministic algorithm in the Godot engine acts as an "engineer" to validate and instantiate 3D components. The aim of this research is to develop and evaluate a hybrid architecture for automatic 3D level generation, in which an LLM produces the progression graph and deterministic algorithms construct the geometry and verify logical, geometric, and navigational constraints. We expect to create a functional Godot addon that allows evaluating whether the hybrid architecture reduces inconsistencies in 3D level generation, aiming to produce levels that meet the defined validity criteria.
+
+\vspace{0.1cm}
+\noindent\textbf{Keywords:} Procedural Content Generation. Large Language Models. Godot Engine. Progression graph. Constraint validation.
+\end{SingleSpace}
+
+\vspace{0.1cm}
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.1cm}
+
+\section{Introdução}
+
+A Geração Procedural de Conteúdo (PCG) poupa esforço manual na criação de mapas \cite{summerville2018procedural}. A geração procedural de conteúdo por aprendizado de máquina (PCGML) antecede os LLMs; modelos de linguagem passaram a ser investigados mais recentemente para essa tarefa. LLMs geram bons níveis textuais em 2D \cite{todd2023level} e auxiliam na orquestração semântica \cite{tang2025unrealllm}.
+
+Contudo, em tarefas de geração de layouts 3D, estudos relatam dificuldades para produzir configurações que satisfaçam restrições espaciais. Ao tentar gerar posicionamentos 3D de arquiteturas complexas via redes estocásticas, surgem erros críticos como sobreposições, corredores sem saída e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner}. Xu e Verbrugge (2025) já combinam LLMs, descrição estruturada e otimização por restrições para produzir fases 3D. Nosso recorte é um protótipo de masmorra modular de um pavimento, que transforma grafos de progressão em geometria editável no Godot e avalia explicitamente sua validade lógica, geométrica e de navegação.
+
+O objetivo principal deste estudo é desenvolver e avaliar uma arquitetura híbrida para geração automática de fases 3D, na qual um LLM produz o grafo de progressão e algoritmos determinísticos constroem a geometria e verificam restrições lógicas, geométricas e de navegabilidade. A premissa é que o LLM planeja a fase conceitualmente, delegando ao algoritmo no Godot a validação topológica e instanciação espacial. Espera-se que essa separação reduza falhas e preserve a expressividade da linguagem natural, assegurando a criação de fases que satisfaçam os critérios de validade definidos: progressão possível com chaves e portas, ausência de sobreposições proibidas e rota navegável entre início e objetivo.
+
+\section{Material e Métodos}
+
+A metodologia adota um fluxo integrado em um \textit{addon} para Godot, com validação dividida em três classes de restrições: (1) progressão lógica com estados de sala/chaves; (2) geometria sem sobreposição indevida e portas/corredores conectados; (3) caminho navegável entre início e objetivo, após gerar a NavMesh.
+
+\textbf{1. Processamento da Linguagem:} O LLM recebe a requisição estrutural. Ele é instruído a omitir cálculos espaciais e exportar conexões semânticas em um grafo de progressão serializado em JSON. Os nós descrevem salas e seus itens; as arestas descrevem conexões, portas e requisitos; o gerador recebe esse grafo e calcula posições, orientações e corredores para instanciar módulos 3D.
+
+\textbf{2. Validação Determinística:} O Godot processa esse grafo de progressão com regras clássicas. As regras realizam uma busca por estados (sala atual, chaves adquiridas), atravessando apenas portas cujos requisitos foram satisfeitos. O grafo inválido é recusado e o erro retorna ao LLM para nova geração.
+
+\textbf{3. Construção e Testes Espaciais:} O gerador percorre o grafo, posiciona salas, alinha portas, conecta por corredores, testa interseções e recusa ou reprocessa layouts sem encaixe válido. O protótipo constitui uma masmorra modular de um pavimento com salas pré-fabricadas de dimensões e conectores conhecidos, impedindo sobreposições visuais e inconsistência física (\textit{clipping}). A \textit{engine} usa nós de \textit{NavigationRegion3D} para atestar que o caminho principal possui malha de navegação (NavMesh) intacta.
+
+\section{Metodologia Experimental e Resultados Esperados}
+
+Esta seção detalha os experimentos planejados para validar a arquitetura em desenvolvimento.
+
+\subsection{Delineamento dos Experimentos}
+
+Os experimentos gerarão amostras de fases (os parâmetros exatos para quantidade de prompts e repetições, faixas de salas, modelo/versão do LLM, temperatura, \textit{assets}, limites de tempo e tentativas serão fixados antes dos experimentos) sob dois tratamentos comparativos:
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Grupo Controle:} LLM gera lógica e coordenadas 3D.
+  \item \textbf{Grupo Experimental:} LLM gera o grafo de progressão e o módulo determinístico constrói e valida a geometria. Essa comparação avalia a arquitetura híbrida como um todo e não isola o efeito da validação.
+\end{itemize}
+
+Rotinas automatizadas auditarão como medida principal a proporção de fases que satisfazem simultaneamente as três classes de restrições; registrando-se também falhas de progressão, colisões, ausência de rota, tentativas e tempo total de geração (o tempo de construção da NavMesh será mantido apenas como medida auxiliar).
+
+\subsection{Resultados Esperados}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Validade e Coerência das Fases:} A hipótese é que a arquitetura híbrida produza maior proporção de fases válidas e menor incidência de violações, hipótese que será testada experimentalmente.
+    \item \textbf{Automatização:} Espera-se finalizar um \textit{plugin} no Godot convertendo linguagem natural em cenários editáveis diretamente no editor, otimizando o \textit{workflow} do artista técnico.
+\end{itemize}
+
+\section{Considerações Finais}
+
+Este trabalho propõe superar deficiências dos LLMs no raciocínio espacial, transferindo cálculos à \textit{game engine}. A arquitetura e as regras estão em desenvolvimento. Os próximos passos serão implementar a conversão automática, verificar as restrições definidas e comparar as abordagens.
+
+% ===========================================================================
+%  REFERENCIAS
+% ===========================================================================
+\SingleSpacing
+\printbibliography[title={Referências}]
+\end{document}

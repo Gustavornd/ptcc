@@ -1,0 +1,275 @@
+﻿% ===========================================================================
+%  TEMPLATE — RESUMO EXPANDIDO
+%  Seminário de Iniciação Científica (SIC 2026)
+%  IFNMG — Campus Januária
+% ===========================================================================
+
+\documentclass[
+  12pt,
+  a4paper,
+  oneside,
+  article,
+  brazil
+]{abntex2}
+
+% ---------------------------------------------------------------------------
+% PACOTES
+% ---------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{setspace}
+
+% ---------------------------------------------------------------------------
+% CITAÇÕES E REFERÊNCIAS ABNT
+% ---------------------------------------------------------------------------
+\usepackage[
+  backend=biber,
+  style=abnt,
+  giveninits=true
+]{biblatex}
+
+\addbibresource{referencias.bib}
+
+% ---------------------------------------------------------------------------
+% MARGENS ABNT NBR 6022
+% ---------------------------------------------------------------------------
+\geometry{top=2cm, bottom=2cm, left=3cm, right=2cm}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% ---------------------------------------------------------------------------
+% CORES IFNMG
+% ---------------------------------------------------------------------------
+\definecolor{ifnmgverde}{RGB}{0,104,55}
+\definecolor{ifnmgcinza}{RGB}{88,88,90}
+
+% ---------------------------------------------------------------------------
+% HYPERLINKS
+% ---------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={Geração de Layouts de Fases 3D Assistida por Modelos de Linguagem de Grande Porte},
+  pdfauthor={Gustavo Rafael Nunes Durães}
+}
+
+% ---------------------------------------------------------------------------
+% CABECALHO E RODAPE
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\textit{SIC 2026 --- IFNMG Campus Januária}}
+\fancyhead[R]{\small\textit{\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+
+\fancypagestyle{primeirapagina}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+}
+
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\aliaspagestyle{cleared}{fancy}
+\aliaspagestyle{part}{fancy}
+
+% ---------------------------------------------------------------------------
+% SECOES — estilo ABNT
+% ---------------------------------------------------------------------------
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\bfseries\itshape}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\itshape}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=endash,
+  justification=raggedright,
+  singlelinecheck=false
+}
+
+% ===========================================================================
+%  INÍCIO DO DOCUMENTO
+% ===========================================================================
+\begin{document}
+\textual
+\aliaspagestyle{plain}{fancy}
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\pagestyle{fancy}
+\thispagestyle{primeirapagina}
+\OnehalfSpacing
+
+\noindent\includegraphics[width=\linewidth]{LogoSIC2026_header.pdf}
+
+\vspace{0.15cm}
+
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.05cm}
+
+% ---------------------------------------------------------------------------
+% TITULO
+% ---------------------------------------------------------------------------
+\begin{center}
+  {\large\bfseries
+    GERAÇÃO DE LAYOUTS DE FASES 3D ASSISTIDA POR MODELOS DE LINGUAGEM DE GRANDE PORTE
+  }
+\end{center}
+
+\vspace{0.1cm}
+
+% ---------------------------------------------------------------------------
+% AUTORES E AFILIAÇÕES
+% ---------------------------------------------------------------------------
+\begin{center}
+  \begin{SingleSpace}
+    {\normalsize
+      Gustavo Rafael Nunes DURÃES\textsuperscript{1,*},\;
+      Wagner Ferreira de BARROS\textsuperscript{2}
+    }\\[3pt]
+    {\small
+      \textsuperscript{1}Discente do Curso de Bach. em Ciência da Computação, IFNMG --- Campus Montes Claros.
+      \texttt{grnd@aluno.ifnmg.edu.br}%
+      \;$|$\;\textit{*autor correspondente}\\
+      \textsuperscript{2}Docente do IFNMG --- Campus Montes Claros.
+      \texttt{wagner.barros@ifnmg.edu.br}
+    }
+  \end{SingleSpace}
+\end{center}
+
+\vspace{0.2cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.05cm}
+
+% ---------------------------------------------------------------------------
+% RESUMO
+% ---------------------------------------------------------------------------
+{\centering\textbf{RESUMO}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+A criação manual de fases para jogos digitais é um processo exaustivo que exige a definição minuciosa de caminhos, salas, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem excelente capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, eles demonstram baixa confiabilidade no raciocínio espacial e geométrico exigido para a modelagem 3D. O presente trabalho propõe uma arquitetura que separa a geração procedimental de fases em duas responsabilidades distintas: um modelo atuando como "arquiteto", encarregado de traduzir intenções textuais do usuário em um grafo lógico estruturado (JSON), e um algoritmo determinístico atuando como "engenheiro", desenvolvido na \textit{engine} Godot, encarregado de validar a acessibilidade das salas e instanciar os componentes 3D no espaço sem colisões indevidas. O objetivo da pesquisa é avaliar o impacto da etapa de validação determinística na coerência das fases geradas, comparando a abordagem assistida estruturalmente com abordagens de geração unificada. Como resultados esperados, almeja-se a criação de um \textit{addon} funcional para Godot que demonstre que a divisão de tarefas (lógica vs. geometria) supera gargalos de inconsistência arquitetural presentes nas abordagens baseadas puramente em LLMs, garantindo a geração de fases solváveis, logicamente conectadas e geometricamente precisas.
+
+\vspace{0.3cm}
+\noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Level Design. JSON.
+\end{SingleSpace}
+
+\vspace{0.1cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.1cm}
+
+% ---------------------------------------------------------------------------
+% ABSTRACT
+% ---------------------------------------------------------------------------
+{\centering\textbf{ABSTRACT}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+The manual creation of levels for digital games is an exhausting process that requires the meticulous definition of paths, rooms, progression rules, and the geometric validation of three-dimensional (3D) spaces. Although Large Language Models (LLMs) exhibit excellent semantic interpretation and logical planning capabilities from natural language, they show low reliability in the spatial and geometric reasoning required for 3D modeling. This ongoing work proposes an architecture that separates procedural level generation into two distinct responsibilities: a model acting as an "architect", tasked with translating the user's textual intentions into a structured logical graph (JSON), and a deterministic algorithm acting as an "engineer", developed in the Godot engine, tasked with validating room accessibility and instantiating 3D components in space without improper collisions. The aim of this research is to evaluate the impact of the deterministic validation step on the coherence of the generated levels, comparing the structurally assisted approach with unified generation approaches. As expected results, we aim to create a functional addon for Godot that demonstrates that dividing tasks (logic vs. geometry) overcomes architectural inconsistency bottlenecks present in purely LLM-based approaches, ensuring the generation of solvable, logically connected, and geometrically accurate levels.
+
+\vspace{0.3cm}
+\noindent\textbf{Keywords:} Procedural Content Generation. Large Language Models. Godot Engine. Level Design. JSON.
+\end{SingleSpace}
+
+\vspace{0.3cm}
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.3cm}
+
+% ===========================================================================
+%  CORPO DO TEXTO
+% ===========================================================================
+
+% ---------------------------------------------------------------------------
+\section{Introdução}
+% ---------------------------------------------------------------------------
+
+A Geração Procedural de Conteúdo (PCG - \textit{Procedural Content Generation}) é amplamente utilizada na indústria de jogos para criar mundos expansivos e variados de forma algorítmica, mitigando o esforço manual do \textit{Level Design} \cite{summerville2018procedural}. Tradicionalmente, métodos determinísticos garantem que o conteúdo gerado (como masmorras ou mapas) atenda a critérios estritos de jogabilidade, como conectividade e solvabilidade. 
+
+Com o advento dos Modelos de Linguagem de Grande Porte (LLMs), surgiu um novo paradigma denominado PCG via Machine Learning (PCGML). Trabalhos recentes demonstraram a viabilidade de usar LLMs para gerar níveis estruturados em representações textuais bidimensionais, como na matriz de posições de blocos para \textit{Sokoban} \cite{todd2023level}. Ademais, abordagens integradas com motores de jogos demonstram o alto potencial dessas redes na orquestração semântica e na assistência criativa contínua \cite{zhu2023calypso, tang2025unrealllm}.
+
+Apesar da alta proficiência em raciocínio lógico e interpretação de intenções em linguagem natural, os LLMs lutam significativamente na coordenação espacial e raciocínio puramente geométrico em espaços tridimensionais (3D). Ao tentar gerar o posicionamento 3D absoluto de estruturas arquitetônicas complexas através de uma rede neural estocástica, frequentemente surgem erros críticos como intersecção de malhas, corredores sem saída e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner}.
+
+
+O objetivo principal deste estudo é desenvolver e avaliar um sistema no qual o LLM processa o \textit{prompt} do usuário e gera exclusivamente a macroestrutura lógica da fase, representada através de um grafo em formato JSON, propondo uma abordagem arquitetural de responsabilidades segregadas. A premissa fundamental, que atua como problema motivador da pesquisa, é a de que o LLM pensa e planeja a fase conceitualmente, enquanto um algoritmo determinístico a verifica e a constrói fisicamente. A instânciação geométrica e a validação topológica, por sua vez, são delegadas a um módulo procedimental desenvolvido na \textit{engine} Godot. 
+
+Espera-se que essa segregação reduza o escopo de falha do modelo probabilístico, mantendo a expressividade oriunda da linguagem natural e assegurando a criação de mapas totalmente jogáveis.
+
+% ---------------------------------------------------------------------------
+\section{Material e Métodos}
+% ---------------------------------------------------------------------------
+
+Para operacionalizar a geração assistida, a metodologia adota um fluxo de trabalho em \textit{pipeline}, dividido em três etapas sequenciais: (1) Processamento da Linguagem, (2) Validação Determinística e (3) Construção e Testes, todas integradas através de um \textit{addon} em desenvolvimento para o Godot Engine.
+
+\textbf{1. Processamento da Linguagem:} Inicialmente, um LLM recebe a requisição estrutural do desenvolvedor/jogador em linguagem natural (e.g., `crie uma masmorra com uma sala inicial, uma bifurcação onde um lado contém um tesouro e o outro lado demanda uma chave localizada no tesouro para acessar a sala do chefe''). O modelo é instruído via \textit{Prompt Engineering} a omitir cálculos espaciais (X, Y, Z) e exportar as conexões semânticas na forma de um grafo serializado em JSON. Essa matriz lógica reflete relações hierárquicas, ramificações e pré-requisitos mecânicos (portas trancadas vs. chaves).
+
+\textbf{2. Validação Determinística:} O Godot intercepta o arquivo JSON e processa o grafo gerado através de um sistema baseado em regras clássicas. O algoritmo averígua condicionais estritas necessárias para uma fase funcional. As regras avaliam premissas topológicas, como: a existência imperativa de uma única sala inicial; a alcançabilidade da sala do chefe; a não alocação de chaves atrás da porta que elas abrem, tornando a sala inacessível; e a garantia de que as salas bônus (como tesouros) não estrangulem a rota principal de progresso. Caso o grafo apresente anomalias lógicas impeditivas, o sistema está sendo modelado para recusar o mapa e retroalimentar o LLM com as diretrizes do erro lógico.
+
+\textbf{3. Construção do Mapa e Testes Espaciais:} Validado o grafo, o gerador espacial entra em vigor. Ele realiza a alocação procedural \textit{tile-based} ou via \textit{prefabs} de salas de combate, corredores e transições \cite{xu2025constraint}. O algoritmo determinístico calcula dinamicamente as posições espaciais com base no tamanho individual de cada malha tridimensional, impedindo sobreposições visuais e inconsistência física (\textit{clipping}). Subsequentemente, a \textit{engine} aplica ferramentas nativas, como nós de \textit{NavigationRegion3D} e projeção de \textit{RayCasts}, para atestar que o caminho principal possui uma malha de navegação (NavMesh) intacta, conectando fisicamente a entrada à saída.
+
+% ---------------------------------------------------------------------------
+\section{Metodologia Experimental e Resultados Esperados}
+% ---------------------------------------------------------------------------
+
+Tendo em vista que o trabalho encontra-se na fase de desenvolvimento e implementação arquitetural, esta seção detalha a formatação dos experimentos programados para validar a premissa da pesquisa, bem como as inferências qualitativas e quantitativas previstas.
+
+\subsection{Delineamento dos Experimentos}
+
+Para atestar o impacto da validação determinística, os experimentos serão divididos em dois tratamentos comparativos gerando amostras de fases de dimensões variadas (pequena, média e grande escala, traduzidas em número de cômodos):
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Grupo Controle (Geração Unificada):} O LLM será solicitado a gerar não somente as conexões lógicas, mas também as coordenadas 3D de instanciação para cada \textit{asset} e cômodo.
+  \item \textbf{Grupo Experimental (Geração Segregada):} A metodologia proposta na qual o LLM produz estritamente a árvore/grafo JSON da progressão, com o algoritmo determinístico encarregado de resolver e instanciar os obstáculos e coordenadas espaciais.
+\end{itemize}
+
+As amostras de fases resultantes de ambos os tratamentos serão expostas à verificações por meio de rotinas automatizadas no Godot que auditarão: (a) o número de colisões estruturais inválidas (sobreposição geométrica); (b) o tempo (milissegundos) para computar a malha navegável do início ao fim do nível; (c) a presença de bloqueios mecânicos (ex: chaves retidas em salas incomunicáveis).
+
+\subsection{Resultados Esperados}
+
+De acordo com o estado da arte e observações empíricas com modelos de linguagem aplicados a problemas de \textit{Facility Layout Optimization} \cite{xu2025constraint}, preveem-se os seguintes resultados primários:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Eliminação de Anomalias Geométricas:} Espera-se que a abordagem segregada demonstre uma taxa de falhas espaciais tendendo a zero, visto que a instaciação passará a obedecer a matrizes de colisão rigorosas que não são compreendidas eficientemente pela rede estocástica do LLM.
+    \item \textbf{Resiliência e Coerência de \textit{Design}:} Pela validação por grafo anterior à instanciação espacial, a metodologia deve impedir inteiramente a geração de bloqueios intransponíveis provocados por falhas semânticas em rotas ramificadas, permitindo níveis longos e coesos que combinem salas de recompensas com salas de desafio.
+    \item \textbf{Automatização em \textit{Addon}:} Como substrato prático da pesquisa, espera-se finalizar um \textit{plugin} integrado à interface nativa do Godot. O pacote proverá um campo de \textit{prompt} diretamente no inspetor do editor, convertendo linguagem natural em cenários físicos editáveis, otimizando drasticamente o \textit{workflow} do artista técnico ou \textit{Level Designer}.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\section{Considerações Finais}
+% ---------------------------------------------------------------------------
+
+O presente trabalho propõe atacar a deficiência inerente dos LLMs no raciocínio espacial contínuo transferindo os cálculos matemáticos para as \textit{game engines}. A arquitetura em desenvolvimento pauta-se no conceito de cooperação entre um componente estocástico-criativo (o modelo, como arquiteto) e um componente determinístico-rígido (o algoritmo, como engenheiro). 
+
+À medida em que a prova de conceito (\textit{Addon} para Godot) avançar em testes empíricos de malhas navegáveis e consistência estrutural, será possível aferir a eventual redução da taxa de mapas inacessíveis, validando o arranjo teórico. Por fim, caso o método demonstre melhoras na solução problema investigado, projeta-se que a simbiose entre as descrições de \textit{layout} via LLM e algoritmos de construtivismo direcional fomentará metodologias de prototipagem hiper-ágeis para o mercado de jogos digitais, permitindo aos desenvolvedores concentrarem-se primordialmente na parte artística, enquanto delegam o trabalho estrutural bruto a modelos inteligentes aliados à lógica formal.
+
+% ===========================================================================
+%  REFERENCIAS
+% ===========================================================================
+\SingleSpacing
+\printbibliography[title={Referências}]
+\end{document}

@@ -1,0 +1,14 @@
+% ---------------------------------------------------------------------------
+\section{Introdução}
+% ---------------------------------------------------------------------------
+
+A Geração Procedural de Conteúdo (PCG - \textit{Procedural Content Generation}) é amplamente utilizada na indústria de jogos para criar mundos expansivos e variados de forma algorítmica, mitigando o esforço manual do \textit{Level Design} \cite{summerville2018procedural}. Tradicionalmente, métodos determinísticos garantem que o conteúdo gerado (como masmorras ou mapas) atenda a critérios estritos de jogabilidade, como conectividade e solvabilidade. 
+
+Com o advento dos Modelos de Linguagem de Grande Porte (LLMs), surgiu um novo paradigma denominado PCG via Machine Learning (PCGML). Trabalhos recentes demonstraram a viabilidade de usar LLMs para gerar níveis estruturados em representações textuais bidimensionais, como na matriz de posições de blocos para \textit{Sokoban} \cite{todd2023level}. Ademais, abordagens integradas com motores de jogos demonstram o alto potencial dessas redes na orquestração semântica e na assistência criativa contínua \cite{tang2025unrealllm}.
+
+Apesar da alta proficiência em raciocínio lógico e interpretação de intenções em linguagem natural, os LLMs lutam significativamente na coordenação espacial e raciocínio puramente geométrico em espaços tridimensionais (3D). Ao tentar gerar o posicionamento 3D absoluto de estruturas arquitetônicas complexas através de uma rede neural estocástica, frequentemente surgem erros críticos como intersecção de malhas, corredores sem saída e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner}.
+
+
+O objetivo principal deste estudo é desenvolver e avaliar um sistema no qual o LLM processa o \textit{prompt} do usuário e gera exclusivamente a macroestrutura lógica da fase, representada através de um grafo em formato JSON, propondo uma abordagem arquitetural de responsabilidades segregadas. A premissa fundamental, que atua como problema motivador da pesquisa, é a de que o LLM pensa e planeja a fase conceitualmente, enquanto um algoritmo determinístico a verifica e a constrói fisicamente. A instânciação geométrica e a validação topológica, por sua vez, são delegadas a um módulo procedimental desenvolvido na \textit{engine} Godot. 
+
+Espera-se que essa segregação reduza o escopo de falha do modelo probabilístico, mantendo a expressividade oriunda da linguagem natural e assegurando a criação de mapas totalmente jogáveis.

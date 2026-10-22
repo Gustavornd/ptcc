@@ -1,0 +1,220 @@
+% ===========================================================================
+%  TEMPLATE — RESUMO EXPANDIDO
+%  Seminário de Iniciação Científica (SIC 2026)
+%  IFNMG — Campus Januária
+% ===========================================================================
+
+\documentclass[
+  12pt,
+  a4paper,
+  oneside,
+  article,
+  brazil
+]{abntex2}
+
+% ---------------------------------------------------------------------------
+% PACOTES
+% ---------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath,amssymb}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{setspace}
+
+% ---------------------------------------------------------------------------
+% CITAÇÕES E REFERÊNCIAS ABNT
+% ---------------------------------------------------------------------------
+\usepackage[
+  backend=biber,
+  style=abnt,
+  giveninits=true
+]{biblatex}
+
+\addbibresource{referencias.bib}
+
+% ---------------------------------------------------------------------------
+% MARGENS ABNT NBR 6022
+% ---------------------------------------------------------------------------
+\geometry{top=2cm, bottom=2cm, left=3cm, right=2cm}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+% ---------------------------------------------------------------------------
+% CORES IFNMG
+% ---------------------------------------------------------------------------
+\definecolor{ifnmgverde}{RGB}{0,104,55}
+\definecolor{ifnmgcinza}{RGB}{88,88,90}
+
+% ---------------------------------------------------------------------------
+% HYPERLINKS
+% ---------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue,
+  pdftitle={Geração de Layouts de Fases 3D Assistida por Modelos de Linguagem de Grande Porte},
+  pdfauthor={Gustavo Rafael Nunes Durães}
+}
+
+% ---------------------------------------------------------------------------
+% CABECALHO E RODAPE
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\textit{Projeto de TCC}}
+\fancyhead[R]{\small\textit{\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+
+\fancypagestyle{primeirapagina}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\small Página \thepage\ de \pageref{LastPage}}
+}
+
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\aliaspagestyle{cleared}{fancy}
+\aliaspagestyle{part}{fancy}
+
+% ---------------------------------------------------------------------------
+% SECOES — estilo ABNT
+% ---------------------------------------------------------------------------
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\bfseries\itshape}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\itshape}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=endash,
+  justification=raggedright,
+  singlelinecheck=false
+}
+
+% ===========================================================================
+%  INÍCIO DO DOCUMENTO
+% ===========================================================================
+\begin{document}
+\textual
+\aliaspagestyle{plain}{fancy}
+\aliaspagestyle{chapter}{fancy}
+\aliaspagestyle{abntchapfirst}{fancy}
+\pagestyle{fancy}
+\thispagestyle{primeirapagina}
+\OnehalfSpacing
+
+\vspace{0.15cm}
+
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.05cm}
+
+% ---------------------------------------------------------------------------
+% TITULO
+% ---------------------------------------------------------------------------
+\begin{center}
+  {\large\bfseries
+    GERAÇÃO DE LAYOUTS DE FASES 3D ASSISTIDA POR MODELOS DE LINGUAGEM DE GRANDE PORTE
+  }
+\end{center}
+
+\vspace{0.1cm}
+
+% ---------------------------------------------------------------------------
+% AUTORES E AFILIAÇÕES
+% ---------------------------------------------------------------------------
+\begin{center}
+  \begin{SingleSpace}
+    {\normalsize
+      Gustavo Rafael Nunes DURÃES\textsuperscript{1,*},\;
+      Wagner Ferreira de BARROS\textsuperscript{2}
+    }\\[3pt]
+    {\small
+      \textsuperscript{1}Discente do Curso de Bach. em Ciência da Computação, IFNMG --- Campus Montes Claros.
+      \texttt{grnd@aluno.ifnmg.edu.br}%
+      \;$|$\;\textit{*autor correspondente}\\
+      \textsuperscript{2}Docente do IFNMG --- Campus Montes Claros.
+      \texttt{wagner.barros@ifnmg.edu.br}
+    }
+  \end{SingleSpace}
+\end{center}
+
+\vspace{0.2cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.05cm}
+
+% ---------------------------------------------------------------------------
+% RESUMO
+% ---------------------------------------------------------------------------
+{\centering\textbf{RESUMO}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+A criação manual de fases para jogos digitais é um processo exaustivo que exige a definição minuciosa de caminhos, salas, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem excelente capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, eles demonstram baixa confiabilidade no raciocínio espacial e geométrico exigido para a modelagem 3D. O presente trabalho propõe uma arquitetura que separa a geração procedimental de fases em duas responsabilidades distintas: um modelo atuando como "arquiteto", encarregado de traduzir intenções textuais do usuário em um grafo lógico estruturado (JSON), e um algoritmo determinístico atuando como "engenheiro", desenvolvido na \textit{engine} Godot, encarregado de validar a acessibilidade das salas e instanciar os componentes 3D no espaço sem colisões indevidas. O objetivo da pesquisa é avaliar o impacto da etapa de validação determinística na coerência das fases geradas, comparando a abordagem assistida estruturalmente com abordagens de geração unificada. Como resultados esperados, almeja-se a criação de um \textit{addon} funcional para Godot que demonstre que a divisão de tarefas (lógica vs. geometria) supera gargalos de inconsistência arquitetural presentes nas abordagens baseadas puramente em LLMs, garantindo a geração de fases solváveis, logicamente conectadas e geometricamente precisas.
+
+\vspace{0.3cm}
+\noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Level Design. JSON.
+\end{SingleSpace}
+
+\vspace{0.1cm}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.1cm}
+
+% ---------------------------------------------------------------------------
+% ABSTRACT
+% ---------------------------------------------------------------------------
+{\centering\textbf{ABSTRACT}\par}
+\vspace{0.1cm}
+\begin{SingleSpace}
+\noindent
+The manual creation of levels for digital games is an exhausting process that requires the meticulous definition of paths, rooms, progression rules, and the geometric validation of three-dimensional (3D) spaces. Although Large Language Models (LLMs) exhibit excellent semantic interpretation and logical planning capabilities from natural language, they show low reliability in the spatial and geometric reasoning required for 3D modeling. This ongoing work proposes an architecture that separates procedural level generation into two distinct responsibilities: a model acting as an "architect", tasked with translating the user's textual intentions into a structured logical graph (JSON), and a deterministic algorithm acting as an "engineer", developed in the Godot engine, tasked with validating room accessibility and instantiating 3D components in space without improper collisions. The aim of this research is to evaluate the impact of the deterministic validation step on the coherence of the generated levels, comparing the structurally assisted approach with unified generation approaches. As expected results, we aim to create a functional addon for Godot that demonstrates that dividing tasks (logic vs. geometry) overcomes architectural inconsistency bottlenecks present in purely LLM-based approaches, ensuring the generation of solvable, logically connected, and geometrically accurate levels.
+
+\vspace{0.3cm}
+\noindent\textbf{Keywords:} Procedural Content Generation. Large Language Models. Godot Engine. Level Design. JSON.
+\end{SingleSpace}
+
+\vspace{0.3cm}
+\noindent\rule{\linewidth}{1pt}
+\vspace{0.3cm}
+
+% ===========================================================================
+%  CORPO DO TEXTO
+% ===========================================================================
+
+\include{introducao}
+\include{materiais_e_metodos}
+\include{metodologia_experimental}
+\include{consideracoes_finais}
+%\include{fundamentacao_teorica}
+%\include{fundamentacao_revisada}
+%\include{fundamentacao_19_10}
+\include{fundamentacao_20_10}
+
+% ===========================================================================
+%  REFERENCIAS
+% ===========================================================================
+\SingleSpacing
+\printbibliography[title={Bibliografia}]
+\end{document}

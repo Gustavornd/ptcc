@@ -1,0 +1,107 @@
+Adventures in Level Design: Generating Missions and
+Spaces for Action Adventure Games
+Joris Dormans
+Hogeschool van Amsterdam
+Weesperzijde 190
+1097DZ Amsterdam, The Netherlands
++31 20 595 1686
+
+j.dormans@hva.nl
+ABSTRACT
+This paper investigates strategies to generate levels for action
+adventure games. This genre relies more strongly on welldesigned levels than rule-driven genres such as strategy or
+roleplaying games for which procedural level generation has been
+successful in the past. The approach outlined by this paper
+distinguishes between missions and spaces as two separate
+structures that need to be generated in two individual steps. It
+discusses the merits of different types of generative grammars for
+each individual step in the process.
+
+Keywords
+Procedural generation; level design; action adventure games.
+
+1. INTRODUCTION
+Games with procedurally generated content have been around for
+some time. The classic example of this type of game is Rogue, an
+old Dungeons & Dragons style ASCII dungeon-crawling game
+which levels are generated every time the player starts a new
+game. The source code of newer games with procedural content is
+generally not accessible, so it is hard to determine what type of
+algorithms are used in the creation of their levels. The source code
+of older games is available and their level generating strategies are
+well documented on the internet. The typical approach of these
+games can be classified as a brute-force random algorithm that is
+tailored to the purpose of generating level structures that function
+for the type of game. One strategy is to generate a tile map that is
+filled with tiles representing solid rock and to „drill‟ tunnels and
+rooms into the map starting from an entrance. Multiple paths can
+be created by drilling into new directions from previously created
+locations. The dungeon is then populated with creatures, traps and
+treasures [1]. Another strategy involves zoning the dungeon into
+large tiles, generate dungeon rooms in some of these zones in the
+next step, and finally connecting the rooms with a network of
+corridors [2]. To create game space to represent wilderness areas
+cellular automata are used to generate more organic structures [3].
+Although these algorithms have a proven track-record for the
+creation of roguelike games, the gameplay their output supports is
+rather limited. A typical major component of the gameplay of
+Permission to make digital or hard copies of all or part of this work
+for personal or classroom use is granted without fee provided that
+copies are not made or distributed for profit or commercial advantage
+and that copies bear this notice and the full citation on the first
+page. To copy otherwise, to republish, to post on servers or to
+redistribute to lists, requires prior specific permission and/or a
+fee.
+PCGames 2010, June 18, Monterey, CA, USA
+Copyright 2010 ACM 978-1-4503-0023-0/10/06... $10.00
+
+roguelike games is character building. This type of gameplay,
+which stems directly from a rather mechanistic interpretation of
+pen-and-paper roleplaying, resolves for a large part around
+gathering experience points and magical equipment to improve
+the main character. As game designer Ernest Adams points out in
+his satirical „letter from a dungeon‟, there seems to be little
+purpose behind these mechanics, resulting in a shallow
+representation of character growth as a faint echo of the mythical
+quest [4]. Gameplay of this type, although forming a viable niche
+of its own, is well suited for a random dungeon layout and does
+not require the same level of level-design quality as, for example,
+an action adventure game from the Zelda series in which this style
+of character development plays only a little part, as is mentioned
+in an interview by Shigeru Miyamoto, the series main designer
+[5]. Just as the random encounter table is an appreciated tool to
+facilitate a particular style, but not all styles, of role-playing in
+Dungeons & Dragons [6].
+It is in a similar light that Kate Compton and Michael Mateas
+point out that generating levels for an action platform game is
+more difficult as level design is a far more critical aspect of that
+type of game [7]. Action adventures rely on level design
+principles that result in enjoyable exploration, flow and narrative
+structure, too. As it turns out, these principles are difficult to
+implement with the algorithms commonly encountered in
+roguelike games. These algorithms generally cannot express these
+principles as they mostly operate on a larger scale than the scale
+of individual dungeon rooms and corridors. In order to generate
+game levels informed by such principles we need to turn to a
+method that does operate on the scale on which these principles
+reside. This method is the use of generative grammars.
+However, even with the use of generative grammars, generating
+good levels is still very hard. Levels often have a random feel to it
+and tend to lack overall structure. To search simply for a single
+generative grammar to tackle all these problems is not going to
+work. Well-designed levels generally have two, instead of one
+structures; a level generally consists of a mission and a space.
+This paper suggests that both missions and spaces are best
+generated separately using types of generative grammars that suit
+the particular needs of each structure. As outlined in the final
+sections of this paper, the route presented here is to generate
+missions first and then generate spaces to accommodate these
+missions.
+
+2. MISSIONS AND SPACES
+In a detailed study of the level design of the Forest Temple level
+of The Legend of Zelda: The Twilight Princess, conducted by the
+author and described in more detail elsewhere [8], two different
+structures emerge that both describe the level. First, there is the
+
+

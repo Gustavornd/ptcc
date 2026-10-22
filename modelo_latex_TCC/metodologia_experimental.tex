@@ -1,0 +1,26 @@
+% ---------------------------------------------------------------------------
+\section{Metodologia Experimental e Resultados Esperados}
+% ---------------------------------------------------------------------------
+
+Tendo em vista que o trabalho encontra-se na fase de desenvolvimento e implementação arquitetural, esta seção detalha a formatação dos experimentos programados para validar a premissa da pesquisa, bem como as inferências qualitativas e quantitativas previstas.
+
+\subsection{Delineamento dos Experimentos}
+
+Para atestar o impacto da validação determinística, os experimentos serão divididos em dois tratamentos comparativos gerando amostras de fases de dimensões variadas (pequena, média e grande escala, traduzidas em número de cômodos):
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Grupo Controle (Geração Unificada):} O LLM será solicitado a gerar não somente as conexões lógicas, mas também as coordenadas 3D de instanciação para cada \textit{asset} e cômodo.
+  \item \textbf{Grupo Experimental (Geração Segregada):} A metodologia proposta na qual o LLM produz estritamente a árvore/grafo JSON da progressão, com o algoritmo determinístico encarregado de resolver e instanciar os obstáculos e coordenadas espaciais.
+\end{itemize}
+
+As amostras de fases resultantes de ambos os tratamentos serão expostas à verificações por meio de rotinas automatizadas no Godot que auditarão: (a) o número de colisões estruturais inválidas (sobreposição geométrica); (b) o tempo (milissegundos) para computar a malha navegável do início ao fim do nível; (c) a presença de bloqueios mecânicos (ex: chaves retidas em salas incomunicáveis).
+
+\subsection{Resultados Esperados}
+
+De acordo com o estado da arte e observações empíricas com modelos de linguagem aplicados a problemas de \textit{Facility Layout Optimization} \cite{xu2025constraint}, preveem-se os seguintes resultados primários:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Eliminação de Anomalias Geométricas:} Espera-se que a abordagem segregada demonstre uma taxa de falhas espaciais tendendo a zero, visto que a instaciação passará a obedecer a matrizes de colisão rigorosas que não são compreendidas eficientemente pela rede estocástica do LLM.
+    \item \textbf{Resiliência e Coerência de \textit{Design}:} Pela validação por grafo anterior à instanciação espacial, a metodologia deve impedir inteiramente a geração de bloqueios intransponíveis provocados por falhas semânticas em rotas ramificadas, permitindo níveis longos e coesos que combinem salas de recompensas com salas de desafio.
+    \item \textbf{Automatização em \textit{Addon}:} Como substrato prático da pesquisa, espera-se finalizar um \textit{plugin} integrado à interface nativa do Godot. O pacote proverá um campo de \textit{prompt} diretamente no inspetor do editor, convertendo linguagem natural em cenários físicos editáveis, otimizando drasticamente o \textit{workflow} do artista técnico ou \textit{Level Designer}.
+\end{itemize}
