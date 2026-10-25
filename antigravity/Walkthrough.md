@@ -82,6 +82,21 @@
 
 ---
 
+### Fase 5 (23/10/2026): Elaboração e Validação do Capítulo de Trabalhos Relacionados
+* **Documentos de Referência:** TCCs da pasta `Exemplos/` (`TCC2 Luciano v03_revisado.pdf` e `TCC_Endi_Final.pdf`), ambos orientados pelo Prof. Wagner Ferreira de Barros.
+* **Arquivo Criado:** `trabalhos_relacionados.tex` (214 linhas).
+* **Estrutura Implementada:**
+  1. *Abertura Taxonômica:* 4 famílias de métodos baseadas no paradigma de geração e validação espacial (2D/simbólico, código/render offline, otimizadores/restrições, engines/multiagente).
+  2. *Método Dialético:* Aplicação rigorosa da tríade *Mecanismo → Mérito → Ponto de Ruptura* para cada um dos 11 sistemas analisados (Todd et al., Word2World, Narrative-to-Scene, SceneCraft, Code-as-Room, RoomPlanner, Constraint GLDL, Database-Driven Framework, Her et al., UnrealLLM, Regmi/Re).
+  3. *Diagnósticos Empíricos e Indústria:* Feng et al. (2026) (*"Layout as Language: Semantic YES, Physical NO"*) e Bandeali (2026) (rejeição de ferramentas autônomas "caixa-preta" e demanda por iniciativa mista com salvaguardas determinísticas na engine).
+  4. *Quadro Comparativo do Estado da Arte:* Tabela comparativa matricial cruzando todos os 11 sistemas frente a 7 critérios técnicos essenciais.
+  5. *Demonstração da Tríplice Lacuna e Posicionamento da Proposta:* Fechamento formal conectando a literatura diretamente à Metodologia da proposta neuro-simbólica (LLM no planejamento JSON + Godot 4 na geometria, física, NavMesh e solvabilidade).
+* **Compilação e Verificação:**
+  - `modelo_latex_TCC/main.tex` atualizado com `\include{trabalhos_relacionados}`.
+  - Compilação limpa com Biber e pdfLaTeX sem warnings de referências indefinidas, gerando `main.pdf` com 48 páginas.
+
+---
+
 ## 3. Síntese do Conteúdo da Fundamentação Teórica (`fundamentacao_20_10.tex`)
 
 Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção:
@@ -157,7 +172,8 @@ PTCC/
 │   ├── materiais_e_metodos.tex        # Capítulo de Materiais e Métodos
 │   ├── metodologia_experimental.tex   # Detalhamento de experimentos
 │   ├── consideracoes_finais.tex       # Conclusões e trabalhos futuros
-│   └── main.pdf                       # PDF compilado com sucesso (36 páginas)
+│   ├── trabalhos_relacionados.tex     # Capítulo de Trabalhos Relacionados (criado em 23/10)
+│   └── main.pdf                       # PDF compilado com sucesso (48 páginas)
 │
 ├── antigravity/                       # Documentação técnica, relatórios e guias de contexto
 │   ├── Walkthrough.md                 # Este documento mestre (guia multiagente e histórico)

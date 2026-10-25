@@ -1,0 +1,4 @@
+#!/bin/bash
+export LD_LIBRARY_PATH="/home/gus/texmf/biber_root/usr/lib:/home/gus/texmf/biber_root/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+export PERL5LIB="/home/gus/texmf/biber_root/usr/share/perl5:/home/gus/texmf/biber_root/usr/lib/x86_64-linux-gnu/perl5/5.38:/home/gus/texmf/biber_root/usr/lib/x86_64-linux-gnu/perl/5.38:$PERL5LIB"
+exec /home/gus/texmf/biber_root/usr/bin/biber "$@"
