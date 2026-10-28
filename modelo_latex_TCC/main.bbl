@@ -1309,39 +1309,6 @@
       \field{pages}{362\bibrangedash 378}
       \range{pages}{17}
     \endentry
-    \entry{re2026integration}{thesis}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=bd9a328b72075a3c1e6878c48af9b72e}{%
-           family={Re},
-           familyi={R\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Politecnico di Torino}%
-      }
-      \list{location}{1}{%
-        {Torino, Italy}%
-      }
-      \strng{namehash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \strng{fullhash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \strng{bibnamehash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \strng{authorbibnamehash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \strng{authornamehash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \strng{authorfullhash}{bd9a328b72075a3c1e6878c48af9b72e}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{bookpagination}{sheet}
-      \field{note}{Supervisor: Prof. Riccardo Coppola}
-      \field{title}{Integration of Intelligent Agents in Game Development: Prompt Engineering Methodologies for Automatic Code Generation}
-      \field{type}{Master Degree Thesis}
-      \field{year}{2026}
-    \endentry
     \entry{regmi2025system}{thesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=15e3196fc302363050b9d591af62cfd2}{%
