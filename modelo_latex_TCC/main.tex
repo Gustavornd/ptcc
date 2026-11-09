@@ -1,7 +1,7 @@
 % ===========================================================================
-%  TEMPLATE — RESUMO EXPANDIDO
-%  Seminário de Iniciação Científica (SIC 2026)
-%  IFNMG — Campus Januária
+%  TRABALHO DE CONCLUSÃO DE CURSO (TCC)
+%  Bacharelado em Ciência da Computação
+%  IFNMG — Campus Montes Claros
 % ===========================================================================
 
 \documentclass[
@@ -172,44 +172,35 @@
 \vspace{0.1cm}
 \begin{SingleSpace}
 \noindent
-A criação manual de fases para jogos digitais é um processo exaustivo que exige a definição minuciosa de caminhos, salas, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem excelente capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, eles demonstram baixa confiabilidade no raciocínio espacial e geométrico exigido para a modelagem 3D. O presente trabalho propõe uma arquitetura que separa a geração procedimental de fases em duas responsabilidades distintas: um modelo atuando como "arquiteto", encarregado de traduzir intenções textuais do usuário em um grafo lógico estruturado (JSON), e um algoritmo determinístico atuando como "engenheiro", desenvolvido na \textit{engine} Godot, encarregado de validar a acessibilidade das salas e instanciar os componentes 3D no espaço sem colisões indevidas. O objetivo da pesquisa é avaliar o impacto da etapa de validação determinística na coerência das fases geradas, comparando a abordagem assistida estruturalmente com abordagens de geração unificada. Como resultados esperados, almeja-se a criação de um \textit{addon} funcional para Godot que demonstre que a divisão de tarefas (lógica vs. geometria) supera gargalos de inconsistência arquitetural presentes nas abordagens baseadas puramente em LLMs, garantindo a geração de fases solváveis, logicamente conectadas e geometricamente precisas.
+A criação manual de fases para jogos digitais exige o planejamento de caminhos, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem elevada capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, estudos relatam dificuldades desses modelos para produzir configurações que satisfaçam restrições espaciais em tarefas de geração de \textit{layouts} 3D. O objetivo desta pesquisa é desenvolver e avaliar uma arquitetura híbrida para a geração automática de fases 3D na \textit{engine} Godot, na qual um LLM produz o grafo de progressão serializado em JSON e algoritmos determinísticos constroem a geometria modular e verificam restrições lógicas, geométricas e de navegabilidade. Espera-se criar um \textit{addon} funcional para Godot que permita avaliar se a arquitetura híbrida reduz inconsistências na geração de fases 3D frente à geração direta pelo LLM, buscando produzir fases que atendam aos critérios de validade lógica, geométrica e navegacional definidos.
 
-\vspace{0.3cm}
-\noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Level Design. JSON.
+\vspace{0.05cm}
+\noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Grafo de Progressão. Validação de Restrições.
 \end{SingleSpace}
 
-\vspace{0.1cm}
+\vspace{0.05cm}
 \noindent\rule{\linewidth}{0.4pt}
-\vspace{0.1cm}
+\vspace{0.05cm}
 
 % ---------------------------------------------------------------------------
 % ABSTRACT
 % ---------------------------------------------------------------------------
 {\centering\textbf{ABSTRACT}\par}
-\vspace{0.1cm}
+\vspace{0.05cm}
 \begin{SingleSpace}
 \noindent
-The manual creation of levels for digital games is an exhausting process that requires the meticulous definition of paths, rooms, progression rules, and the geometric validation of three-dimensional (3D) spaces. Although Large Language Models (LLMs) exhibit excellent semantic interpretation and logical planning capabilities from natural language, they show low reliability in the spatial and geometric reasoning required for 3D modeling. This ongoing work proposes an architecture that separates procedural level generation into two distinct responsibilities: a model acting as an "architect", tasked with translating the user's textual intentions into a structured logical graph (JSON), and a deterministic algorithm acting as an "engineer", developed in the Godot engine, tasked with validating room accessibility and instantiating 3D components in space without improper collisions. The aim of this research is to evaluate the impact of the deterministic validation step on the coherence of the generated levels, comparing the structurally assisted approach with unified generation approaches. As expected results, we aim to create a functional addon for Godot that demonstrates that dividing tasks (logic vs. geometry) overcomes architectural inconsistency bottlenecks present in purely LLM-based approaches, ensuring the generation of solvable, logically connected, and geometrically accurate levels.
+Manual level creation for digital games demands path planning, progression rules, and geometric validation of three-dimensional (3D) spaces. Although Large Language Models (LLMs) exhibit strong semantic interpretation and logical planning from natural language, studies report difficulties in producing configurations that satisfy spatial constraints in 3D layout generation tasks. The aim of this research is to develop and evaluate a hybrid architecture for automatic 3D level generation in the Godot engine, in which an LLM produces the progression graph serialized in JSON and deterministic algorithms construct the modular geometry and verify logical, geometric, and navigational constraints. We expect to create a functional Godot addon that allows evaluating whether the hybrid architecture reduces inconsistencies in 3D level generation compared to direct LLM generation, aiming to produce levels that meet the defined logical, geometric, and navigational validity criteria.
 
-\vspace{0.3cm}
-\noindent\textbf{Keywords:} Procedural Content Generation. Large Language Models. Godot Engine. Level Design. JSON.
-\end{SingleSpace}
-
-\vspace{0.3cm}
+\vspace{0.05cm}
+\noindent\textbf{Keywords:} Procedural Content Generation. Large Language Models. Godot Engine. Progression Graph. Constraint Validation.\\[-4pt]
 \noindent\rule{\linewidth}{1pt}
-\vspace{0.3cm}
+\end{SingleSpace}
 
 % ===========================================================================
 %  CORPO DO TEXTO
 % ===========================================================================
 
 \include{introducao}
-\include{materiais_e_metodos}
-\include{metodologia_experimental}
-\include{consideracoes_finais}
-%\include{fundamentacao_teorica}
-%\include{fundamentacao_revisada}
-%\include{fundamentacao_19_10}
 \include{fundamentacao_20_10}
 \include{trabalhos_relacionados}
 

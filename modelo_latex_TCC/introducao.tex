@@ -1,14 +1,86 @@
 % ---------------------------------------------------------------------------
 \section{Introdução}
+\label{sec:introducao}
 % ---------------------------------------------------------------------------
 
-A Geração Procedural de Conteúdo (PCG - \textit{Procedural Content Generation}) é amplamente utilizada na indústria de jogos para criar mundos expansivos e variados de forma algorítmica, mitigando o esforço manual do \textit{Level Design} \cite{summerville2018procedural}. Tradicionalmente, métodos determinísticos garantem que o conteúdo gerado (como masmorras ou mapas) atenda a critérios estritos de jogabilidade, como conectividade e solvabilidade. 
+No desenvolvimento de jogos digitais, uma fase --- também denominada nível (\textit{level}) ou mapa --- constitui o espaço interativo onde as regras, mecânicas e desafios do jogo se concretizam para o jogador \cite{tanagra, pcgbook}. O planejamento e a construção desses ambientes competem à disciplina de \textit{Level Design}, cujo propósito envolve conduzir o deslocamento e a atenção do usuário, equilibrar a dificuldade e regular o ritmo da experiência \cite{dormans2010, totten2014architectural}. Sob a ótica estrutural, a concepção de uma fase articula duas dimensões complementares: a organização lógica da \textit{missão}, que define a sequência de tarefas, objetivos e dependências como chaves e fechaduras (\textit{lock-and-key puzzles}), e a organização física do \textit{espaço}, que corresponde à realização geométrica de salas, corredores e conectores \cite{dormans2010, linden2013designing, linden2014dungeons}.
 
-Com o advento dos Modelos de Linguagem de Grande Porte (LLMs), surgiu um novo paradigma denominado PCG via Machine Learning (PCGML). Trabalhos recentes demonstraram a viabilidade de usar LLMs para gerar níveis estruturados em representações textuais bidimensionais, como na matriz de posições de blocos para \textit{Sokoban} \cite{todd2023level}. Ademais, abordagens integradas com motores de jogos demonstram o alto potencial dessas redes na orquestração semântica e na assistência criativa contínua \cite{tang2025unrealllm}.
+Em ambientes tridimensionais (3D), a autoria manual de fases exige um trabalho minucioso e de elevado custo produtivo, uma vez que o projetista precisa definir caminhos, distribuir regras de progressão e validar geometricamente o posicionamento de cada estrutura no espaço contínuo \cite{linden2014dungeons, xu2025constraint}. Nesse cenário, a Geração Procedural de Conteúdo (PCG --- \textit{Procedural Content Generation}) consolidou-se tanto na indústria quanto na pesquisa acadêmica com o objetivo de poupar esforço manual na criação de mapas, ampliar a variedade dos ambientes gerados e auxiliar o fluxo de trabalho de projetistas e artistas técnicos \cite{pcgbook, summerville2018procedural, maleki2024procedural}.
 
-Apesar da alta proficiência em raciocínio lógico e interpretação de intenções em linguagem natural, os LLMs lutam significativamente na coordenação espacial e raciocínio puramente geométrico em espaços tridimensionais (3D). Ao tentar gerar o posicionamento 3D absoluto de estruturas arquitetônicas complexas através de uma rede neural estocástica, frequentemente surgem erros críticos como intersecção de malhas, corredores sem saída e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner}.
+Historicamente, os métodos clássicos de PCG apoiaram-se em algoritmos construtivos, técnicas baseadas em busca e solucionadores formais de restrições para sintetizar níveis \cite{togelius2011search, shaker2016constructive, smith2011answer, karth2017wavefunctioncollapse}. Com o avanço das técnicas orientadas a dados, estabeleceu-se a Geração Procedural de Conteúdo por Aprendizado de Máquina (PCGML --- \textit{Procedural Content Generation via Machine Learning}), voltada ao treinamento de modelos estatísticos e neurais sobre conjuntos de fases preexistentes \cite{summerville2018procedural}, bem como abordagens fundamentadas em aprendizado por reforço \cite{khalifa2020pcgrl}.
 
+Importa destacar que a PCGML antecede os Modelos de Linguagem de Grande Porte (LLMs --- \textit{Large Language Models}) baseados na arquitetura \textit{Transformer} \cite{vaswani2017attention, brown2020language, summerville2018procedural}; esses modelos de linguagem passaram a ser investigados mais recentemente para tarefas de geração de níveis em razão de sua capacidade de interpretar instruções abertas em linguagem natural \cite{Gallotta_2024, maleki2024procedural}. Estudos recentes demonstraram que os LLMs geram bons níveis textuais em representações bidimensionais (2D) baseadas em grades de caracteres \cite{todd2023level, nasir2024word2worldgeneratingstoriesworlds, chen2025narrative} e auxiliam na orquestração semântica de ferramentas procedurais em motores de jogos \cite{Gallotta_2024, tang2025unrealllm}.
 
-O objetivo principal deste estudo é desenvolver e avaliar um sistema no qual o LLM processa o \textit{prompt} do usuário e gera exclusivamente a macroestrutura lógica da fase, representada através de um grafo em formato JSON, propondo uma abordagem arquitetural de responsabilidades segregadas. A premissa fundamental, que atua como problema motivador da pesquisa, é a de que o LLM pensa e planeja a fase conceitualmente, enquanto um algoritmo determinístico a verifica e a constrói fisicamente. A instânciação geométrica e a validação topológica, por sua vez, são delegadas a um módulo procedimental desenvolvido na \textit{engine} Godot. 
+% ---------------------------------------------------------------------------
+\subsection{Motivação}
+\label{sec:motivacao}
+% ---------------------------------------------------------------------------
 
-Espera-se que essa segregação reduza o escopo de falha do modelo probabilístico, mantendo a expressividade oriunda da linguagem natural e assegurando a criação de mapas totalmente jogáveis.
+A principal motivação para investigar a integração de LLMs ao projeto de fases reside na possibilidade de reduzir a barreira técnica imposta pelos métodos procedurais tradicionais. Abordagens clássicas fundamentadas em gramáticas de grafos e solucionadores formais asseguram a coerência lógica das missões, mas exigem que o projetista codifique e mantenha manualmente conjuntos complexos de regras de produção ou restrições matemáticas \cite{dormans2010, linden2013designing, linden2014dungeons}. O emprego da linguagem natural como interface de especificação permite que intenções estruturais --- como a quantidade de salas, ramificações de caminho e relações entre chaves e portas --- sejam descritas de maneira direta e intuitiva \cite{Gallotta_2024, wang2026designerlyloop}.
+
+Entretanto, diferentemente de ativos puramente visuais ou cosméticos, fases de jogos são conteúdos estritamente funcionais \cite{summerville2018procedural, linden2014dungeons}. Uma fase tridimensional gerada com falhas estruturais --- tais como malhas arquitetônicas que se interceptam indevidamente, corredores obstruídos ou portas trancadas cujas chaves foram posicionadas em salas inacessíveis --- compromete a progressão do jogador e torna o nível inválido para uso prático \cite{linden2014dungeons, xu2025constraint}. Conforme apontado em estudos sobre ferramentas de autoria assistida na indústria de jogos \cite{lai2020towards, walton2020evaluating, bandeali2026generative}, geradores probabilísticos que produzem cenários defeituosos obrigam o desenvolvedor a realizar reparos manuais dispendiosos, anulando o ganho de produtividade esperado da automação.
+
+Dessa forma, vislumbra-se a necessidade de arquiteturas que combinem a capacidade de interpretação semântica e planejamento estrutural dos LLMs com a precisão de algoritmos determinísticos de validação e construção espacial integrados diretamente ao editor de um motor de jogos (\textit{game engine}). A disponibilidade de uma ferramenta dessa natureza em um motor de código aberto como o Godot Engine pode otimizar a prototipagem de cenários 3D editáveis e reduzir a incidência de inconsistências espaciais e lógicas. Diante disso, constata-se uma oportunidade de contribuição para a literatura.
+
+% ---------------------------------------------------------------------------
+\subsection{Contextualização do Problema}
+\label{sec:contextualizacao_problema}
+% ---------------------------------------------------------------------------
+
+Apesar da elevada capacidade dos LLMs na interpretação semântica e no encadeamento lógico textual, em tarefas de geração de \textit{layouts} 3D estudos relatam severas dificuldades desses modelos para produzir configurações que satisfaçam restrições espaciais e métricas contínuas \cite{Gallotta_2024, sun2024roomplanner, feng2026repurposing3dgenerativemodel}. Como os modelos de linguagem operam por predição autorregressiva de \textit{tokens} sem um modelo físico ou geométrico nativo do espaço euclidiano $\mathbb{R}^3$, sua inferência carece de ancoragem espacial (\textit{spatial grounding}) para manter invariantes de dimensão, orientação e distância ao longo de estruturas compostas \cite{harnad1990symbol, cohn2008qualitative, feng2026repurposing3dgenerativemodel}.
+
+Consequentemente, ao tentar gerar posicionamentos 3D de arquiteturas complexas diretamente por meio de redes estocásticas, surgem erros críticos como sobreposições geométricas entre salas e objetos (\textit{clipping}), violações de limites perimetrais, corredores sem saída (\textit{dead-ends}) e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner, feng2026repurposing3dgenerativemodel}. Tais falhas evidenciam que a geração unificada --- na qual o LLM é encarregado simultaneamente de conceber a lógica de progressão e de calcular coordenadas tridimensionais exatas --- mostra-se pouco confiável para a construção de níveis 3D jogáveis.
+
+Na literatura recente voltada ao domínio 3D, propostas de síntese de cenas internas guiadas por LLMs \cite{ocal2024sceneteller, hu2024scenecraft, sun2024roomplanner, yang2026codeasroomgenerating3drooms} concentram-se no arranjo de mobília em cômodos isolados para modelagem e renderização \textit{offline}, sem abordar a composição modular de fases com múltiplas salas e progressão mecânica. No escopo específico de fases 3D jogáveis, Xu e Verbrugge \cite{xu2025constraint, xu2025databasedrivenframework3dlevel} já combinam LLMs, descrição estruturada e otimização por restrições (baseada no Problema de \textit{Layout} de Instalações resolvido via Têmpera Simulada) para produzir fases 3D. Contudo, essas abordagens ou restringem a geração guiada por \textit{prompt} sob demanda a uma única sala sem progressão de chaves e portas \cite{xu2025constraint}, ou deslocam o uso do LLM para uma etapa prévia e \textit{offline} de preenchimento de bancos de dados estáticos, apoiando-se em restrições flexíveis (\textit{soft constraints}) que não impedem construtivamente obstruções e exigem passagens corretivas posteriores \cite{xu2025databasedrivenframework3dlevel}.
+
+Para enfrentar esse problema, este trabalho propõe uma arquitetura híbrida e neuro-simbólica \cite{garcez2023neurosymbolic} na qual o LLM planeja a fase conceitualmente, omitindo cálculos de coordenadas espaciais e exportando conexões semânticas na forma de um grafo de progressão serializado em JSON (em que os nós descrevem salas e seus itens, e as arestas descrevem conexões, portas e requisitos de acesso), enquanto algoritmos determinísticos na \textit{engine} Godot realizam a validação topológica e a instanciação espacial. O recorte desta pesquisa consiste em um protótipo de masmorra modular de um pavimento, integrado como um \textit{addon} no Godot, que utiliza salas pré-fabricadas de dimensões e conectores conhecidos para transformar grafos de progressão em geometria 3D editável e verificar explicitamente três classes de restrições: (1) progressão lógica possível com estados de sala atual e chaves adquiridas, recusando grafos inválidos e retornando o erro ao LLM para nova geração; (2) geometria sem sobreposições proibidas (\textit{clipping}) \cite{ericson2004realtime}, com salas posicionadas, portas alinhadas e ambientes conectados por corredores; e (3) existência de caminho fisicamente navegável entre o início e o objetivo, comprovada após a geração da malha de navegação (\textit{NavMesh}) por meio de nós de \texttt{NavigationRegion3D} \cite{snook2000simplified, hart1968formal}.
+
+% ---------------------------------------------------------------------------
+\subsection{Definição do Problema}
+\label{sec:definicao_problema}
+% ---------------------------------------------------------------------------
+
+O problema a ser tratado neste trabalho consiste em: ``A partir de requisições estruturais em linguagem natural, como gerar automaticamente \textit{layouts} de fases 3D modulares em um motor de jogo de modo a reduzir inconsistências espaciais e satisfazer, simultaneamente, restrições de progressão lógica com chaves e portas, restrições geométricas sem sobreposição indevida e restrições de navegabilidade física entre o início e o objetivo?''
+
+De forma específica, a resolução desse problema envolve responder às seguintes questões de pesquisa:
+
+\begin{enumerate}
+    \item Como estruturar uma representação intermediária baseada em um grafo de progressão serializado em JSON que descreva salas, itens, conexões, portas e requisitos de acesso, dispensando o LLM do cálculo direto de coordenadas tridimensionais?
+    \item Como validar de forma determinística a consistência da progressão lógica do grafo por meio de uma busca por estados (sala atual e chaves adquiridas), recusando grafos inválidos e retornando o erro ao LLM para nova geração?
+    \item Como calcular posições, orientações e conexões por corredores para instanciar salas 3D pré-fabricadas de dimensões e conectores conhecidos em uma masmorra modular de um pavimento, garantindo o alinhamento de portas e impedindo sobreposições geométricas proibidas (\textit{clipping})?
+    \item Como verificar de maneira automatizada, após a instanciação geométrica e a geração da malha de navegação (\textit{NavMesh}), a existência de uma rota fisicamente navegável entre a sala inicial e o objetivo da fase?
+    \item Em que medida a arquitetura híbrida proposta aumenta a proporção de fases que satisfazem simultaneamente as três classes de restrições e reduz a incidência de violações lógicas, geométricas e de navegação quando comparada à geração direta de lógica e coordenadas 3D pelo LLM?
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\subsection{Objetivos}
+\label{sec:objetivos}
+% ---------------------------------------------------------------------------
+
+\subsubsection{Objetivo Geral}
+\label{sec:objetivo_geral}
+
+O objetivo geral deste trabalho é desenvolver e avaliar uma arquitetura híbrida para a geração automática de fases 3D na \textit{engine} Godot, na qual um Modelo de Linguagem de Grande Porte produz o grafo de progressão serializado em JSON e algoritmos determinísticos constroem a geometria modular e verificam restrições lógicas, geométricas e de navegabilidade.
+
+\subsubsection{Objetivos Específicos}
+\label{sec:objetivos_especificos}
+
+Especificamente, pretende-se:
+
+\begin{itemize}
+    \item definir o esquema do grafo de progressão serializado em JSON para representar salas, itens, conexões, portas e requisitos de travessia a partir de requisições estruturais em linguagem natural;
+    \item implementar o algoritmo determinístico de validação lógica por busca de estados (sala atual e chaves adquiridas), com mecanismo de recusa de grafos inválidos e retorno de erro ao LLM para nova geração;
+    \item desenvolver o módulo de construção espacial determinística na \textit{engine} Godot para posicionar salas 3D pré-fabricadas em uma masmorra modular de um pavimento, alinhar portas, conectar ambientes por corredores e executar testes de interseção contra sobreposições indevidas (\textit{clipping});
+    \item implementar a verificação automatizada de navegabilidade física no motor de jogo utilizando nós de \texttt{NavigationRegion3D} para gerar a malha de navegação (\textit{NavMesh}) e atestar a existência de uma rota navegável entre o início e o objetivo;
+    \item integrar o fluxo proposto em um \textit{addon} funcional no editor da \textit{engine} Godot, convertendo descrições em linguagem natural em cenários 3D editáveis;
+    \item avaliar experimentalmente a arquitetura híbrida como um todo em comparação a um grupo controle (no qual o LLM gera lógica e coordenadas 3D), medindo a proporção de fases que satisfazem simultaneamente as três classes de restrições, além de registrar falhas de progressão, colisões, ausência de rota, número de tentativas e tempo de geração.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\subsection{Organização do Trabalho}
+\label{sec:organizacao_trabalho}
+% ---------------------------------------------------------------------------
+
+O restante deste trabalho está estruturado da seguinte forma. Na Seção~\ref{sec:fundamentacao} é apresentada a Fundamentação Teórica, abordando os conceitos de fases de jogos, \textit{Level Design} e a distinção entre organização lógica da missão e organização física do espaço; os fundamentos da Geração Procedural de Conteúdo (PCG); a geração via aprendizado de máquina (PCGML) e os Modelos de Linguagem de Grande Porte (LLMs), incluindo suas limitações de raciocínio espacial em 3D; a modelagem lógica de fases por grafos; a representação modular e geométrica de \textit{layouts} 3D; as arquiteturas híbridas guiadas por restrições; e os critérios formais de validade lógica, geométrica, navegabilidade e solvabilidade.
+
+Na Seção~\ref{sec:trabalhos_relacionados} são discutidos os Trabalhos Relacionados, organizados em três categorias: métodos procedurais baseados em gramáticas de grafos, restrições e iniciativa mista; abordagens de geração de fases e cenas bidimensionais assistidas por LLMs; e sistemas voltados à geração de cenas e fases tridimensionais assistidos por LLMs. Ao final da seção, apresenta-se uma síntese comparativa da literatura e o posicionamento técnico da arquitetura híbrida proposta.

@@ -107,28 +107,43 @@
 
 ---
 
+### Fase 7 (09/11/2026): Reescrita da Introdução e Reestruturação de `main.tex`
+* **Documentos de Referência:** Versão final revisada do resumo expandido do SIC 2026 (`SIC/Modelo Overleaf_Resumo_Expandido_SIC2026/SIC2026_Ciencias_Exatas_e_da_Terra_identificado.tex`) e TCCs da pasta `Exemplos/` (`TCC2 Luciano v03_revisado.pdf` e `TCC_Endi_Final.pdf`).
+* **Alterações Executadas em `modelo_latex_TCC/introducao.tex`:**
+  1. *Fusão estrutural dos dois exemplos (`TCC2 Luciano` + `TCC_Endi_Final`):* Organização do capítulo em preâmbulo contextual (4 parágrafos), `\subsection{Motivação}`, `\subsection{Contextualização do Problema}`, `\subsection{Definição do Problema}` (enunciado central da pergunta de pesquisa + lista numerada `enumerate` com 5 questões específicas de pesquisa), `\subsection{Objetivos}` (`\subsubsection{Objetivo Geral}` e `\subsubsection{Objetivos Específicos}` em lista `itemize`) e `\subsection{Organização do Trabalho}`.
+  2. *Incorporação integral das revisões do SIC 2026:* Esclarecimento histórico de que a PCGML antecede os LLMs; substituição de afirmações absolutas pela formulação precisa das três classes de restrições verificadas (*progressão lógica possível com chaves e portas via busca de estados*, *ausência de sobreposições geométricas proibidas* e *rota fisicamente navegável entre início e objetivo via NavMesh*); especificação do grafo de progressão serializado em JSON; delimitação do recorte (protótipo de masmorra modular de um pavimento na *engine* Godot, em formato de *addon*, com salas pré-fabricadas de dimensões e conectores conhecidos); e alinhamento dos objetivos ao delineamento experimental (Grupo Controle vs. Grupo Experimental avaliando a arquitetura híbrida como um todo).
+* **Alterações Executadas em `modelo_latex_TCC/main.tex`:**
+  - Remoção dos artefatos e capítulos obsoletos herdados do modelo base do SIC (`\include{materiais_e_metodos}`, `\include{metodologia_experimental}` e `\include{consideracoes_finais}`, bem como versões antigas comentadas da fundamentação).
+  - Atualização do Resumo e Abstract de `main.tex` para refletir o escopo revisado.
+  - Estruturação dos capítulos de `main.tex` na ordem canônica do TCC:
+    1. **Introdução** (`\include{introducao}`)
+    2. **Fundamentação Teórica** (`\include{fundamentacao_20_10}`)
+    3. **Trabalhos Relacionados** (`\include{trabalhos_relacionados}`)
+
+---
+
 ## 3. Síntese do Conteúdo da Fundamentação Teórica (`fundamentacao_20_10.tex`)
 
-Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção:
+Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção (Seção 2 em `main.tex`):
 
-* **5.1 Fases de Jogos, *Level Design* e *Layouts* 3D:**
+* **2.1 Fases de Jogos, *Level Design* e *Layouts* 3D:**
   - Definição formal de fase como contêiner estruturado e arena interativa governada pelo sistema de regras do jogo.
   - *Level Design* conceituado através de Totten (2014) como arquitetura de experiência, fluxo de navegação e regulação de ritmo (*pacing*).
   - Decomposição do layout em salas, corredores, conectores, instalações (*props*) e entidades dinâmicas.
   - Distinção teórica estrita entre **missão** (organização lógica de objetivos) e **espaço** (realização métrica e física), com base em Dormans (2010) e van der Linden et al. (2013).
-* **5.2 Geração Procedural de Conteúdo (PCG):**
+* **2.2 Geração Procedural de Conteúdo (PCG):**
   - Definição, escopo (conteúdos cosméticos vs. funcionais) e motivações (redução de custos, rejogabilidade, adaptabilidade).
   - Propriedades técnicas: reprodutibilidade (PRNGs), expressividade (*expressive range* por Smith & Whitehead, 2010) e a tensão entre controle e diversidade.
   - Taxonomia canônica (Togelius et al., 2011): métodos construtivos, baseados em busca (*fitness function*) e baseados em restrições/solucionadores (WFC por Karth & Smith, 2017; ASP por Smith & Mateas, 2011).
   - Técnicas de geração de níveis: particionamento espacial (BSP/octrees), agentes escavadores em escala local, autômatos celulares e gramáticas de grafos/formas.
-* **5.3 PCGML e Modelos de Linguagem de Grande Porte (LLMs):**
+* **2.3 PCGML e Modelos de Linguagem de Grande Porte (LLMs):**
   - Definição formal de PCGML estrito (Summerville et al., 2018) via treinamento supervisionado sobre *corpora* de jogos prévios.
   - Caracterização de PCGRL (Khalifa et al., 2020) operando via interação dinâmica agente-ambiente e otimização de recompensas cumulativas.
   - Distinção conceitual: *zero-shot/few-shot prompting* opera via aprendizado em contexto (ICL) e transferência transdomínio (Brown et al., 2020); *fine-tuning* sobre fases configura PCGML estrito.
   - Evolução de PLN: gargalos de RNNs/LSTMs e esvanecimento de gradientes (Bengio et al., 1994) superados pela arquitetura Transformer e mecanismo de autoatenção (*self-attention*, Vaswani et al., 2017).
   - Taxonomia dos 4 papéis dos LLMs em PCG: gerador textual direto, planejador lógico de alto nível, sintetizador de código/parâmetros e assistente em iniciativa mista.
   - Separação entre modelo conceitual (grafo, triplas, DSL) e formato de serialização (JSON com esquemas formais; contextualização da sintaxe CSS de SceneTeller).
-* **5.4 Raciocínio e Ancoragem Espacial em LLMs:**
+* **2.4 Raciocínio e Ancoragem Espacial em LLMs:**
   - Raciocínio espacial qualitativo (Cohn & Renz, 2008) vs. raciocínio métrico contínuo.
   - Distinção formal entre **direção** (relação relativa entre entidades) e **orientação** (*pose* intrínseca e vetor frontal).
   - O problema da ancoragem semântica (*symbol grounding problem*, Harnad, 1990).
@@ -136,24 +151,24 @@ Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção:
   - Alucinação espacial formalizada: ausência de modelo físico na autoatenção, severa compressão de dados e deriva autorregressiva cumulativa de erros métricos.
   - Exemplos empíricos da literatura: *SceneCraft* (Hu et al., 2024), *RoomPlanner* (Sun et al., 2024) e *Code-as-Room* (Yang et al., 2026).
   - Quatro tipos de falhas geométricas: colisões/sobreposições (*clipping*), violações de limites/suporte (*out-of-bounds* e flutuação), erros de alinhamento e obstrução de circulação.
-* **5.5 Representação Lógica de Fases por Grafos:**
+* **2.5 Representação Lógica de Fases por Grafos:**
   - Formalismo matemático de dígrafos $G=(V, E)$ (Cormen et al., 2009): graus de entrada/saída, caminhos orientados e conectividade forte.
   - Grafos de espaço (topológicos) vs. grafos de missão/ações; agrupamento de ações colocalizadas (*co-located actions*, Dormans, 2010; van der Linden et al., 2013).
   - Mecanismo de chave e fechadura (*lock-and-key puzzle*).
   - Formalização do subgrafo de dependências $G_{\text{dep}}$ como um Grafo Acíclico Direcionado (DAG) obrigatório com ordenação topológica $\tau(u) < \tau(v)$ para prevenir *deadlocks* lógicos, contrastando com o grafo de circulação física que admite ciclos controlados (*backtracking*, atalhos). Definição do espaço de estados $S$.
   - Mapeamento um-para-muitos e planarização com nós intermediários (van der Linden et al., 2013).
-* **5.6 Representação de *Layouts* Espaciais 3D:**
+* **2.6 Representação de *Layouts* Espaciais 3D:**
   - Modelagem modular: grades/voxels, chunks, salas pré-construídas e *prefabs* 3D com conectores/portas (posição local, dimensão e vetor normal de orientação).
   - Relações afins no espaço contínuo $\mathbb{R}^3$: decomposição estrita entre *pose* (translação $\mathbf{p}_i$ e rotação $\mathbf{R}_i$ com guinada $\theta_i$), dimensões nominais $(w_i, l_i, h_i)$ e fator de escala $\mathbf{s}_i$.
   - Volumes delimitadores (Ericson, 2004): Caixa Delimitadora Alinhada aos Eixos (AABB) vs. Caixa Delimitadora Orientada (OBB).
   - Restrições geométricas rígidas: não sobreposição volumétrica ($V_{\text{overlap}} = 0$), contenção perimetral, alinhamento de portais e desobstrução (*clearance*) contra adensamento indevido (*overcrowding/clutter*).
-* **5.7 Arquiteturas Híbridas e Geração Baseada em Restrições:**
+* **2.7 Arquiteturas Híbridas e Geração Baseada em Restrições:**
   - Integração neuro-simbólica (Garcez & Lamb, 2023): sinergia entre raciocínio de alto nível (neural/LLM) e garantias determinísticas de restrições (simbólico/algorítmico).
   - Sistemas de iniciativa mista (*Mixed-Initiative PCG*): colaboração humano-IA exemplificada por *Tanagra* (Smith et al., 2010) e *Sentient Sketchbook* (Liapis et al., 2013).
   - Problemas de Satisfação de Restrições (CSP, Russell & Norvig, 2021): variáveis, domínios, restrições e consistência de arcos.
   - Restrições rígidas (*hard*) vs. restrições flexíveis (*soft*) e analogia com o Problema de Layout de Instalações (FLP).
   - Quatro estratégias de qualidade: rejeição integral (*generate-and-test*), *backtracking* construtivo, reparo pós-geração e laço fechado de refinamento (*feedback loop*).
-* **5.8 Validade, Navegabilidade e Solvabilidade de Fases:**
+* **2.8 Validade, Navegabilidade e Solvabilidade de Fases:**
   - Decomposição rigorosa das camadas de avaliação funcional:
     1. **Validade Lógica:** Aciclicidade do grafo causal e conectividade abstrata.
     2. **Validade Geométrica:** Não interseção de sólidos e contenção espacial via estruturas de consulta (AABBs, octrees, raycasting).
@@ -161,7 +176,7 @@ Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção:
     4. **Pathfinding:** Algoritmo $A^*$ (Hart et al., 1968) com heurística admissível assegurando caminho de custo ótimo.
     5. **Solvabilidade:** Atingibilidade conjunta no espaço de estados e no espaço geométrico.
   - As 3 dissociações teóricas fundamentais: (i) validade geométrica sem navegabilidade; (ii) navegabilidade física sem solvabilidade dinâmica (chave trancada atrás da porta); (iii) validade lógica abstrata sem solvabilidade espacial (obstáculo físico bloqueando a chave).
-  - **5.8.6 Síntese Conceitual:** Consolidação do arcabouço teórico como ponte para as decisões de modelagem e arquitetura a serem formalizadas na Metodologia.
+  - **2.8.6 Síntese Conceitual:** Consolidação do arcabouço teórico como ponte para as decisões de modelagem e arquitetura a serem formalizadas na Metodologia.
 
 ---
 
@@ -171,19 +186,19 @@ Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção:
 PTCC/
 │
 ├── modelo_latex_TCC/
-│   ├── main.tex                       # Documento mestre do artigo/TCC (classe abntex2/article)
+│   ├── main.tex                       # Documento mestre do TCC (1- Introdução, 2- Fundamentação, 3- Relacionados)
 │   ├── referencias.bib                # Base BibTeX unificada e validada (48 entradas)
-│   ├── fundamentacao_20_10.tex        # Versão ATUAL E DEFINITIVA da Fundamentação Teórica
+│   ├── introducao.tex                 # Capítulo 1: Introdução completa do TCC
+│   ├── fundamentacao_20_10.tex        # Capítulo 2: Versão ATUAL E DEFINITIVA da Fundamentação Teórica
 │   ├── fundamentação_20_10.tex        # Cópia idêntica byte a byte (compatibilidade de acentuação)
+│   ├── trabalhos_relacionados.tex     # Capítulo 3: Trabalhos Relacionados
 │   ├── fundamentacao_19_10.tex        # Versão intermediária anterior (19/10)
 │   ├── fundamentacao_revisada.tex     # Primeira versão revisada pós-parecer do orientador (29/09)
 │   ├── fundamentacao_teorica.tex      # Versão legada inicial (rascunho original)
-│   ├── introducao.tex                 # Introdução do trabalho
-│   ├── materiais_e_metodos.tex        # Capítulo de Materiais e Métodos
-│   ├── metodologia_experimental.tex   # Detalhamento de experimentos
-│   ├── consideracoes_finais.tex       # Conclusões e trabalhos futuros
-│   ├── trabalhos_relacionados.tex     # Capítulo de Trabalhos Relacionados (criado em 23/10)
-│   └── main.pdf                       # PDF compilado com sucesso (48 páginas)
+│   ├── materiais_e_metodos.tex        # Arquivo legado do template base do SIC (desvinculado de main.tex)
+│   ├── metodologia_experimental.tex   # Arquivo legado do template base do SIC (desvinculado de main.tex)
+│   ├── consideracoes_finais.tex       # Arquivo legado do template base do SIC (desvinculado de main.tex)
+│   └── main.pdf                       # PDF compilado com sucesso
 │
 ├── antigravity/                       # Documentação técnica, relatórios e guias de contexto
 │   ├── Walkthrough.md                 # Este documento mestre (guia multiagente e histórico)
@@ -222,16 +237,21 @@ Qualquer agente de IA que assumir a continuidade deste projeto em qualquer dispo
 3. **Versionamento e Nomenclatura:**
    - Se novas alterações forem solicitadas na fundamentação teórica, salve em um novo arquivo com a data atual: `fundamentacao_DD_MM.tex` e mantenha uma cópia idêntica byte a byte nomeada `fundamentação_DD_MM.tex`.
    - Nunca sobrescreva ou apague versões de dias anteriores (`fundamentacao_teorica.tex`, `fundamentacao_revisada.tex`, `fundamentacao_19_10.tex`), pois o usuário mantém histórico de controle entre versões.
-4. **Posicionamento de Inclusão em `main.tex`:**
-   - O comando `\include{fundamentacao_20_10}` deve permanecer exatamente onde está (ao final de `main.tex`, logo após `\include{consideracoes_finais}`). Não reposicione este include para o meio do documento, pois o usuário está usando o template apenas para carregar e inspecionar o capítulo compilado isoladamente e fará a formatação final posteriormente.
+4. **Estrutura e Ordem de Capítulos em `main.tex`:**
+   - Os capítulos obsoletos do modelo base do SIC (`materiais_e_metodos`, `metodologia_experimental`, `consideracoes_finais`) foram removidos de `main.tex`.
+   - O documento mestre `main.tex` deve manter a ordem estrutural correta do TCC:
+     1. `\include{introducao}` (1 - Introdução)
+     2. `\include{fundamentacao_20_10}` (2 - Fundamentação Teórica)
+     3. `\include{trabalhos_relacionados}` (3 - Trabalhos Relacionados)
 5. **Agnosticismo Teórico vs. Metodologia:**
-   - Em hipótese alguma reintroduza termos da engine (Godot, GDScript, C#, NavigationRegion3D, addon, arquiteto/engenheiro) nos arquivos de Fundamentação Teórica. Esses conceitos devem ser reservados exclusivamente aos capítulos de **Materiais e Métodos** e **Metodologia Experimental**.
+   - Em hipótese alguma reintroduza termos da engine (Godot, GDScript, C#, NavigationRegion3D, addon, arquiteto/engenheiro) nos arquivos de Fundamentação Teórica. Esses conceitos devem ser reservados à Introdução (contextualização do escopo) e aos capítulos de **Metodologia** e **Experimentos**.
 6. **Compilação do Documento:**
-   - O ambiente utiliza MiKTeX no Windows PowerShell.
    - A sequência correta de compilação quando bibliografias ou referências forem alteradas é:
-     ```powershell
+     ```bash
      cd "modelo_latex_TCC"
+     pdflatex -interaction=nonstopmode main.tex
      biber main
+     pdflatex -interaction=nonstopmode main.tex
      pdflatex -interaction=nonstopmode main.tex
      ```
 
