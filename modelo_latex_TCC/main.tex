@@ -34,6 +34,13 @@
 \usepackage{url}
 \usepackage{multirow}
 \usepackage{setspace}
+\usepackage{csquotes}
+
+% ---------------------------------------------------------------------------
+% DIAGRAMAS TIKZ
+% ---------------------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, shapes.misc, calc, fit}
 
 % ---------------------------------------------------------------------------
 % CITAÇÕES E REFERÊNCIAS ABNT
@@ -136,7 +143,7 @@
 % ---------------------------------------------------------------------------
 \begin{center}
   {\large\bfseries
-    GERAÇÃO DE LAYOUTS DE FASES 3D ASSISTIDA POR MODELOS DE LINGUAGEM DE GRANDE PORTE
+    GERAÇÃO DE \textit{LAYOUTS} DE FASES 3D ASSISTIDA POR MODELOS DE LINGUAGEM DE GRANDE PORTE
   }
 \end{center}
 
@@ -172,7 +179,7 @@
 \vspace{0.1cm}
 \begin{SingleSpace}
 \noindent
-A criação manual de fases para jogos digitais exige o planejamento de caminhos, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem elevada capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, estudos relatam dificuldades desses modelos para produzir configurações que satisfaçam restrições espaciais em tarefas de geração de \textit{layouts} 3D. O objetivo desta pesquisa é desenvolver e avaliar uma arquitetura híbrida para a geração automática de fases 3D na \textit{engine} Godot, na qual um LLM produz o grafo de progressão serializado em JSON e algoritmos determinísticos constroem a geometria modular e verificam restrições lógicas, geométricas e de navegabilidade. Espera-se criar um \textit{addon} funcional para Godot que permita avaliar se a arquitetura híbrida reduz inconsistências na geração de fases 3D frente à geração direta pelo LLM, buscando produzir fases que atendam aos critérios de validade lógica, geométrica e navegacional definidos.
+A criação manual de fases para jogos digitais exige o planejamento de caminhos, regras de progressão e a validação geométrica de espaços tridimensionais (3D). Embora os Modelos de Linguagem de Grande Porte (LLMs) apresentem elevada capacidade de interpretação semântica e planejamento lógico a partir de linguagem natural, estudos relatam dificuldades desses modelos para produzir configurações que satisfaçam restrições espaciais em tarefas de geração de \textit{layouts} 3D. O objetivo desta pesquisa é desenvolver e avaliar uma arquitetura híbrida para a geração automática de fases 3D na \textit{engine} Godot, na qual um LLM produz o grafo de progressão serializado em JSON e algoritmos determinísticos constroem a geometria modular e verificam restrições lógicas, geométricas e de navegabilidade. Espera-se criar um \textit{addon} funcional para Godot que permita avaliar se a arquitetura híbrida reduz inconsistências na geração de fases 3D frente à geração direta de coordenadas pelo LLM, buscando produzir fases que atendam aos critérios de validade lógica, geométrica e navegacional definidos.
 
 \vspace{0.05cm}
 \noindent\textbf{Palavras-chave:} Geração Procedural de Conteúdo. Modelos de Linguagem de Grande Porte. Godot Engine. Grafo de Progressão. Validação de Restrições.
@@ -200,13 +207,14 @@ Manual level creation for digital games demands path planning, progression rules
 %  CORPO DO TEXTO
 % ===========================================================================
 
-\include{introducao}
-\include{fundamentacao_20_10}
-\include{trabalhos_relacionados}
+\input{introducao}
+\input{fundamentacao_16_11}
+\input{trabalhos_relacionados}
 
 % ===========================================================================
 %  REFERENCIAS
 % ===========================================================================
+\clearpage
 \SingleSpacing
-\printbibliography[title={Bibliografia}]
+\printbibliography[title={Referências}]
 \end{document}

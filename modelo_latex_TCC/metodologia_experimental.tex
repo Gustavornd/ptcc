@@ -10,17 +10,17 @@ Para atestar o impacto da validação determinística, os experimentos serão di
 
 \begin{itemize}[leftmargin=*]
   \item \textbf{Grupo Controle (Geração Unificada):} O LLM será solicitado a gerar não somente as conexões lógicas, mas também as coordenadas 3D de instanciação para cada \textit{asset} e cômodo.
-  \item \textbf{Grupo Experimental (Geração Segregada):} A metodologia proposta na qual o LLM produz estritamente a árvore/grafo JSON da progressão, com o algoritmo determinístico encarregado de resolver e instanciar os obstáculos e coordenadas espaciais.
+  \item \textbf{Grupo Experimental (Geração Híbrida Segregada):} A metodologia proposta na qual o LLM produz estritamente o grafo de progressão serializado em JSON, com o algoritmo determinístico encarregado de resolver e instanciar os módulos e coordenadas espaciais.
 \end{itemize}
 
-As amostras de fases resultantes de ambos os tratamentos serão expostas à verificações por meio de rotinas automatizadas no Godot que auditarão: (a) o número de colisões estruturais inválidas (sobreposição geométrica); (b) o tempo (milissegundos) para computar a malha navegável do início ao fim do nível; (c) a presença de bloqueios mecânicos (ex: chaves retidas em salas incomunicáveis).
+As amostras de fases resultantes de ambos os tratamentos serão expostas a verificações por meio de rotinas automatizadas no Godot que auditarão: (a) o número de colisões estruturais inválidas (sobreposição geométrica); (b) o tempo (milissegundos) para computar a malha navegável e a rota do início ao objetivo do nível; (c) a presença de bloqueios estruturais ou inconsistências lógicas de dependência (como salas órfãs ou contradições no grafo de progressão).
 
 \subsection{Resultados Esperados}
 
-De acordo com o estado da arte e observações empíricas com modelos de linguagem aplicados a problemas de \textit{Facility Layout Optimization} \cite{xu2025constraint}, preveem-se os seguintes resultados primários:
+De acordo com a literatura e observações empíricas com modelos de linguagem aplicados ao arranjo espacial 3D \cite{feng2026repurposing3dgenerativemodel, xu2025constraint}, preveem-se os seguintes resultados primários:
 
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Eliminação de Anomalias Geométricas:} Espera-se que a abordagem segregada demonstre uma taxa de falhas espaciais tendendo a zero, visto que a instaciação passará a obedecer a matrizes de colisão rigorosas que não são compreendidas eficientemente pela rede estocástica do LLM.
-    \item \textbf{Resiliência e Coerência de \textit{Design}:} Pela validação por grafo anterior à instanciação espacial, a metodologia deve impedir inteiramente a geração de bloqueios intransponíveis provocados por falhas semânticas em rotas ramificadas, permitindo níveis longos e coesos que combinem salas de recompensas com salas de desafio.
-    \item \textbf{Automatização em \textit{Addon}:} Como substrato prático da pesquisa, espera-se finalizar um \textit{plugin} integrado à interface nativa do Godot. O pacote proverá um campo de \textit{prompt} diretamente no inspetor do editor, convertendo linguagem natural em cenários físicos editáveis, otimizando drasticamente o \textit{workflow} do artista técnico ou \textit{Level Designer}.
+    \item \textbf{Redução Substancial de Anomalias Geométricas:} Espera-se que a abordagem híbrida segregada demonstre uma taxa de falhas espaciais substancialmente menor que a geração direta, visto que a instanciação passa a obedecer a volumes delimitadores e alinhamentos geométricos rigorosos que não são garantidos pela inferência puramente autorregressiva do LLM.
+    \item \textbf{Resiliência e Coerência de \textit{Design}:} Pela validação determinística do grafo anterior à instanciação espacial, a metodologia visa impedir sistematicamente a geração de bloqueios intransponíveis provocados por contradições lógicas em rotas ramificadas, permitindo níveis coesos que combinem salas de desafio com salas de recompensa.
+    \item \textbf{Automatização em \textit{Addon}:} Como substrato prático da pesquisa, espera-se consolidar um \textit{addon} integrado à interface nativa do Godot. A ferramenta proverá uma interface diretamente no editor, convertendo linguagem natural em cenários físicos modulares editáveis, otimizando o fluxo de trabalho do projetista de fases (\textit{Level Designer}).
 \end{itemize}

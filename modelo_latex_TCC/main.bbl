@@ -24,14 +24,17 @@
         {{un=0,uniquepart=base,hash=3ea9ad25ed6bafbdab0d230cd1939d81}{%
            family={Araújo},
            familyi={A\bibinitperiod},
-           given={Wendell\bibnamedelimb Oliveira\bibnamedelima de},
-           giveni={W\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim d\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=16a58398d631fb8cdcda1353ed54fde8}{%
+           given={Wendell\bibnamedelima Oliveira},
+           giveni={W\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=4bb141656a905a92bbc13f251ee1dbee}{%
            family={Aranha},
            familyi={A\bibinitperiod},
-           given={Eduardo\bibnamedelimb Henrique\bibnamedelimb da\bibnamedelima Silva},
-           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Eduardo\bibnamedelimb Henrique\bibnamedelima Silva},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=8d18624660eb72411f14fa1a21f74ea7}{%
            family={Madeira},
@@ -41,17 +44,17 @@
            givenun=0}}%
       }
       \list{location}{1}{%
-        {Porto Alegre}%
+        {Porto Alegre, RS, Brasil}%
       }
       \list{publisher}{1}{%
         {Sociedade Brasileira de Computação}%
       }
-      \strng{namehash}{e45f4e50bd91c8410b31473c16c41332}
-      \strng{fullhash}{e45f4e50bd91c8410b31473c16c41332}
-      \strng{bibnamehash}{e45f4e50bd91c8410b31473c16c41332}
-      \strng{authorbibnamehash}{e45f4e50bd91c8410b31473c16c41332}
-      \strng{authornamehash}{e45f4e50bd91c8410b31473c16c41332}
-      \strng{authorfullhash}{e45f4e50bd91c8410b31473c16c41332}
+      \strng{namehash}{b36270bc6f6ba1dc15dfcb471fca72aa}
+      \strng{fullhash}{b36270bc6f6ba1dc15dfcb471fca72aa}
+      \strng{bibnamehash}{b36270bc6f6ba1dc15dfcb471fca72aa}
+      \strng{authorbibnamehash}{b36270bc6f6ba1dc15dfcb471fca72aa}
+      \strng{authornamehash}{b36270bc6f6ba1dc15dfcb471fca72aa}
+      \strng{authorfullhash}{b36270bc6f6ba1dc15dfcb471fca72aa}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -205,6 +208,12 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Red Hook, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
       \strng{namehash}{85437fe07696e4c57f916c83d4ba5581}
       \strng{fullhash}{7b7bf3c58b040b737b9816829a955c41}
       \strng{bibnamehash}{85437fe07696e4c57f916c83d4ba5581}
@@ -244,6 +253,12 @@
            given={Arnav},
            giveni={A\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Palo Alto, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
       }
       \strng{namehash}{231bd82474af2227562565e1372e6a60}
       \strng{fullhash}{231bd82474af2227562565e1372e6a60}
@@ -305,6 +320,9 @@
            familyi={P\bibinitperiod},
            given={Bruce},
            giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam, Netherlands}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
@@ -570,9 +588,8 @@
            giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
+      \list{publisher}{1}{%
+        {IEEE}%
       }
       \strng{namehash}{1599580695d4234db900a7871be36746}
       \strng{fullhash}{94aef2b977f7991098deb3a79726ab78}
@@ -588,7 +605,9 @@
       \field{labeltitlesource}{title}
       \field{issn}{2475-1510}
       \field{journaltitle}{IEEE Transactions on Games}
+      \field{number}{4}
       \field{title}{Large Language Models and Games: A Survey and Roadmap}
+      \field{volume}{16}
       \field{year}{2024}
       \field{pages}{1\bibrangedash 18}
       \range{pages}{18}
@@ -607,9 +626,12 @@
         {{un=0,uniquepart=base,hash=70658466246873155f5b9b3a737cdd4e}{%
            family={Garcez},
            familyi={G\bibinitperiod},
-           given={Artur\bibnamedelima d'Avila},
-           giveni={A\bibinitperiod\bibinitdelim d\bibinitperiod},
-           givenun=0}}%
+           given={Artur},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={d'Avila},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
         {{un=0,uniquepart=base,hash=fd05cca2f0b6523e1db9b0f5eed3c647}{%
            family={Lamb},
            familyi={L\bibinitperiod},
@@ -855,6 +877,12 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
       \strng{namehash}{4a209c83dd05025d6cfade5753477de1}
       \strng{fullhash}{cc40c218d294e090a98950ab1693be4a}
       \strng{bibnamehash}{4a209c83dd05025d6cfade5753477de1}
@@ -951,6 +979,12 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Palo Alto, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
       \strng{namehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
       \strng{fullhash}{ff020027ac0762da6abd909bbc870363}
       \strng{bibnamehash}{6ed30a9d10c99ecd96ef316c7fef7ff9}
@@ -964,7 +998,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)}
-      \field{number}{1}
       \field{title}{{PCGRL}: Procedural Content Generation via Reinforcement Learning}
       \field{volume}{16}
       \field{year}{2020}
@@ -1043,6 +1076,9 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
       \list{publisher}{1}{%
         {ACM}%
       }
@@ -1087,6 +1123,9 @@
            given={Rafael},
            giveni={R\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Palo Alto, CA, USA}%
       }
       \list{publisher}{1}{%
         {AAAI Press}%
@@ -1177,6 +1216,9 @@
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Palo Alto, CA, USA}%
+      }
       \list{publisher}{1}{%
         {AAAI Press}%
       }
@@ -1195,7 +1237,6 @@
       \field{booktitle}{Proceedings of the Twentieth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)}
       \field{eprintclass}{cs.AI}
       \field{eprinttype}{arXiv}
-      \field{number}{1}
       \field{title}{Procedural Content Generation in Games: A Survey with Insights on Emerging {LLM} Integration}
       \field{volume}{20}
       \field{year}{2024}
@@ -1856,28 +1897,6 @@
            giveni={X\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{4}{}{%
-        {{hash=cb0803882fba28a6c7ecb519069a89de}{%
-           family={Che},
-           familyi={C\bibinitperiod},
-           given={Wanxiang},
-           giveni={W\bibinitperiod}}}%
-        {{hash=bfe9d325a7c90fcd2c57a7d9ff201524}{%
-           family={Nabende},
-           familyi={N\bibinitperiod},
-           given={Joyce},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c36f9fc7c3f7617b9ee71cb8646c6f30}{%
-           family={Shutova},
-           familyi={S\bibinitperiod},
-           given={Ekaterina},
-           giveni={E\bibinitperiod}}}%
-        {{hash=25546e3752457eae386c91911a2fb5f8}{%
-           family={Pilehvar},
-           familyi={P\bibinitperiod},
-           given={Mohammad\bibnamedelima Taher},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
       \list{location}{1}{%
         {Vienna, Austria}%
       }
@@ -1890,9 +1909,6 @@
       \strng{authorbibnamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
       \strng{authornamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
       \strng{authorfullhash}{b45ea1db01788fe626adb92ed97d3c4c}
-      \strng{editorbibnamehash}{6810c318bea26b0d4170d243c1a0e7ee}
-      \strng{editornamehash}{6810c318bea26b0d4170d243c1a0e7ee}
-      \strng{editorfullhash}{fbc5cc62b7fffb46f357f510b4531271}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{extradatescope}{labelyear}
@@ -1947,6 +1963,9 @@
            given={Julian},
            giveni={J\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
       }
       \list{publisher}{1}{%
         {ACM}%
@@ -2114,6 +2133,12 @@
            giveni={I\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Red Hook, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
       \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
       \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
@@ -2139,45 +2164,6 @@
       \verb https://arxiv.org/abs/1706.03762
       \endverb
     \endentry
-    \entry{vieira2024metodologia}{thesis}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=739e1a8e51d77db7a8b3a5754cd1378d}{%
-           family={Vieira},
-           familyi={V\bibinitperiod},
-           given={Antonio\bibnamedelimb Henrique\bibnamedelima Garcia},
-           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Universidade Estadual Paulista (Unesp)}%
-      }
-      \list{location}{1}{%
-        {Bauru}%
-      }
-      \strng{namehash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \strng{fullhash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \strng{bibnamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \strng{authorbibnamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \strng{authornamehash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \strng{authorfullhash}{739e1a8e51d77db7a8b3a5754cd1378d}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{bookpagination}{sheet}
-      \field{month}{2}
-      \field{title}{Metodologia de geração procedural de conteúdo para estruturas narrativas em jogos eletrônicos}
-      \field{type}{phdthesis}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://hdl.handle.net/11449/295661
-      \endverb
-      \verb{url}
-      \verb https://hdl.handle.net/11449/295661
-      \endverb
-    \endentry
     \entry{walton2020evaluating}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=668e48e900b64914529cca73b980a467}{%
@@ -2199,9 +2185,8 @@
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
+      \list{publisher}{1}{%
+        {IEEE}%
       }
       \strng{namehash}{f310caaa9eef0a25038883a403171ea0}
       \strng{fullhash}{f310caaa9eef0a25038883a403171ea0}
@@ -2309,6 +2294,9 @@
            giveni={C\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Palo Alto, CA, USA}%
+      }
       \list{publisher}{1}{%
         {AAAI Press}%
       }
@@ -2382,6 +2370,8 @@
       \field{series}{FDG '25}
       \field{title}{Constraint Is All You Need: Optimization-Based 3D Level Generation with LLMs}
       \field{year}{2025}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
       \verb{doi}
       \verb 10.1145/3723498.3723840
       \endverb

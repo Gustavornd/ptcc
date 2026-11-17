@@ -122,6 +122,45 @@
 
 ---
 
+### Fase 8 (16/11/2026): Implementação da Revisão do Orientador, Diagramas TikZ e Auditoria Completa
+* **Documentos de Referência:** Relatório de Auditoria e Revisão do Orientador (`antigravity/Revisao_Orientador_TCC_16_11_2026.md`) e Plano de Implementação (`antigravity/brain/.../implementation_plan.md`).
+* **Eixos de Correção Executados:**
+  1. *Expurgo do Viés de "Chaves e Portas":*
+     - Substituição do dogma restritivo de *lock-and-key* pelo foco real da pesquisa: **geração e validação de um grafo lógico de progressão coerente e sem contradições** (conectividade, presença de início/objetivo, aciclicidade do DAG de dependências $G_{\text{dep}}$ e alcançabilidade sem estrangulamentos).
+     - Adoção sistemática do termo **"conectores de passagem"** para as aberturas de encaixe modular entre salas 3D.
+  2. *Correção das Citações Narrativas (`biblatex-abnt`):*
+     - Eliminação de `Autor (AUTOR, ANO)` e de `em (AUTOR, ANO)`.
+     - Adoção de `\textcite{chave}` para citações narrativas no corpo do texto (e.g., `\textcite{dormans2010}` $\to$ Dormans (2010)).
+     - Adoção de `Autor \cite*{chave}` para as 16 linhas da Tabela 1 e referências com sufixos desambiguadores (e.g., `van der Linden et al. \cite*{linden2013designing, linden2014dungeons}`, `Xu e Verbrugge \cite*{xu2025constraint}`).
+  3. *Correções Factuais e Limpeza de Citation Dumping na Fundamentação Teórica:*
+     - Criação da versão versionada `fundamentacao_16_11.tex` e sua réplica idêntica `fundamentação_16_11.tex` (mantendo `fundamentacao_20_10.tex` intacto).
+     - Remoção da atribuição falsa de *Matterport3D* ao *RoomPlanner* (Sun et al. não utiliza Matterport3D; otimiza arranjo de cômodos via colisão e $A^*$).
+     - Correção da descrição do *SceneCraft* (grafo/blueprint, restrições numéricas em Python e refinamento visual por VLM).
+     - Correção da citação de *Code-as-Room* e de Feng et al. (2026).
+     - Limpeza rigorosa de citações não sustentadas (remoção de citações indevidas a Xu & Verbrugge em PSO/MCTS e feedback loop, Her et al. em data scarcity, Brown et al. em instruction tuning, Sun et al. em conectores modulares, volumes delimitadores e NavMesh).
+  4. *Refinamentos Conceituais e Eliminação do Overfull \hbox:*
+     - Rigor em dígrafos: caminho simples vs. passeio, conectividade fraca e assimetria de alcançabilidade.
+     - Ajuste da função de aptidão em PCG baseada em busca para valor (ou vetor de valores) numérico.
+     - Separação ontológica entre modelo conceitual abstrato e camada sintática/notacional (DSL/código).
+     - Eliminação do `Overfull \hbox` de 2.94pt em L23 substituindo travessões por parênteses.
+  5. *Inclusão de Diagramas Conceituais em TikZ:*
+     - **Figura 1:** Dualidade entre Grafo Lógico de Progressão e Realização Espacial Modular 3D (Seção 2.1.3).
+     - **Figura 2:** Acoplamento modular com AABBs, conectores de passagem e vetores normais opostos/colineares (Seção 2.6.3).
+     - **Figura 3:** Tríplice dissociação entre validade geométrica, navegabilidade física na NavMesh e solvabilidade lógica (Seção 2.8.5).
+  6. *Ajustes Estruturais em `main.tex`:*
+     - Inclusão do pacote `\usepackage{csquotes}` antes do `biblatex` (eliminando o warning de compilação).
+     - Inclusão de `\usepackage{tikz}` e bibliotecas `arrows.meta`, `positioning`, `shapes.geometric`, `calc`.
+     - Ajuste do título (`\textit{LAYOUTS}`) e do Resumo (`frente à geração direta de coordenadas pelo LLM`).
+     - Migração de `\include` para `\input` (`\input{introducao}`, `\input{fundamentacao_16_11}`, `\input{trabalhos_relacionados}`), eliminando páginas órfãs em branco.
+     - Padronização de referências a "capítulo" para "seção".
+     - Ajuste do título de referências para `\printbibliography[title={Referências}]`.
+  7. *Correção da Base Bibliográfica (`referencias.bib`):*
+     - Remoção de editor em `tang2025unrealllm`, correção de `IEEE` em `walton2020evaluating` e `Gallotta_2024` (com `volume` e `number`), remoção de `number={1}` em `maleki2024procedural` e `khalifa2020pcgrl`, correção de partículas de sobrenome em `araujo2018geracao` e `garcez2023neurosymbolic`, adição de páginas em `xu2025constraint`, remoção de entradas órfãs (`re2026integration`, `vieira2024metodologia`) e preenchimento de `publisher`/`address` para eliminar `[S.l.]`.
+  8. *Limpeza Preventiva dos Rascunhos Desvinculados:*
+     - Correções gramaticais, tipográficas e conceituais em `materiais_e_metodos.tex`, `metodologia_experimental.tex` e `consideracoes_finais.tex`.
+
+---
+
 ## 3. Síntese do Conteúdo da Fundamentação Teórica (`fundamentacao_20_10.tex`)
 
 Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção (Seção 2 em `main.tex`):
@@ -228,25 +267,26 @@ PTCC/
 
 Qualquer agente de IA que assumir a continuidade deste projeto em qualquer dispositivo DEVE seguir estritamente as regras abaixo:
 
-1. **Regra de Citações no LaTeX:**
-   - Utilize **exclusivamente** `\cite{chave}`.
-   - **NUNCA** utilize `\textcite{chave}`. O estilo bibliográfico configurado (`abntex2` com `biblatex`) gera quebras sintáticas no texto caso `\textcite` seja empregado. As referências devem sempre ser introduzidas de forma impessoal no corpo do texto (ex.: *"Conforme demonstrado por Dormans \cite{dormans2010}..."*).
+1. **Regra de Citações no LaTeX (`biblatex-abnt`):**
+   - **Citações Narrativas no Corpo do Texto:** Utilize `\textcite{chave}` (e.g., `\textcite{dormans2010}` imprime `Dormans (2010)`). **NUNCA** escreva manualmente `Dormans \cite{dormans2010}` pois isso gera a anomalia `Dormans (DORMANS, 2010)`.
+   - **Citações em Tabelas e Casos Especiais:** Utilize `Autor \cite*{chave}` (e.g., `Dormans \cite*{dormans2010}`, `van der Linden et al. \cite*{linden2013designing, linden2014dungeons}`, `Xu e Verbrugge \cite*{xu2025constraint}`). No `biblatex-abnt`, o comando `\cite*` imprime os parênteses e o ano com letra desambiguadora `(2025b)`, enquanto `\citeyear` gera parênteses duplos `((2025))` e perde a letra.
+   - **Citações Parentéticas ao Final de Períodos:** Utilize `\cite{chave}` (e.g., `\cite{tanagra, pcgbook}`).
 2. **Sincronização de Chaves BibTeX:**
    - Antes de adicionar qualquer citação nova no texto LaTeX, confirme que a chave correspondente existe em `referencias.bib`.
-   - A chave para o artigo de van der Linden et al. (2013) é estritamente `linden2013designing` (a antiga chave genérica `inproceedings` foi renomeada e abolida).
+   - A chave para o artigo de van der Linden et al. (2013) é estritamente `linden2013designing`.
 3. **Versionamento e Nomenclatura:**
    - Se novas alterações forem solicitadas na fundamentação teórica, salve em um novo arquivo com a data atual: `fundamentacao_DD_MM.tex` e mantenha uma cópia idêntica byte a byte nomeada `fundamentação_DD_MM.tex`.
-   - Nunca sobrescreva ou apague versões de dias anteriores (`fundamentacao_teorica.tex`, `fundamentacao_revisada.tex`, `fundamentacao_19_10.tex`), pois o usuário mantém histórico de controle entre versões.
-4. **Estrutura e Ordem de Capítulos em `main.tex`:**
-   - Os capítulos obsoletos do modelo base do SIC (`materiais_e_metodos`, `metodologia_experimental`, `consideracoes_finais`) foram removidos de `main.tex`.
-   - O documento mestre `main.tex` deve manter a ordem estrutural correta do TCC:
-     1. `\include{introducao}` (1 - Introdução)
-     2. `\include{fundamentacao_20_10}` (2 - Fundamentação Teórica)
-     3. `\include{trabalhos_relacionados}` (3 - Trabalhos Relacionados)
+   - Nunca sobrescreva ou apague versões de datas anteriores (`fundamentacao_teorica.tex`, `fundamentacao_revisada.tex`, `fundamentacao_19_10.tex`, `fundamentacao_20_10.tex`), preservando o histórico de controle de versões.
+4. **Estrutura e Ordem de Inclusão em `main.tex`:**
+   - Utilizar `\input` em vez de `\include` para evitar quebras de página indesejadas no modo `article`:
+     1. `\input{introducao}` (Seção 1 - Introdução)
+     2. `\input{fundamentacao_16_11}` (Seção 2 - Fundamentação Teórica)
+     3. `\input{trabalhos_relacionados}` (Seção 3 - Trabalhos Relacionados)
+   - **IMPORTANTE:** Sempre manter `\clearpage` imediatamente antes de `\SingleSpacing\printbibliography[title={Referências}]`. Quando seções usam `\input`, ambientes flutuantes (como a Tabela 1 em `trabalhos_relacionados.tex`) podem ser diferidos para páginas subsequentes se não houver um `\clearpage`, o que faria a tabela flutuar para o meio das páginas de Referências bibliográficas.
 5. **Agnosticismo Teórico vs. Metodologia:**
-   - Em hipótese alguma reintroduza termos da engine (Godot, GDScript, C#, NavigationRegion3D, addon, arquiteto/engenheiro) nos arquivos de Fundamentação Teórica. Esses conceitos devem ser reservados à Introdução (contextualização do escopo) e aos capítulos de **Metodologia** e **Experimentos**.
+   - Em hipótese alguma reintroduza termos da engine (Godot, GDScript, C#, NavigationRegion3D, addon, arquiteto/engenheiro) nos arquivos de Fundamentação Teórica. Esses conceitos pertencem estritamente à Introdução (contextualização do escopo) e aos capítulos de **Metodologia** e **Experimentos**.
 6. **Compilação do Documento:**
-   - A sequência correta de compilação quando bibliografias ou referências forem alteradas é:
+   - A sequência canônica de 4 passagens de compilação é:
      ```bash
      cd "modelo_latex_TCC"
      pdflatex -interaction=nonstopmode main.tex
@@ -259,19 +299,18 @@ Qualquer agente de IA que assumir a continuidade deste projeto em qualquer dispo
 
 ## 6. Próximos Passos do TCC (Roadmap Metodológico)
 
-Com a Fundamentação Teórica plenamente validada, alinhada ao orientador e compilada sem pendências, a frente de trabalho prioritária para os próximos agentes consiste no desenvolvimento do **Capítulo de Metodologia**:
+Com os Capítulos 1 a 3 (Introdução, Fundamentação Teórica e Trabalhos Relacionados) integralmente auditados, corrigidos e alinhados ao escopo do grafo lógico geral de progressão, a frente de trabalho prioritária consiste no desenvolvimento do **Capítulo 4 (Metodologia)**:
 
-1. **Especificação da Arquitetura Híbrida do Sistema:**
-   - Detalhar formalmente o fluxo de dados entre o LLM e o motor de jogos (Godot 4.x).
-   - Especificar o esquema JSON formal (*JSON Schema*) utilizado para representar o grafo de progressão (nós, salas, corredores, conexões, requisitos de chaves/portas e tipos funcionais).
-2. **Estratégia de Engenharia de Prompt e Chamada ao Modelo:**
-   - Estrutura de prompts em poucas passagens (*few-shot*) e decomposição em Cadeia de Pensamento (CoT) para síntese do grafo lógico sem alucinações sintáticas.
-3. **Mecanismo de Instanciação Geométrica 3D e Resolução de Restrições:**
-   - Algoritmo determinístico de alocação modular de salas e corredores com base em portas/conectores.
-   - Algoritmo de posicionamento de mobiliário e *props* com base em restrições de contenção e áreas livres (*clearance*).
-4. **Pipeline Automatizado de Teste e Validação Funcional:**
-   - Rotinas de *bake* e reconstrução programática da NavMesh (`NavigationRegion3D`).
-   - Algoritmo de teste de conectividade física com $A^*$ entre todos os nós e pontos de interesse.
-   - Verificador de solvabilidade no espaço de estados dinâmicos (simulador de inventário e progressão chave-fechadura).
-5. **Planejamento de Experimentos e Métricas:**
-   - Métricas quantitativas de avaliação: taxa de validade geométrica (ausência de colisão), taxa de navegabilidade contínua da NavMesh, taxa de solvabilidade lógica, tempo de geração e expressividade do espaço de fases (*expressive range*).
+1. **Visão Geral da Arquitetura Híbrida (Diagrama do Pipeline):**
+   - Fluxo completo: *Prompt em linguagem natural → Engenharia de Prompt / LLM → Grafo Lógico de Progressão em JSON → Validador Topológico e Lógico [com loop de retorno de erro ao LLM em caso de contradição] → Construtor Espacial Modular 3D no Godot → Verificador de Colisão (AABB) e Alinhamento de Conectores → Geração de NavMesh (`NavigationRegion3D`) e Verificação de Rotas ($A^*$) → Cena 3D Editável no Editor do Godot*.
+2. **Especificação Formal do Grafo de Progressão e JSON Schema (Objetivo Específico 1):**
+   - Estrutura formal de vértices (salas, papéis funcionais, metadados) e arestas (conectores, direcionalidade, pré-requisitos lógicos), com esquema JSON validável.
+3. **Algoritmo de Validação Topológica e Lógica do Grafo (Objetivo Específico 2):**
+   - Verificação determinística de invariantes: (i) unicidade de início e presença de objetivo; (ii) conectividade (sem salas órfãs); (iii) alcançabilidade do objetivo; (iv) aciclicidade e consistência do DAG de dependências ($G_{\text{dep}}$); (v) formatação do diagnóstico estruturado de erro para retroalimentação do LLM.
+4. **Catálogo de Módulos 3D e Algoritmo de Construção Espacial (Objetivo Específico 3):**
+   - Especificação de salas modulares pré-fabricadas na Godot (dimensões $w \times l \times h$, conectores de passagem e vetores normais).
+   - Cálculo determinístico de pose $(\mathbf{p}_i, \theta_i)$ para alinhamento de conectores, inserção de corredores e verificação de AABBs contra sobreposição (*clipping*).
+5. **Verificação Automatizada de Navegabilidade Física (Objetivo Específico 4):**
+   - Geração de NavMesh via `NavigationRegion3D` e busca de caminhos via $A^*$ no `NavigationServer3D` entre início, salas intermediárias e objetivo.
+6. **Delineamento Experimental e Grupo Controle (Objetivo Específico 6):**
+   - Metodologia de comparação quantitativa entre Grupo Controle (LLM gerando estrutura + coordenadas diretamente) e Grupo Experimental (arquitetura híbrida proposta).
