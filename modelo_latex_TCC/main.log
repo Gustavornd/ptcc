@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  17 NOV 2026 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  17 NOV 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1737,10 +1737,53 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 349.
  [24] [25] [26] [27] [28] [29] [30])
-(./trabalhos_relacionados.tex [31] [32] [33] [34] [35] [36] [37] [38] [39]
-[40] [41] [42]) [43] [44
+(./trabalhos_relacionados.tex [31] [32]
+<figuras/fig_conversao_linden.png, id=1405, 1855.93375pt x 990.70125pt>
+File: figuras/fig_conversao_linden.png Graphic file (type png)
+<use figuras/fig_conversao_linden.png>
+Package pdftex.def Info: figuras/fig_conversao_linden.png  used on input line 4
+0.
+(pdftex.def)             Requested size: 418.82375pt x 223.56331pt.
+ [33 <./figuras/fig_conversao_linden.png (PNG copy)>]
+<figuras/fig_iniciativa_tanagra.png, id=1431, 1004.75375pt x 632.3625pt>
+File: figuras/fig_iniciativa_tanagra.png Graphic file (type png)
+<use figuras/fig_iniciativa_tanagra.png>
+Package pdftex.def Info: figuras/fig_iniciativa_tanagra.png  used on input line
+ 58.
+(pdftex.def)             Requested size: 364.19667pt x 229.21347pt.
+ [34 <./figuras/fig_iniciativa_tanagra.png (PNG copy)>] [35]
+<figuras/fig_word2world.png, id=1473, 2096.83376pt x 1005.7575pt>
+File: figuras/fig_word2world.png Graphic file (type png)
+<use figuras/fig_word2world.png>
+Package pdftex.def Info: figuras/fig_word2world.png  used on input line 80.
+(pdftex.def)             Requested size: 432.48051pt x 207.44005pt.
 
-] [45] [46] [47]
+[36 <./figuras/fig_word2world.png (PNG copy)>] [37]
+<figuras/fig_cenas_3d_scenecraft_roomplanner.png, id=1511, 1445.4pt x 1357.07pt
+>
+File: figuras/fig_cenas_3d_scenecraft_roomplanner.png Graphic file (type png)
+<use figuras/fig_cenas_3d_scenecraft_roomplanner.png>
+Package pdftex.def Info: figuras/fig_cenas_3d_scenecraft_roomplanner.png  used 
+on input line 108.
+(pdftex.def)             Requested size: 345.98302pt x 324.83376pt.
+ [38 <./figuras/fig_cenas_3d_scenecraft_roomplanner.png (PNG copy)>]
+<figuras/fig_xu_verbrugge_multiandar.png, id=1538, 2177.13374pt x 771.88374pt>
+File: figuras/fig_xu_verbrugge_multiandar.png Graphic file (type png)
+<use figuras/fig_xu_verbrugge_multiandar.png>
+Package pdftex.def Info: figuras/fig_xu_verbrugge_multiandar.png  used on input
+ line 128.
+(pdftex.def)             Requested size: 418.82375pt x 148.48502pt.
+ [39 <./figuras/fig_xu_verbrugge_multiandar.png (PNG copy)>]
+<figuras/fig_unrealllm_ue5.png, id=1566, 1517.67pt x 682.55pt>
+File: figuras/fig_unrealllm_ue5.png Graphic file (type png)
+<use figuras/fig_unrealllm_ue5.png>
+Package pdftex.def Info: figuras/fig_unrealllm_ue5.png  used on input line 146.
+
+(pdftex.def)             Requested size: 432.48051pt x 194.49753pt.
+ [40] [41 <./figuras/fig_unrealllm_ue5.png (PNG copy)>]
+[42] [43]) [44] [45
+
+] [46] [47] [48]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
@@ -1753,11 +1796,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41449 strings out of 476182
- 767521 string characters out of 5795594
- 1952975 words of memory out of 5000000
- 62207 multiletter control sequences out of 15000+600000
- 714428 words of font info for 322 fonts, out of 8000000 for 9000
+ 41483 strings out of 476182
+ 769161 string characters out of 5795594
+ 1953975 words of memory out of 5000000
+ 62250 multiletter control sequences out of 15000+600000
+ 713778 words of font info for 317 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,15n,107p,1851b,4319s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
@@ -1779,10 +1822,10 @@ e1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (47 pages, 757166 bytes).
+Output written on main.pdf (48 pages, 4496334 bytes).
 PDF statistics:
- 2079 PDF objects out of 2487 (max. 8388607)
- 1942 compressed objects within 20 object streams
- 194 named destinations out of 1000 (max. 500000)
- 84435 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2109 PDF objects out of 2487 (max. 8388607)
+ 1965 compressed objects within 20 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 84465 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -210,6 +210,50 @@
 
 ---
 
+### Fase 11 (17/11/2026): Inserção das Imagens Reais no Capítulo de Trabalhos Relacionados e Validação Gráfica Completa
+* **Objetivo:** Substituição de todos os 6 marcadores provisórios (`\fbox{\parbox{... [INSERIR FIGURA AQUI: ...]}}`) em `modelo_latex_TCC/trabalhos_relacionados.tex` por imagens reais de alta resolução extraídas diretamente dos artigos científicos originais ou montadas como composições comparativas limpas.
+* **Figuras Geradas e Inseridas na Pasta `modelo_latex_TCC/figuras/`:**
+  1. `fig_conversao_linden.png` (Subseção 3.1.1, Figura 4): Extraída de van der Linden et al. (2013, *Designing Procedurally Generated Levels*, p. 4, Fig. 1), exibindo o grafo conceitual de ações do jogador em (a), o layout ortogonal gerado em (b), o cômodo 3D com baú de tesouro instanciado no *Dwarf Quest* em (c) e layout alternativo em (d).
+  2. `fig_iniciativa_tanagra.png` (Subseção 3.1.2, Figura 5): Extraída de Smith et al. (2010, *Tanagra: a mixed-initiative level design tool*, p. 1, Fig. 1), apresentando a interface gráfica completa com o *Drawing Canvas*, a linha do tempo de ritmo (*Beat Timeline*), painel de controle e a validação em tempo real de saltos via solucionador de restrições numéricas Choco.
+  3. `fig_word2world.png` (Subseção 3.2, Figura 6): Extraída de Nasir et al. (2024, *Word2World*, p. 4, Fig. 4), ilustrando o pipeline completo: narrativa textual de entrada (*Story*), mapeamento e extração de blocos/personagens/objetivos, matrizes alfanuméricas cruas e com personagens, posições de metas e o mapa 2D final sintetizado.
+  4. `fig_cenas_3d_scenecraft_roomplanner.png` (Subseção 3.3.1, Figura 7): Composição comparativa em dois painéis: (a) falhas de colisão, sobreposição (*clipping* de piano em mesa e parede) e invasão de limites em modelos de linguagem sem validação geométrica estrita (extraído de Feng et al., 2026, p. 1, Fig. 1); (b) pipeline de otimização em malha fechada do *RoomPlanner* com laços explícitos de satisfação de colisão (*Collision Constraint*) e alcançabilidade navegável (*Reachable Constraint*) via busca $A^*$ (extraído de Sun et al., 2024, p. 4, Fig. 2).
+  5. `fig_xu_verbrugge_multiandar.png` (Subseção 3.3.2, Figura 8): Composição em dois painéis a partir de Xu e Verbrugge (2025a, *A Database-Driven Framework for 3D Level Generation with LLMs*): (a) estrutura topológica tridimensional de salas empilhadas com ordenação global $\tau$ (p. 4, Fig. 1); (b) ambiente multiandar instanciado na Unity com salas, escadarias, portas e agente de teste navegando pela NavMesh (p. 8, Fig. 4).
+  6. `fig_unrealllm_ue5.png` (Subseção 3.3.3, Figura 9): Extraída de Tang et al. (2025, *UnrealLLM*, p. 6, Fig. 7), apresentando o fluxo completo em colmeia a partir de prompt em linguagem natural (*Scene Analyst* e *SketchAgent*), traçado de curvas guias (*splines*) na Unreal Engine 5, dispersão procedural nativa de vegetação e edificações de vilarejo medieval, e cena 3D final renderizada.
+* **Ajustes no Código LaTeX (`trabalhos_relacionados.tex`):**
+  - Substituição de todos os 6 blocos `\fbox{\parbox{...}}` por `\includegraphics[width=...]{figuras/...}` com larguras calibradas proporcionalmente.
+  - Eliminação de `\newpage` redundante antes da Figura 9, permitindo que a diagramação do LaTeX distribua as figuras e textos de forma harmônica e estável.
+* **Verificação e Compilação Conclusiva:**
+  - Compilação executada via cadeia canônica completa: `pdflatex` + `biber` + `pdflatex` + `pdflatex`.
+  - Resultado: 0 erros, 0 referências indefinidas, 46 citekeys resolvidas pelo Biber.
+  - `main.pdf` gerado com 48 páginas (4.685.583 bytes), com todas as 6 figuras enquadradas nas páginas 33, 34, 36, 38, 40 e 41, e a Tabela 1 diagramada na página 42.
+
+---
+
+### Fase 12 (17/11/2026): Auditoria Adversarial e Recomposição de Diagramação das Figuras dos Trabalhos Relacionados
+* **Objetivo:** Refinamento gráfico e editorial rigoroso para eliminar anomalias de paginação e discrepâncias textuais decorrentes da primeira inserção de figuras.
+* **Problemas Detectados e Sanados:**
+  1. *Composição Vertical Excessiva da Figura 8 (Xu e Verbrugge, 2025a):*
+     - A tentativa anterior empilhava a ordenação topológica $\tau$ e o nível Unity verticalmente (aspecto 0.89, altura de ~15 cm), impedindo a figura de caber na Página 39 e empurrando-a para a Página 40, onde ficava órfã sobre o cabeçalho da Subseção 3.3.3.
+     - **Solução:** Recomposição horizontal (*side-by-side*) em 300 DPI gerando `fig_xu_verbrugge_multiandar.png` com aspecto panorâmico (2169x769, 2.82:1) com legendas internas padronizadas (`(a) Ordenação topológica global \tau das salas` e `(b) Nível multiandar na Unity com NavMesh e agente`). Com altura reduzida para ~5.2 cm em `0.92\linewidth`, a Figura 8 coube integralmente na Página 39 ao lado de seus parágrafos interpretativos.
+  2. *Discrepância Textual no Parágrafo da Figura 7:*
+     - O parágrafo interpretativo da Figura 7 mantinha a redação antiga citando SceneCraft, enquanto a imagem e a legenda exibiam a comparação empírica de Feng et al. (2026) (falhas de LayoutGPT e LayoutVLM) com o RoomPlanner de Sun et al. (2024).
+     - **Solução:** O parágrafo interpretativo foi reescrito para refletir com exatidão científica os dois painéis da figura, harmonizando texto, legenda e fontes bibliográficas.
+  3. *Eliminação de Quebras de Sentenças e Citações em Páginas Consecutivas:*
+     - A Figura 7 a `0.88\linewidth` causava o corte da frase de encerramento da Subseção 3.3.1 entre as páginas 37 e 38. Resolvido ajustando a largura da Figura 7 para `0.76\linewidth` e inserindo `\newpage` determinístico, agrupando a figura, seu parágrafo interpretativo e a conclusão de 3.3.1 em um bloco limpo na Página 38.
+     - A Figura 5 em `0.88\linewidth` empurrava a citação `(SMITH; WHITEHEAD; MATEAS, 2010)` para quebra entre as páginas 34 e 35. Calibrada para `0.80\linewidth`, assegurando continuidade natural do texto.
+* **Verificação e Compilação Definitiva:**
+  - Cadeia completa executada (`pdflatex` + `biber` + `pdflatex` + `pdflatex`): 0 erros, 0 referências indefinidas, 46 citekeys compiladas.
+  - `main.pdf` com 48 páginas (4.496.334 bytes). Distribuição página a página perfeitamente harmônica:
+    * Página 33: Figura 4 integrada;
+    * Página 34: Figura 5 integrada com citação inquebrável;
+    * Página 36: Figura 6 integrada com Word2World;
+    * Página 38: Figura 7 com parágrafo interpretativo e encerramento de 3.3.1 unificados;
+    * Página 39: Subseção 3.3.2 com Figura 8 panorâmica encaixada;
+    * Página 41: Figura 9 perfeitamente balanceada na Subseção 3.3.3;
+    * Página 42: Tabela 1 em página dedicada limpa.
+
+---
+
 ## 3. Síntese do Conteúdo da Fundamentação Teórica (`fundamentacao_20_10.tex`)
 
 Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção (Seção 2 em `main.tex`):
@@ -277,16 +321,24 @@ PTCC/
 │   ├── main.tex                       # Documento mestre do TCC (1- Introdução, 2- Fundamentação, 3- Relacionados)
 │   ├── referencias.bib                # Base BibTeX unificada e validada (48 entradas)
 │   ├── introducao.tex                 # Capítulo 1: Introdução completa do TCC
-│   ├── fundamentacao_20_10.tex        # Capítulo 2: Versão ATUAL E DEFINITIVA da Fundamentação Teórica
-│   ├── fundamentação_20_10.tex        # Cópia idêntica byte a byte (compatibilidade de acentuação)
-│   ├── trabalhos_relacionados.tex     # Capítulo 3: Trabalhos Relacionados
+│   ├── fundamentacao_16_11.tex        # Capítulo 2: Versão ATUAL E DEFINITIVA da Fundamentação Teórica
+│   ├── fundamentação_16_11.tex        # Cópia idêntica byte a byte (compatibilidade de acentuação)
+│   ├── trabalhos_relacionados.tex     # Capítulo 3: Trabalhos Relacionados (com 6 figuras reais e Tabela 1)
+│   ├── figuras/                       # Figuras em alta resolução do capítulo de Trabalhos Relacionados
+│   │   ├── fig_conversao_linden.png   # Figura 4: Grafo de ações e layout 3D (van der Linden et al., 2013)
+│   │   ├── fig_iniciativa_tanagra.png # Figura 5: Interface de iniciativa mista (Smith et al., 2010 - Tanagra)
+│   │   ├── fig_word2world.png         # Figura 6: Pipeline narrativa-para-mapa 2D (Nasir et al., 2024)
+│   │   ├── fig_cenas_3d_scenecraft_roomplanner.png # Figura 7: Clipping vs. Otimização (Feng et al. / Sun et al.)
+│   │   ├── fig_xu_verbrugge_multiandar.png # Figura 8: Topologia tau e fases Unity (Xu e Verbrugge, 2025a)
+│   │   └── fig_unrealllm_ue5.png      # Figura 9: Splines e geração procedural na UE5 (Tang et al., 2025)
+│   ├── fundamentacao_20_10.tex        # Versão anterior (20/10)
 │   ├── fundamentacao_19_10.tex        # Versão intermediária anterior (19/10)
 │   ├── fundamentacao_revisada.tex     # Primeira versão revisada pós-parecer do orientador (29/09)
 │   ├── fundamentacao_teorica.tex      # Versão legada inicial (rascunho original)
 │   ├── materiais_e_metodos.tex        # Arquivo legado do template base do SIC (desvinculado de main.tex)
 │   ├── metodologia_experimental.tex   # Arquivo legado do template base do SIC (desvinculado de main.tex)
 │   ├── consideracoes_finais.tex       # Arquivo legado do template base do SIC (desvinculado de main.tex)
-│   └── main.pdf                       # PDF compilado com sucesso
+│   └── main.pdf                       # PDF compilado com sucesso (48 páginas, 0 erros)
 │
 ├── antigravity/                       # Documentação técnica, relatórios e guias de contexto
 │   ├── Walkthrough.md                 # Este documento mestre (guia multiagente e histórico)

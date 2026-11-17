@@ -37,16 +37,8 @@ Avançando nessa separação com foco na autoria e na conversão direta para amb
 
 \begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Referência van der Linden et al. (2013) ou Dormans (2010)]} \\[6pt]
-    \small \textit{Indicação visual: Esquema comparativo ilustrando o grafo abstrato de ações/missão à esquerda, as etapas intermediárias de planarização e grade ortogonal ao centro, e a masmorra 3D instanciada com salas e corredores à direita.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Processo de conversão automática de um grafo conceitual abstrato em um layout espacial tridimensional com salas e corredores.}
+\includegraphics[width=0.92\linewidth]{figuras/fig_conversao_linden.png}
+\caption{Processo de conversão automática de um grafo conceitual abstrato em um layout espacial tridimensional com salas e corredores no pipeline de \textcite{linden2013designing}.}
 \label{fig:conversao_grafo_espaco}
 \end{figure}
 
@@ -63,16 +55,8 @@ No sistema \textit{Tanagra}, desenvolvido por \textcite{tanagra}, a criação de
 
 \begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Referência Smith et al. (2010) - Tanagra ou Liapis et al. (2013) - Sentient Sketchbook]} \\[6pt]
-    \small \textit{Indicação visual: Interface gráfica do sistema de iniciativa mista, ilustrando a intervenção manual do usuário simultaneamente à visualização em tempo real das restrições resolvidas e rotas navegáveis validadas.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Interface de iniciativa mista evidenciando a coautoria entre o projetista humano e solucionadores determinísticos de restrições.}
+\includegraphics[width=0.80\linewidth]{figuras/fig_iniciativa_tanagra.png}
+\caption{Interface de iniciativa mista da ferramenta Tanagra \cite{tanagra}, evidenciando a coautoria entre o projetista humano e solucionadores determinísticos de restrições.}
 \label{fig:iniciativa_mista}
 \end{figure}
 
@@ -93,16 +77,8 @@ Para superar essa barreira sem demandar ajuste fino supervisionado, \textcite{na
 
 \begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Referência Nasir et al. (2024) - Word2World]} \\[6pt]
-    \small \textit{Indicação visual: Diagrama do pipeline Word2World ilustrando a entrada em narrativa textual, a matriz ASCII crua com correções algorítmicas de linhas/duplicações e o mapa 2D final validado pelo agente A*.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Pipeline de geração bidimensional guiado por narrativa com intervenção de reparo algorítmico e validação de caminhos via $A^*$.}
+\includegraphics[width=0.95\linewidth]{figuras/fig_word2world.png}
+\caption{Pipeline de geração bidimensional do sistema Word2World \cite{nasir2024word2worldgeneratingstoriesworlds}, guiado por narrativa com matriz alfanumérica intermediária e instanciação 2D.}
 \label{fig:word2world_pipeline}
 \end{figure}
 
@@ -126,22 +102,15 @@ No polo da predição direta, \textcite{ocal2024sceneteller} utilizaram o LLM no
 
 Em contrapartida, \textcite{sun2024roomplanner} introduziram no \textit{RoomPlanner} uma abordagem de otimização geométrica em malha fechada. Em vez de delegar as coordenadas numéricas ao modelo de linguagem, o sistema utiliza o LLM para seleção semântica dos ativos e formula o arranjo espacial como uma função de perda com penalidades explícitas: um termo rígido de colisão física entre volumes e uma restrição de alcançabilidade calculada via busca $A^*$ sobre uma grade 2D transitável que conecta a porta a cada mobília \cite{sun2024roomplanner}. A necessidade dessas restrições externas foi confirmada formalmente por \textcite{feng2026repurposing3dgenerativemodel}: ao analisarem modelos que emitem layouts 3D como texto puro (como o LayoutGPT), os autores demonstraram que tais arquiteturas mantêm coerência temática (\textit{Semantic: Yes}), mas falham sistematicamente na consistência geométrica (\textit{Physical: No}), apresentando interpenetrações destrutivas, objetos flutuantes e portas bloqueadas.
 
+\newpage
 \begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Comparação visual entre SceneCraft (Hu et al., 2024) e RoomPlanner (Sun et al., 2025)]} \\[6pt]
-    \small \textit{Indicação visual: Painel comparativo exibindo à esquerda renderizações do SceneCraft com sobreposições volumétricas (clipping) e mobília interceptando paredes, contrastadas à direita com a cena do RoomPlanner otimizada com restrições explícitas de colisão e alcançabilidade.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Comparação visual de arranjos tridimensionais internos evidenciando falhas de ancoragem geométrica (\textit{clipping}) frente à otimização com restrições de colisão e circulação.}
+\includegraphics[width=0.76\linewidth]{figuras/fig_cenas_3d_scenecraft_roomplanner.png}
+\caption{Comparação visual de arranjos tridimensionais internos evidenciando falhas de ancoragem geométrica (\textit{clipping}) frente à otimização com restrições de colisão e circulação \cite{feng2026repurposing3dgenerativemodel, sun2024roomplanner}.}
 \label{fig:comparacao_cenas_3d}
 \end{figure}
 
-A Figura~\ref{fig:comparacao_cenas_3d} apresenta uma comparação visual entre arranjos tridimensionais produzidos por síntese de código sem validação física estrita no SceneCraft \cite{hu2024scenecraft} e por otimização guiada por restrições explícitas de colisão e alcançabilidade no RoomPlanner \cite{sun2024roomplanner}. Observe que o método baseado apenas em relações inferidas no script exibe falhas visíveis de ancoragem física, tais como sobreposição volumétrica entre móveis (\textit{clipping}) e bloqueio de passagens, ao passo que a introdução de penalidades geométricas explícitas preserva o espaçamento adequado e corredores livres de circulação. Essa etapa é particularmente relevante para o problema abordado neste TCC, pois comprova visualmente a incapacidade dos LLMs em calcular coordenadas 3D métricas sem colisões, reforçando que a validação de volumes delimitadores e a garantia de áreas transitáveis devem ser delegadas a algoritmos determinísticos no motor de jogos.
+A Figura~\ref{fig:comparacao_cenas_3d} apresenta o contraste empírico entre as falhas de ancoragem física em arranjos tridimensionais gerados sem restrições estritas (painel superior, documentado por \textcite{feng2026repurposing3dgenerativemodel}) e o arcabouço de otimização geométrica em malha fechada com restrições explícitas de colisão e alcançabilidade no RoomPlanner (painel inferior, proposto por \textcite{sun2024roomplanner}). Observe que abordagens puramente baseadas em linguagem ou heurísticas visuais (como no SceneCraft e nos modelos avaliados por \textcite{feng2026repurposing3dgenerativemodel}) exibem falhas visíveis de ancoragem física, tais como sobreposição volumétrica entre móveis (\textit{clipping}), objetos flutuantes e bloqueio de passagens, ao passo que a introdução de penalidades geométricas explícitas de colisão (\textit{Collision Constraint}) e alcançabilidade transitável (\textit{Reachable Constraint}) preserva o espaçamento adequado e corredores livres de circulação. Essa etapa é particularmente relevante para o problema abordado neste TCC, pois comprova visualmente a incapacidade dos LLMs em calcular coordenadas 3D métricas sem colisões, reforçando que a validação de volumes delimitadores e a garantia de áreas transitáveis devem ser delegadas a algoritmos determinísticos no motor de jogos.
 
 Não obstante a sofisticação gráfica dessas soluções, todas elas circunscrevem-se a um único cômodo residencial isolado e a processos custosos de renderização \textit{offline} ($\sim$30 minutos no RoomPlanner). Nenhum desses métodos aborda a geração modular de fases com múltiplas salas interconectadas, a criação em tempo real de Malhas de Navegação em motores de jogos comerciais ou a validação de regras mecânicas de progressão.
 
@@ -156,16 +125,8 @@ Para superar o confinamento à arena única e viabilizar fases em múltiplos pav
 
 \begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Referência Xu e Verbrugge (2025a)]} \\[6pt]
-    \small \textit{Indicação visual: Esquema do arcabouço multiandar exibindo a topologia de salas empilhadas com ordenação tau, a alocação de mecânicas de progressão e a rota do agente de teste percorrendo a NavMesh na Unity para identificar e remover instalações obstruidoras.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Geração de fases 3D em múltiplos pavimentos com ordenação topológica e validação corretiva via agente de busca na NavMesh.}
+\includegraphics[width=0.92\linewidth]{figuras/fig_xu_verbrugge_multiandar.png}
+\caption{Geração de fases 3D em múltiplos pavimentos com ordenação topológica e validação corretiva via agente de busca na NavMesh \cite{xu2025databasedrivenframework3dlevel}.}
 \label{fig:xu_verbrugge_validation}
 \end{figure}
 
@@ -180,19 +141,10 @@ A terceira vertente em 3D investiga o uso de LLMs para controlar ferramentas pro
 
 No campo da integração nativa com motores de jogos de alta fidelidade, \textcite{tang2025unrealllm} apresentaram o arcabouço \textit{UnrealLLM}, conectando requisições em linguagem natural ao sistema procedural da \textit{Unreal Engine 5} (UE5). O sistema utiliza agentes apoiados em biblioteca de ativos para converter descrições textuais em uma linguagem de domínio em JSON, a qual aciona grafos procedurais na engine combinados a curvas guias (\textit{splines}) geradas pelo agente \textit{SketchAgent} para demarcar limites de zonas e traçados viários. Não obstante sua expressividade visual em vastas paisagens abertas (como florestas, montanhas e vilarejos) \cite{tang2025unrealllm}, o \textit{UnrealLLM} destina-se exclusivamente a ambientes externos governados por dispersão procedural de folhagens e relevos, não contemplando a montagem modular confinada de fases internas com conectores de passagem nem a validação de aciclicidade em grafos de progressão.
 
-\newpage
-\begin{figure}[tbp]
+\begin{figure}[htbp]
 \centering
-\fbox{
-  \parbox{0.92\linewidth}{
-    \vspace{0.3cm}
-    \centering
-    \textbf{[INSERIR FIGURA AQUI: Referência Tang et al. (2025) - UnrealLLM]} \\[6pt]
-    \small \textit{Indicação visual: Exemplo de cena 3D de terreno e vilarejo gerada na Unreal Engine 5 a partir de prompt em linguagem natural, exibindo o traçado de splines e os grafos de nós procedurais nativos da engine.}
-    \vspace{0.3cm}
-  }
-}
-\caption{Geração de ambientes 3D externos na Unreal Engine 5 por meio de integração entre LLM, linguagem de domínio em JSON e grafos procedurais nativos.}
+\includegraphics[width=0.95\linewidth]{figuras/fig_unrealllm_ue5.png}
+\caption{Geração de ambientes 3D externos na Unreal Engine 5 por meio de integração entre LLM, curvas guias (\textit{splines}) e grafos procedurais nativos \cite{tang2025unrealllm}.}
 \label{fig:unrealllm_scene}
 \end{figure}
 
