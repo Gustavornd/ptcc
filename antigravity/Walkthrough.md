@@ -161,6 +161,55 @@
 
 ---
 
+### Fase 9 (17/11/2026): Reformulação Crítica dos Trabalhos Relacionados, Figuras Orientadas e Tabela Comparativa Metodológica
+* **Documentos de Referência:** Diretrizes de Revisão do Orientador para Trabalhos Relacionados (Seções 6.1.1 a 6.4 no esquema antigo, correspondentes a 3.1.1 a 3.4 no esquema atual).
+* **Arquivo Modificado:** `modelo_latex_TCC/trabalhos_relacionados.tex` (totalmente reescrito e expandido).
+* **Eixos de Reestruturação Executados:**
+  1. *Abandono da Estrutura de Fichamento por Autores:*
+     - Agrupamento analítico e comparativo centrado em métodos, técnicas e classes de problemas (ordenamento causal, conversão de grafos em 3D, iniciativa mista e CSP, geração 2D autorregressiva vs. reparo algorítmico, síntese de código vs. otimização por restrições em salas isoladas, Têmpera Simulada em arenas vs. bancos de dados estáticos multiandar, e controle de ferramentas procedurais em engines comerciais).
+     - Redução de descrições puramente técnicas isoladas em favor do confronto dialético direto entre os trade-offs de cada metodologia.
+  2. *Aprofundamento da Conversão Automática de Grafos em Espaço 3D:*
+     - Investigação detalhada das etapas determinísticas de conversão: mapeamento de nós em salas e arestas em corredores, planarização e limitação de grau a 4 portas/conectores via nós intermediários de junção, resolução em grade ortogonal 2D e instanciação de prefabs tridimensionais (van der Linden et al., 2013).
+     - Identificação explícita das lacunas e limitações de cada método (rigidez gramatical, dependência de grade, falta de interface semântica em linguagem natural).
+  3. *Inclusão de 6 Figuras com Marcadores e Parágrafos Interpretativos Obrigatórios:*
+     - Cada subseção relevante recebeu um marcador visual `[INSERIR FIGURA AQUI: Referência X]` acompanhado de parágrafo interpretativo guiando o leitor conforme o molde exigido (*"A Figura X apresenta a transformação... Observe que o método precisa... Essa etapa é particularmente relevante para o problema abordado neste TCC."*):
+       * **Figura 4 (3.1.1):** Conversão de grafo de ações em layout 3D (van der Linden et al., 2013).
+       * **Figura 5 (3.1.2):** Interface de iniciativa mista e solucionador numérico Choco (Smith et al., 2010 - Tanagra).
+       * **Figura 6 (3.2):** Pipeline narrativo-espacial com reparo determinístico e agente $A^*$ (Nasir et al., 2024 - Word2World).
+       * **Figura 7 (3.3.1):** Comparação visual de cenas 3D internas evidenciando falhas de colisão/ancoragem (*clipping*) vs. otimização com restrições (SceneCraft vs. RoomPlanner).
+       * **Figura 8 (3.3.2):** Fases 3D multiandar com ordenação $\tau$ e validação corretiva por agente na NavMesh (Xu e Verbrugge, 2025a).
+       * **Figura 9 (3.3.3):** Síntese de paisagens e vilarejos externos na Unreal Engine 5 via JSON DSL e splines (Tang et al., 2025 - UnrealLLM).
+  4. *Reformulação da Tabela 1 (Tabela Comparativa Metodológica):*
+     - Expurgo de trabalhos tangenciais e retenção dos 8 trabalhos mais próximos do estado da arte mais a Proposta deste TCC.
+     - Reestruturação em 6 colunas canônicas: *Trabalho*, *Entrada e Repr. Intermediária*, *Método de Geração Espacial*, *Tratamento de Restrições e Colisões*, *Navegabilidade e Progressão Lógica* e *Automação e Intervenção Humana*.
+     - Demonstração visual clara do que a literatura já resolveu, do que permaneceu em aberto e de como o TCC se posiciona.
+  5. *Posicionamento da Proposta (Seção 3.4):*
+     - Demonstração minuciosa de como a arquitetura híbrida supera pontualmente as 6 principais lacunas identificadas: (i) flexibilidade semântica de prompts sem gramáticas manuais; (ii) espaço contínuo tridimensional com transformações afins completas; (iii) fases modulares completas interligadas em tempo real vs. recintos isolados; (iv) geração sob demanda sem dependência de bancos estáticos; (v) instanciação modular determinística livre de sobreposição por construção vs. Têmpera Simulada com reparo destrutivo; (vi) validação lógica formal do dígrafo ($G_{\text{dep}}$) acoplada a NavMesh e testes de rotas $A^*$ no Godot.
+
+---
+
+### Fase 10 (17/11/2026): Auditoria Adversarial, Correção Tipográfica e Polimento de Layout da Seção 3
+* **Objetivo:** Inspeção visual e algorítmica rigorosa da reescrita dos Trabalhos Relacionados para eliminar anomalias tipográficas, corrigir citações ABNT e garantir estabilidade de paginação.
+* **Problemas Detectados e Corrigidos:**
+  1. *Citações ABNT com Parênteses Duplos e Sobrenomes Quebrados:*
+     - A tentativa anterior gerou `(SceneCraft (2024))` e `(RoomPlanner (2025))` devido ao aninhamento incorreto de `\cite*` dentro de parênteses manuais. Corrigido para `SceneCraft \cite{hu2024scenecraft}` e `RoomPlanner \cite{sun2024roomplanner}`.
+     - Corrigida a divisão da citação `(XU; VERBRUGGE, 2025b)` entre páginas consecutivas, substituindo por `\textcite{xu2025constraint}` com espaçamento inquebrável.
+     - Ajustada a ordenação de `Xu e Verbrugge (2025a,b)` e o marcador da Figura 8 para referenciar especificamente o arcabouço multiandar (2025a).
+  2. *Fragmentação da Seção 3.4 e Dispersão da Tabela 1:*
+     - A tentativa anterior fragmentou a Seção 3.4 por 4 páginas distintas, gerando um título órfão isolado e uma tabela flutuante desvinculada.
+     - Resolvido com o controle determinístico de altura (`\arraystretch{0.95}`, `\tabcolsep{2.2pt}`) e inclusão da tabela como bloco fixo `[H]`, unificando o título da Seção 3.4, parágrafo introdutório, Tabela 1 e legenda na Página 41.
+  3. *Eliminação de Linhas Órfãs e Quebras em Parágrafos Interpretativos de Figuras:*
+     - Eliminadas as linhas viúvas (`do layout tridimensional.` e `Precedes(M_i, M_j).`) no topo de páginas.
+     - Fixação da Figura 9 no topo da Página 40 acompanhada de seu parágrafo interpretativo completo e dos estudos de agência autoral (Bandeali e Wang et al.).
+     - Compactação refinada dos itens 1 a 4 para conclusão exata no rodapé da Página 42, mantendo os itens 5, 6 e o parágrafo conclusivo do capítulo contidos na Página 43.
+  4. *Início Limpo das Referências Bibliográficas:*
+     - As Referências Bibliográficas iniciam perfeitamente no topo da Página 44, sem resíduos de texto ou quebras órfãs.
+* **Verificação Conclusiva:**
+  - Compilação canônica de 4 passagens (`pdflatex` + `biber` + `pdflatex` + `pdflatex`) finalizada com código de retorno 0 e 0 erros.
+  - Documento final gerado: `main.pdf` com 47 páginas (757.166 bytes). Layout validado página a página via conversão em alta resolução (150 DPI).
+
+---
+
 ## 3. Síntese do Conteúdo da Fundamentação Teórica (`fundamentacao_20_10.tex`)
 
 Abaixo sintetiza-se a cobertura conceitual consolidada em cada subseção (Seção 2 em `main.tex`):
