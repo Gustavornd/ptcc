@@ -1,0 +1,379 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{summerville2018procedural}{misc}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=198982c57c855e20171a0d57488800c6}{%
+           family={Summerville},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b76cd99c7d9f136d105a5b9ef54cd023}{%
+           family={Snodgrass},
+           familyi={S\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e135527091b0f84e96d6573052d149b}{%
+           family={Guzdial},
+           familyi={G\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36d10fc86048a38b49af3fada5db7c52}{%
+           family={Holmgård},
+           familyi={H\bibinitperiod},
+           given={Christoffer},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=993b84f2da72478a96a6ddccf1db4953}{%
+           family={Hoover},
+           familyi={H\bibinitperiod},
+           given={Amy\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c2dfe32580e160e14b6a6838e0f77c9}{%
+           family={Isaksen},
+           familyi={I\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b42b016dc19b9d5aaa8679d8a1506a52}{%
+           family={Nealen},
+           familyi={N\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{fullhash}{6e2076797d39e4d4274a6633911e3284}
+      \strng{bibnamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authorbibnamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authornamehash}{980472e054c4b0a4d53d1c00a3e68019}
+      \strng{authorfullhash}{6e2076797d39e4d4274a6633911e3284}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Procedural Content Generation via Machine Learning (PCGML)}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1702.00539
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1702.00539
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1702.00539
+      \endverb
+    \endentry
+    \entry{sun2024roomplanner}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=74c17d9d8d0d03f7dee9f5387e640934}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Wenzhuo},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f97172150f8228ec3e48ed19d365e8a9}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Mingjian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd246d86bb3e421049b3c343f13300d6}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Wenxuan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bbaa0c1ef8159b79eb2b3023fa7476e}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xuelian},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dbfc282073c3c0a824d475bb3e3dfca4}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Zongyuan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{fullhash}{445b7d22199734e58f455b24ad6b6806}
+      \strng{bibnamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authorbibnamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authornamehash}{cc977661552d42e6bc1f70d0c6b117e2}
+      \strng{authorfullhash}{445b7d22199734e58f455b24ad6b6806}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{RoomPlanner: Explicit Layout Planner for Easier LLM-Driven 3D Room Generation}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2511.17048
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2511.17048
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2511.17048
+      \endverb
+    \endentry
+    \entry{tang2025unrealllm}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=a858be89fb86717ce8f2c2771a8b1853}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1689d6d8f402fb855ce2857437e9459}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Kaiyong},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0af346791f32de569a1d3f867283a05a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuliang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a770f9f6dcfe05f34bc7d9835ea4375b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xuebo},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12dc46bad2af10d5ed593a618c71a287}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Junyi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42b03d7a28c97c101e0a62ee7baba8f9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fdc38753a7609fdd6a44286e907bad0}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Xiaowen},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=cb0803882fba28a6c7ecb519069a89de}{%
+           family={Che},
+           familyi={C\bibinitperiod},
+           given={Wanxiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=bfe9d325a7c90fcd2c57a7d9ff201524}{%
+           family={Nabende},
+           familyi={N\bibinitperiod},
+           given={Joyce},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c36f9fc7c3f7617b9ee71cb8646c6f30}{%
+           family={Shutova},
+           familyi={S\bibinitperiod},
+           given={Ekaterina},
+           giveni={E\bibinitperiod}}}%
+        {{hash=25546e3752457eae386c91911a2fb5f8}{%
+           family={Pilehvar},
+           familyi={P\bibinitperiod},
+           given={Mohammad\bibnamedelima Taher},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{fullhash}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{bibnamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authorbibnamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authornamehash}{3ac9e8e8255af44ab2458dc78c386ab4}
+      \strng{authorfullhash}{b45ea1db01788fe626adb92ed97d3c4c}
+      \strng{editorbibnamehash}{6810c318bea26b0d4170d243c1a0e7ee}
+      \strng{editornamehash}{6810c318bea26b0d4170d243c1a0e7ee}
+      \strng{editorfullhash}{fbc5cc62b7fffb46f357f510b4531271}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The creation of high-quality 3D scenes is essential for applications like video games and simulations, yet automating this process while retaining the benefits of Procedural Content Generation (PCG) remains challenging. In this paper, we introduce UnrealLLM, a novel multi-agent framework that connects natural language descriptions with the professional PCG system (Unreal Engine 5) to automate scene generation. UnrealLLM constructs a comprehensive knowledge base to translate text into executable PCG blueprints and a diverse asset library that guarantees high-quality scene generation. Additionally, it also introduces a text-based blueprint system with a spline-based control mechanism for geometric arrangement, enabling natural language interaction and enhancing interactivity in 3D environments using UE5{'}s advanced capabilities. Through extensive experiments, we show that UnrealLLM achieves competitive performance in technical metrics and aesthetic quality, offering unique advantages in generation scale and interactivity. This work makes a valuable contribution to automated 3D content creation, benefiting both novice users and professional designers.}
+      \field{booktitle}{Findings of the Association for Computational Linguistics: ACL 2025}
+      \field{month}{7}
+      \field{title}{{U}nreal{LLM}: Towards Highly Controllable and Interactable 3{D} Scene Generation by {LLM}-powered Procedural Content Generation}
+      \field{year}{2025}
+      \field{pages}{19417\bibrangedash 19435}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.18653/v1/2025.findings-acl.994
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2025.findings-acl.994/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2025.findings-acl.994/
+      \endverb
+    \endentry
+    \entry{todd2023level}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=fc9c46cc0807547b221e93ef062030a4}{%
+           family={Todd},
+           familyi={T\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=495f1f7321ab1541320d57f92a26ae86}{%
+           family={Earle},
+           familyi={E\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0dd404eff45c62fd5cab19321edd726}{%
+           family={Nasir},
+           familyi={N\bibinitperiod},
+           given={Muhammad\bibnamedelima Umair},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db70cf2978895cc7b9e9d8febc794f7c}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima Cerny},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{fullhash}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \strng{bibnamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authorbibnamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authornamehash}{9a7628e4f40411cca901fb740339ef73}
+      \strng{authorfullhash}{458dc229f70afbda4ca5a49e0a9fa99b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 18th International Conference on the Foundations of Digital Games}
+      \field{month}{4}
+      \field{series}{FDG 2023}
+      \field{title}{Level Generation Through Large Language Models}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3582437.3587211
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/3582437.3587211
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/3582437.3587211
+      \endverb
+    \endentry
+    \entry{xu2025constraint}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=34b9bd64f26fdc9409ceefff047d2681}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kaijie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c45a28e37e915fb5b0cc8623267ade9}{%
+           family={Verbrugge},
+           familyi={V\bibinitperiod},
+           given={Clark},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{fullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{bibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorbibnamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authornamehash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \strng{authorfullhash}{cd858f18cae5b7759a4bfe3638f36c06}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th International Conference on the Foundations of Digital Games}
+      \field{series}{FDG '25}
+      \field{title}{Constraint Is All You Need: Optimization-Based 3D Level Generation with LLMs}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1145/3723498.3723840
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3723498.3723840
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3723498.3723840
+      \endverb
+      \keyw{Procedural Content Generation,Facility Layout Problem,Level Generation,Large Language Models,Game Design}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

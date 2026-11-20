@@ -42,6 +42,18 @@
 \usepackage{url}
 \usepackage{needspace}
 
+% ---------------------------------------------------------------------------
+% CITAÇÕES E REFERÊNCIAS ABNT
+% ---------------------------------------------------------------------------
+\usepackage[
+  backend=biber,
+  style=abnt,
+  giveninits=true,
+  repeatfields=true
+]{biblatex}
+
+\addbibresource{referencias.bib}
+
 \tcbuselibrary{skins, breakable}
 
 % ---------------------------------------------------------------------------
@@ -266,11 +278,11 @@
 \secao{Introdu\c{c}\~{a}o}
 
 {\fBody
-A Geração Procedural de Conteúdo (PCG) poupa esforço manual na criação de mapas em jogos. (Summerville \textit{et al.}, 2018). A geração procedural de conteúdo por aprendizado de máquina (PCGML) antecede os LLMs; modelos de linguagem passaram a ser investigados mais recentemente para essa tarefa. LLMs geram bons níveis textuais em 2D (Todd \textit{et al.}, 2023) e auxiliam na orquestração semântica (Tang \textit{et al.}, 2025).
+A Geração Procedural de Conteúdo (PCG) poupa esforço manual na criação de mapas em jogos \cite{summerville2018procedural}. A geração procedural de conteúdo por aprendizado de máquina (PCGML) antecede os LLMs; modelos de linguagem passaram a ser investigados mais recentemente para essa tarefa. LLMs geram bons níveis textuais em 2D \cite{todd2023level} e auxiliam na orquestração semântica \cite{tang2025unrealllm}.
 
 \vspace{3mm}
 
-Contudo, em tarefas de geração de layouts 3D, estudos relatam dificuldades para produzir configurações que satisfaçam restrições espaciais. Ao tentar gerar posicionamentos 3D de arquiteturas complexas via redes estocásticas, surgem erros críticos como sobreposições, corredores sem saída e chaves geradas em salas inacessíveis (Xu; Verbrugge, 2025; Sun \textit{et al.}, 2025). Xu e Verbrugge (2025) já combinam LLMs, descrição estruturada e otimização por restrições para produzir fases 3D. Nosso recorte é um protótipo de masmorra modular de um pavimento, que transforma grafos de progressão em geometria editável no Godot e avalia explicitamente sua validade lógica, geométrica e de navegação.
+Contudo, em tarefas de geração de layouts 3D, estudos relatam dificuldades para produzir configurações que satisfaçam restrições espaciais. Ao tentar gerar posicionamentos 3D de arquiteturas complexas via redes estocásticas, surgem erros críticos como sobreposições, corredores sem saída e chaves geradas em salas inacessíveis \cite{xu2025constraint, sun2024roomplanner}. \textcite{xu2025constraint} já combinam LLMs, descrição estruturada e otimização por restrições para produzir fases 3D. Nosso recorte é um protótipo de masmorra modular de um pavimento, que transforma grafos de progressão em geometria editável no Godot e avalia explicitamente sua validade lógica, geométrica e de navegação.
 }\par
 
 \vspace{4mm}
@@ -299,6 +311,13 @@ A metodologia adota um fluxo integrado em um \textit{addon} para Godot, com vali
 
 \textbf{3. Construção e Testes Espaciais:} O gerador percorre o grafo, posiciona salas, alinha portas, conecta por corredores, testa interseções e recusa ou reprocessa layouts sem encaixe válido. O protótipo constitui uma masmorra modular de um pavimento com salas pré-fabricadas de dimensões e conectores conhecidos, impedindo sobreposições visuais e inconsistência física (\textit{clipping}). A \textit{engine} usa nós de \textit{NavigationRegion3D} para atestar que o caminho principal possui malha de navegação (NavMesh) intacta.
 }\par
+
+\vspace{4mm}
+
+\begin{center}
+  \includegraphics[width=0.95\linewidth]{diagrama_arquitetura_16x9}
+  \captionof{figure}{Arquitetura híbrida proposta e fluxo integrado de geração e validação de fases 3D.}
+\end{center}
 
 %=============================================================================
 % ◄ COLUNA DIREITA ►
@@ -345,19 +364,9 @@ Este trabalho propõe superar deficiências dos LLMs no raciocínio espacial, tr
 
 \secao{Refer\^{e}ncias Bibliogr\'{a}ficas}
 
-{\fRef
-\begin{itemize}[leftmargin=0pt, itemsep=4pt, parsep=0pt, label={}]
-  \item SUMMERVILLE, A. \textit{et al.} \textbf{Procedural Content Generation via Machine Learning (PCGML)}. [\textit{S. l.: s. n.}], 2018. arXiv: \texttt{1702.00539 [cs.AI]}. Disponível em: \url{https://arxiv.org/abs/1702.00539}.
-
-  \item SUN, W. \textit{et al.} \textbf{RoomPlanner: Explicit Layout Planner for Easier LLM-Driven 3D Room Generation}. [\textit{S. l.: s. n.}], 2025. arXiv: \texttt{2511.17048 [cs.CV]}. Disponível em: \url{https://arxiv.org/abs/2511.17048}.
-
-  \item TANG, S. \textit{et al.} UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation. \textit{In}: CHE, W. \textit{et al.} (ed.). \textbf{Findings of the Association for Computational Linguistics: ACL 2025}. Vienna, Austria: Association for Computational Linguistics, jul. 2025. p.~19417--19435. ISBN 979-8-89176-256-5. DOI: \texttt{10.18653/v1/2025.findings-acl.994}. Disponível em: \url{https://aclanthology.org/2025.findings-acl.994/}.
-
-  \item TODD, G. \textit{et al.} Level Generation Through Large Language Models. \textit{In}: PROCEEDINGS of the 18th International Conference on the Foundations of Digital Games. [\textit{S. l.}]: ACM, abr. 2023. (FDG 2023), p.~1--8. DOI: \texttt{10.1145/3582437.3587211}. Disponível em: \url{http://dx.doi.org/10.1145/3582437.3587211}.
-
-  \item XU, K.; VERBRUGGE, C. Constraint Is All You Need: Optimization-Based 3D Level Generation with LLMs. \textit{In}: PROCEEDINGS of the 20th International Conference on the Foundations of Digital Games. [\textit{S. l.}]: Association for Computing Machinery, 2025. (FDG '25). ISBN 9798400718564. DOI: \texttt{10.1145/3723498.3723840}. Disponível em: \url{https://doi.org/10.1145/3723498.3723840}.
-\end{itemize}
-}\par
+{\renewcommand*{\bibfont}{\fRef}%
+\setlength{\bibitemsep}{4pt}%
+\printbibliography[heading=none]}
 
 \end{paracol}
 

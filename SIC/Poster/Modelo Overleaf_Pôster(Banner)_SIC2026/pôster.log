@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  19 NOV 2026 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  20 NOV 2026 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,6 +725,278 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
+(/home/gus/texmf/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/home/gus/texmf/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count331
+
+(/home/gus/texmf/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count332
+\c@listtotal=\count333
+\c@listcount=\count334
+\c@liststart=\count335
+\c@liststop=\count336
+\c@citecount=\count337
+\c@citetotal=\count338
+\c@multicitecount=\count339
+\c@multicitetotal=\count340
+\c@instcount=\count341
+\c@maxnames=\count342
+\c@minnames=\count343
+\c@maxitems=\count344
+\c@minitems=\count345
+\c@citecounter=\count346
+\c@maxcitecounter=\count347
+\c@savedcitecounter=\count348
+\c@uniquelist=\count349
+\c@uniquename=\count350
+\c@refsection=\count351
+\c@refsegment=\count352
+\c@maxextratitle=\count353
+\c@maxextratitleyear=\count354
+\c@maxextraname=\count355
+\c@maxextradate=\count356
+\c@maxextraalpha=\count357
+\c@abbrvpenalty=\count358
+\c@highnamepenalty=\count359
+\c@lownamepenalty=\count360
+\c@maxparens=\count361
+\c@parenlevel=\count362
+\blx@tempcnta=\count363
+\blx@tempcntb=\count364
+\blx@tempcntc=\count365
+\c@blx@maxsection=\count366
+\blx@maxsegment@0=\count367
+\blx@notetype=\count368
+\blx@parenlevel@text=\count369
+\blx@parenlevel@foot=\count370
+\blx@sectionciteorder@0=\count371
+\blx@sectionciteorderinternal@0=\count372
+\blx@entrysetcounter=\count373
+\blx@biblioinstance=\count374
+\labelnumberwidth=\skip76
+\labelalphawidth=\skip77
+\biblabelsep=\skip78
+\bibitemsep=\skip79
+\bibnamesep=\skip80
+\bibinitsep=\skip81
+\bibparsep=\skip82
+\bibhang=\skip83
+\blx@bcfin=\read5
+\blx@bcfout=\write5
+\blx@langwohyphens=\language6
+\c@mincomprange=\count375
+\c@maxcomprange=\count376
+\c@mincompwidth=\count377
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/home/gus/texmf/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'abnt.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count378
+\c@savedafterword=\count379
+\c@annotator=\count380
+\c@savedannotator=\count381
+\c@author=\count382
+\c@savedauthor=\count383
+\c@bookauthor=\count384
+\c@savedbookauthor=\count385
+\c@commentator=\count386
+\c@savedcommentator=\count387
+\c@editor=\count388
+\c@savededitor=\count389
+\c@editora=\count390
+\c@savededitora=\count391
+\c@editorb=\count392
+\c@savededitorb=\count393
+\c@editorc=\count394
+\c@savededitorc=\count395
+\c@foreword=\count396
+\c@savedforeword=\count397
+\c@holder=\count398
+\c@savedholder=\count399
+\c@introduction=\count400
+\c@savedintroduction=\count401
+\c@namea=\count402
+\c@savednamea=\count403
+\c@nameb=\count404
+\c@savednameb=\count405
+\c@namec=\count406
+\c@savednamec=\count407
+\c@translator=\count408
+\c@savedtranslator=\count409
+\c@shortauthor=\count410
+\c@savedshortauthor=\count411
+\c@shorteditor=\count412
+\c@savedshorteditor=\count413
+\c@labelname=\count414
+\c@savedlabelname=\count415
+\c@institution=\count416
+\c@savedinstitution=\count417
+\c@lista=\count418
+\c@savedlista=\count419
+\c@listb=\count420
+\c@savedlistb=\count421
+\c@listc=\count422
+\c@savedlistc=\count423
+\c@listd=\count424
+\c@savedlistd=\count425
+\c@liste=\count426
+\c@savedliste=\count427
+\c@listf=\count428
+\c@savedlistf=\count429
+\c@location=\count430
+\c@savedlocation=\count431
+\c@organization=\count432
+\c@savedorganization=\count433
+\c@origlocation=\count434
+\c@savedoriglocation=\count435
+\c@origpublisher=\count436
+\c@savedorigpublisher=\count437
+\c@publisher=\count438
+\c@savedpublisher=\count439
+\c@language=\count440
+\c@savedlanguage=\count441
+\c@origlanguage=\count442
+\c@savedoriglanguage=\count443
+\c@pageref=\count444
+\c@savedpageref=\count445
+\shorthandwidth=\skip84
+\shortjournalwidth=\skip85
+\shortserieswidth=\skip86
+\shorttitlewidth=\skip87
+\shortauthorwidth=\skip88
+\shorteditorwidth=\skip89
+\locallabelnumberwidth=\skip90
+\locallabelalphawidth=\skip91
+\localshorthandwidth=\skip92
+\localshortjournalwidth=\skip93
+\localshortserieswidth=\skip94
+\localshorttitlewidth=\skip95
+\localshortauthorwidth=\skip96
+\localshorteditorwidth=\skip97
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/home/gus/texmf/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/home/gus/texmf/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count446
+\c@textcitetotal=\count447
+\c@textcitemaxnames=\count448
+\c@biburlbigbreakpenalty=\count449
+\c@biburlbreakpenalty=\count450
+\c@biburlnumpenalty=\count451
+\c@biburlucpenalty=\count452
+\c@biburllcpenalty=\count453
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count454
+)
+Package biblatex Info: Trying to load bibliography style 'abnt'...
+Package biblatex Info: ... file 'abnt.bbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/abnt.bbx
+File: abnt.bbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count455
+\c@bbx:relatedtotal=\count456
+))
+Package biblatex Info: Trying to load citation style 'abnt'...
+Package biblatex Info: ... file 'abnt.cbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/abnt.cbx
+File: abnt.cbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load citation style 'authoryear-comp'...
+Package biblatex Info: ... file 'authoryear-comp.cbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/cbx/authoryear-comp.cbx
+File: authoryear-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\citetitle'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\citeyear'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/home/gus/texmf/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-01-22 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/home/gus/texmf/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -743,53 +1015,58 @@ Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@testbox=\box85
 \tcb@totalupperbox=\box86
 \tcb@totallowerbox=\box87
 )
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-68.
 
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count457
+\@quotereset=\count458
+
+Package biblatex Warning: Conflicting options.
+(biblatex)                '<namepart>inits' conflicts with 'uniquename=minfull'
+.
+(biblatex)                Setting 'uniquename=mininit on input line 180.
+
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+80.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./pôster.aux)
 \openout1 = `pôster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Info: Redefining \microtypecontext on input line 168.
-Package microtype Info: Applying patch `item' on input line 168.
-Package microtype Info: Applying patch `toc' on input line 168.
-Package microtype Info: Applying patch `eqnum' on input line 168.
-Package microtype Info: Applying patch `footnote' on input line 168.
-Package microtype Info: Applying patch `verbatim' on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Info: Redefining \microtypecontext on input line 180.
+Package microtype Info: Applying patch `item' on input line 180.
+Package microtype Info: Applying patch `toc' on input line 180.
+Package microtype Info: Applying patch `eqnum' on input line 180.
+Package microtype Info: Applying patch `footnote' on input line 180.
+Package microtype Info: Applying patch `verbatim' on input line 180.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 168.
+LaTeX Info: Redefining \showhyphens on input line 180.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -800,16 +1077,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
+\scratchcounter=\count459
 \scratchdimen=\dimen302
 \scratchbox=\box88
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count460
+\nofMParguments=\count461
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count334
+\MPscratchCnt=\count462
 \MPscratchDim=\dimen303
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPnumerator=\count463
+\makeMPintoPDFobject=\count464
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -856,19 +1133,111 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'brazil' -> 'brazil-abnt'...
+Package biblatex Info: ... file 'brazil-abnt.lbx' found.
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazil-abnt.lbx
+File: brazil-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+
+
+Package biblatex Warning: File 'brazilian-abnt-abnt.lbx' not found!
+(biblatex)                Ignoring mapping 'brazilian-abnt' -> 'brazilian-abnt-
+abnt'.
+
+Package biblatex Info: Trying to load language 'brazilian-abnt'...
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'.
+..
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'brazilian-abnt'...
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'.
+..
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'brazil'...
+Package biblatex Info: ... file 'brazil.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazil.lbx
+File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)))
+Package biblatex Info: Trying to load language 'brazil'...
+Package biblatex Info: ... file 'brazil.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazil.lbx
+File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'brazilian' -> 'brazilian-abnt'.
+..
+Package biblatex Info: ... file 'brazilian-abnt.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex-abnt/brazilian-abnt.lbx
+File: brazilian-abnt.lbx 2018-11-17 v3.4 ABNT BibLaTeX citation style
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'brazil'...
+Package biblatex Info: ... file 'brazil.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazil.lbx
+File: brazil.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'brazilian'...
+Package biblatex Info: ... file 'brazilian.lbx' found.
+
+(/home/gus/texmf/tex/latex/biblatex/lbx/brazilian.lbx
+File: brazilian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+))))))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `pôster.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'pôster.bbl' found.
+ (./pôster.bbl)
+Package biblatex Info: Reference section=0 on input line 180.
+Package biblatex Info: Reference segment=0 on input line 180.
 <LogoSIC2026_header.pdf, id=4, 573.82379pt x 82.3878pt>
 File: LogoSIC2026_header.pdf Graphic file (type pdf)
 <use LogoSIC2026_header.pdf>
-Package pdftex.def Info: LogoSIC2026_header.pdf  used on input line 176.
+Package pdftex.def Info: LogoSIC2026_header.pdf  used on input line 188.
 (pdftex.def)             Requested size: 2301.82797pt x 330.52959pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 191--193
+Overfull \hbox (15.0pt too wide) in paragraph at lines 203--205
 [][][]
  []
 
-LaTeX Font Info:    Calculating math sizes for size <32> on input line 198.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-98.
+LaTeX Font Info:    Calculating math sizes for size <32> on input line 210.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+10.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -876,31 +1245,31 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-98.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+10.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-198.
+210.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-198.
+210.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <32> on input line 198.
+(Font)              <32> on input line 210.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <22.3999> on input line 198.
+(Font)              <22.3999> on input line 210.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <16> on input line 198.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 198
+(Font)              <16> on input line 210.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 210
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -909,7 +1278,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 198
+LaTeX Font Info:    Trying to load font information for U+msb on input line 210
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -918,15 +1287,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Calculating math sizes for size <26> on input line 206.
+LaTeX Font Info:    Calculating math sizes for size <26> on input line 218.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <26> on input line 206.
+(Font)              <26> on input line 218.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.19992> on input line 206.
+(Font)              <18.19992> on input line 218.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13> on input line 206.
+(Font)              <13> on input line 218.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-06.
+18.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -936,59 +1305,63 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <26> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 206.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 218.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 212--214
+Overfull \hbox (15.0pt too wide) in paragraph at lines 224--226
 [][][]
  []
 
-LaTeX Font Info:    Calculating math sizes for size <25> on input line 219.
+LaTeX Font Info:    Calculating math sizes for size <25> on input line 231.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <25> on input line 219.
+(Font)              <25> on input line 231.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.49992> on input line 219.
+(Font)              <17.49992> on input line 231.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.5> on input line 219.
+(Font)              <12.5> on input line 231.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 224.
+nput line 236.
 (/home/gus/texmf/tex/latex/fontawesome5/ufontawesomefree3.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 229.
+nput line 241.
 
 (/home/gus/texmf/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on i
-nput line 241.
+nput line 253.
 
 (/home/gus/texmf/tex/latex/fontawesome5/ufontawesomefree0.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 242.
+nput line 254.
 
 (/home/gus/texmf/tex/latex/fontawesome5/ufontawesomefree2.fd)
-Overfull \hbox (15.0pt too wide) in paragraph at lines 248--250
+Overfull \hbox (15.0pt too wide) in paragraph at lines 260--262
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <27> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 269.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 300.
+<diagrama_arquitetura_16x9.pdf, id=5, 1445.4pt x 813.0375pt>
+File: diagrama_arquitetura_16x9.pdf Graphic file (type pdf)
+<use diagrama_arquitetura_16x9.pdf>
+Package pdftex.def Info: diagrama_arquitetura_16x9.pdf  used on input line 318.
+
+(pdftex.def)             Requested size: 1071.74074pt x 602.85413pt.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <27> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 314.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 333.
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <21> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 350.
-LaTeX Font Info:    Calculating math sizes for size <21> on input line 350.
+LaTeX Font Info:    Calculating math sizes for size <21> on input line 369.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <21> on input line 350.
+(Font)              <21> on input line 369.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.69994> on input line 350.
+(Font)              <14.69994> on input line 369.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.5> on input line 350.
+(Font)              <10.5> on input line 369.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 368--370
+Overfull \hbox (15.0pt too wide) in paragraph at lines 377--379
 [][][]
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-375.
+384.
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1009,29 +1382,32 @@ thsy.enc}{/home/gus/texmf/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/home/gus/
 texmf/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/home/gus/texmf/fonts/enc/dvip
 s/fontawesome5/fa5free0.enc}{/home/gus/texmf/fonts/enc/dvips/fontawesome5/fa5fr
 ee2.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./LogoSIC2026_header.
-pdf>] (./pôster.aux)
+pdf> <./diagrama_arquitetura_16x9.pdf>] (./pôster.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+L3 programming layer <2020/03/25>
  ***********
+Package logreq Info: Writing requests to 'pôster.run.xml'.
+\openout1 = `pôster.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 27343 strings out of 476182
- 564614 string characters out of 5795594
- 1950975 words of memory out of 5000000
- 48749 multiletter control sequences out of 15000+600000
- 673418 words of font info for 215 fonts, out of 8000000 for 9000
+ 35694 strings out of 476182
+ 735101 string characters out of 5795594
+ 1957975 words of memory out of 5000000
+ 57001 multiletter control sequences out of 15000+600000
+ 676074 words of font info for 217 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 83i,7n,87p,1004b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,7n,87p,1277b,4319s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/gus/texmf/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1
 /public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on pôster.pdf (1 page, 288643 bytes).
+Output written on pôster.pdf (1 page, 840629 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 243 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 66578 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 68631 words of extra memory for PDF output out of 74296 (max. 10000000)
 
